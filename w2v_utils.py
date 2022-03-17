@@ -111,6 +111,19 @@ def read_glove_vecs(glove_file):
             
     return words, word_to_vec_map
 
+
+def glove_word_index(glove_file):
+    with open(glove_file, 'r') as f:
+        word_to_index_map = {}
+        
+        for index, line in enumerate(f):
+            line = line.strip().split()
+            curr_word = line[0]
+            word_to_index_map[curr_word] = index
+            
+    return word_to_index_map
+
+
 def relu(x):
     """
     Compute the relu of x
