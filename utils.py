@@ -3,7 +3,7 @@ import os
 import numpy as np
 import torch
 import tensorflow as tf
-from tqdm import tqdm
+from tqdm.notebook import tqdm
 from tensorboard.plugins import projector
 from transformers import BertTokenizer, BertModel
 
@@ -164,7 +164,7 @@ def complete_analogy(word_a, word_b, word_c, word_to_vec_map):
     best_word = None                   # Initialize best_word with None, it will help keep track of the word to output
     
     # Loop over the whole word vector set
-    for w in words:   
+    for w in tqdm(words):
         # To avoid best_word being one of the input words, skip the input word_c
         # Skip word_c from query
         if w == word_c:
