@@ -5,7 +5,7 @@ Requirement | Comment
 :--- | :---
 python 3.10 | 
 virtualenv | <ul style="padding-left:0em;"><li>install by running `sudo apt-get install virtualenv` (Linux) or `pip install virtualenv`</li><li>create new environment by running `virtualenv -p python3.10 .venv`</li><li>activate by running `source .venv/bin/activate` (Linux) or `source .venv/Scripts/activate` (Windows)</li><li>deactivate by running `deactivate`</li></ul>
-pip-tools | <ul style="padding-left:0em;"><li>compiles requirements.in to requirements.txt</li><li>install by running `pip install pip-tools`</li><li>run `pip-compile ./requirements.in` to generate or refresh requirements.txt</li></ul>
+pip-tools | <ul style="padding-left:0em;"><li>compiles requirements.in to requirements.txt</li><li>install by running `pip install pip-tools`</li><li>run `pip-compile requirements.in` to generate or refresh requirements.txt</li></ul>
 requirements.txt | run `pip install -r requirements.txt`
 [GloVe](https://nlp.stanford.edu/projects/glove/) word embeddings | [download](https://nlp.stanford.edu/data/glove.6B.zip) and extract the `.zip` file and save `glove.6B.50d.txt` to [data](./data)
 

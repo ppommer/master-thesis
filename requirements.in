@@ -6,3 +6,4 @@ tensorboard
 transformers
 torch
 scipy
+ipywidgets

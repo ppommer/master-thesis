@@ -17,7 +17,7 @@ def read_glove_vecs(glove_file: str) -> dict[str, list[np.float64]]:
     Arguments:
     glove_file -- path to the .txt file containing the vectors
     """
-    with open(glove_file, "r") as f:
+    with open(glove_file, "r", encoding="utf-8") as f:
         words = set()
         glove_map = {}
         
