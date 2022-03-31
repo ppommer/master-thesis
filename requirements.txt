@@ -59,20 +59,35 @@ flatbuffers==2.0
     # via tensorflow
 gast==0.5.3
     # via tensorflow
+google-api-core==2.7.1
+    # via google-api-python-client
+google-api-python-client==2.42.0
+    # via -r requirements.in
 google-auth==2.6.2
     # via
+    #   google-api-core
+    #   google-api-python-client
+    #   google-auth-httplib2
     #   google-auth-oauthlib
     #   tensorboard
+google-auth-httplib2==0.1.0
+    # via google-api-python-client
 google-auth-oauthlib==0.4.6
     # via tensorboard
 google-pasta==0.2.0
     # via tensorflow
+googleapis-common-protos==1.56.0
+    # via google-api-core
 grpcio==1.44.0
     # via
     #   tensorboard
     #   tensorflow
 h5py==3.6.0
     # via tensorflow
+httplib2==0.20.4
+    # via
+    #   google-api-python-client
+    #   google-auth-httplib2
 huggingface-hub==0.4.0
     # via transformers
 idna==3.3
@@ -180,6 +195,8 @@ prompt-toolkit==3.0.28
     # via ipython
 protobuf==3.19.4
     # via
+    #   google-api-core
+    #   googleapis-common-protos
     #   tensorboard
     #   tensorflow
 psutil==5.9.0
@@ -200,7 +217,9 @@ pygments==2.11.2
     #   jupyterlab-pygments
     #   nbconvert
 pyparsing==3.0.7
-    # via packaging
+    # via
+    #   httplib2
+    #   packaging
 pyrsistent==0.18.1
     # via jsonschema
 python-dateutil==2.8.2
@@ -223,6 +242,7 @@ regex==2022.3.15
     #   transformers
 requests==2.27.1
     # via
+    #   google-api-core
     #   huggingface-hub
     #   requests-oauthlib
     #   tensorboard
@@ -244,6 +264,7 @@ six==1.16.0
     #   astunparse
     #   bleach
     #   google-auth
+    #   google-auth-httplib2
     #   google-pasta
     #   grpcio
     #   keras-preprocessing
@@ -308,6 +329,8 @@ typing-extensions==4.1.1
     #   huggingface-hub
     #   tensorflow
     #   torch
+uritemplate==4.1.1
+    # via google-api-python-client
 urllib3==1.26.9
     # via requests
 wcwidth==0.2.5
