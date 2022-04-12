@@ -1,5 +1,5 @@
 # Guide how to use pip-tools: https://medium.com/@ramalhodevitor/abandon-requirements-txt-for-managing-dependencies-in-python-immediately-50b1c45b824a
-# run "pip3 install pip-tools"
+# run "pip install pip-tools"
 # run "pip-compile ./requirements.in" to generate or refresh requirements.txt
 
 # embeddings.ipynb
@@ -12,3 +12,11 @@ ipywidgets
 
 # perspective_api.ipynb
 google-api-python-client
+
+# emotions.ipynb
+pandas
+tensorflow_hub
+wget
+sentencepiece
+sklearn
+plotly

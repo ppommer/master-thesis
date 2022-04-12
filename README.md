@@ -13,6 +13,8 @@ requirements.txt | run `pip install -r requirements.txt`
 Notebook | Content
 :--- | :---
 [embeddings.ipynb](./embeddings.ipynb) | Playground for GloVe and BERT embeddings
+[perspective_api.ipynb](./perspective_api.ipynb) | Access to the Perspective API (returns toxicity scores)
+[emotions.ipynb](./emotions.ipynb) | Emotion classification with BERT on GoEmotions
 
 ## Hypotheses
 Hypothesis | Approach | Validated | Comment | Notebook | References
