@@ -113,7 +113,9 @@ jinja2==3.0.3
     #   nbconvert
     #   notebook
 joblib==1.1.0
-    # via sacremoses
+    # via
+    #   sacremoses
+    #   scikit-learn
 jsonschema==4.4.0
     # via nbformat
 jupyter-client==7.1.2
@@ -170,9 +172,12 @@ numpy==1.22.3
     #   h5py
     #   keras-preprocessing
     #   opt-einsum
+    #   pandas
+    #   scikit-learn
     #   scipy
     #   tensorboard
     #   tensorflow
+    #   tensorflow-hub
     #   transformers
 oauthlib==3.2.0
     # via requests-oauthlib
@@ -183,12 +188,16 @@ packaging==21.3
     #   bleach
     #   huggingface-hub
     #   transformers
+pandas==1.4.2
+    # via -r requirements.in
 pandocfilters==1.5.0
     # via nbconvert
 parso==0.8.3
     # via jedi
 pickleshare==0.7.5
     # via ipython
+plotly==5.7.0
+    # via -r requirements.in
 prometheus-client==0.13.1
     # via notebook
 prompt-toolkit==3.0.28
@@ -199,6 +208,7 @@ protobuf==3.19.4
     #   googleapis-common-protos
     #   tensorboard
     #   tensorflow
+    #   tensorflow-hub
 psutil==5.9.0
     # via ipykernel
 pure-eval==0.2.2
@@ -223,7 +233,11 @@ pyparsing==3.0.7
 pyrsistent==0.18.1
     # via jsonschema
 python-dateutil==2.8.2
-    # via jupyter-client
+    # via
+    #   jupyter-client
+    #   pandas
+pytz==2022.1
+    # via pandas
 pywin32==303
     # via jupyter-core
 pywinpty==2.0.5
@@ -253,10 +267,16 @@ rsa==4.8
     # via google-auth
 sacremoses==0.0.49
     # via transformers
+scikit-learn==1.0.2
+    # via sklearn
 scipy==1.8.0
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   scikit-learn
 send2trash==1.8.0
     # via notebook
+sentencepiece==0.1.96
+    # via -r requirements.in
 six==1.16.0
     # via
     #   absl-py
@@ -268,13 +288,18 @@ six==1.16.0
     #   google-pasta
     #   grpcio
     #   keras-preprocessing
+    #   plotly
     #   python-dateutil
     #   sacremoses
     #   tensorflow
+sklearn==0.0
+    # via -r requirements.in
 soupsieve==2.3.1
     # via beautifulsoup4
 stack-data==0.2.0
     # via ipython
+tenacity==8.0.1
+    # via plotly
 tensorboard==2.8.0
     # via
     #   -r requirements.in
@@ -284,6 +309,8 @@ tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
     # via tensorboard
 tensorflow==2.8.0
+    # via -r requirements.in
+tensorflow-hub==0.12.0
     # via -r requirements.in
 tensorflow-io-gcs-filesystem==0.24.0
     # via tensorflow
@@ -295,6 +322,8 @@ testpath==0.6.0
     # via nbconvert
 tf-estimator-nightly==2.8.0.dev2021122109
     # via tensorflow
+threadpoolctl==3.1.0
+    # via scikit-learn
 tokenizers==0.11.6
     # via transformers
 torch==1.11.0
@@ -339,6 +368,8 @@ webencodings==0.5.1
     # via bleach
 werkzeug==2.0.3
     # via tensorboard
+wget==3.2
+    # via -r requirements.in
 wheel==0.37.1
     # via
     #   astunparse
