@@ -20,3 +20,17 @@ wget
 sentencepiece
 sklearn
 plotly
+
+# neutralizing-bias
+pytorch-pretrained-bert==0.3.0
+torch
+torchvision
+tensorboardX
+simplediff
+nltk
+sklearn
+mwparserfromhell
+#python-Levenshtein
+autocorrect
+future
+spacy
