@@ -1,15 +1,16 @@
 #!/bin/sh
 
 FOLDERNAME=$1
+ROBERTA_LARGE="/home/pp/master-thesis/style-transfer-paraphrase/models/roberta.large"
 
-fairseq-preprocess \
+python ~/master-thesis/style-transfer-paraphrase/fairseq/preprocess.py \
     --only-source \
     --trainpref "${FOLDERNAME}/train.label" \
     --validpref "${FOLDERNAME}/dev.label" \
     --destdir "${FOLDERNAME}-bin/label" \
     --workers 24
 
-fairseq-preprocess \
+python ~/master-thesis/style-transfer-paraphrase/fairseq/preprocess.py \
     --only-source \
     --trainpref "${FOLDERNAME}/train.input0.bpe" \
     --validpref "${FOLDERNAME}/dev.input0.bpe" \

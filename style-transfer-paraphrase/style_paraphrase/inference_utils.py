@@ -50,7 +50,7 @@ class GPT2Generator(object):
         args.temperature = 0
         args.top_p = top_p
         args.top_k = 1
-        #args.device = torch.cuda.current_device()
+        args.device = torch.cuda.current_device()
 
     def modify_p(self, top_p):
         self.args.top_p = top_p
@@ -92,9 +92,9 @@ class GPT2Generator(object):
             instances.append(instance)
 
         output, _, scores = self.gpt2_model.generate(
-            gpt2_sentences=torch.tensor([inst.sentence for inst in instances]),#.to(args.device),
-            segments=torch.tensor([inst.segment for inst in instances]),#.to(args.device),
-            global_dense_vectors=torch.tensor([inst.gdv for inst in instances]),#.to(args.device),
+            gpt2_sentences=torch.tensor([inst.sentence for inst in instances]).to(args.device),
+            segments=torch.tensor([inst.segment for inst in instances]).to(args.device),
+            global_dense_vectors=torch.tensor([inst.gdv for inst in instances]).to(args.device),
             init_context_size=instances[0].init_context_size,
             eos_token_id=tokenizer.eos_token_id,
             get_scores=get_scores,

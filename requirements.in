@@ -30,7 +30,7 @@ simplediff
 nltk
 sklearn
 mwparserfromhell
-#python-Levenshtein
+python-Levenshtein
 autocorrect
 future
 spacy
@@ -106,3 +106,11 @@ wasabi==0.8.0
 watchdog==0.10.3
 Werkzeug==1.0.1
 zipp==3.4.0
+# pre-procesing
+tqdm
+omegaconf==2.0.6
+hydra-core==1.0.7
+regex
+bitarray
+sacrebleu
+transformers
