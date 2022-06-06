@@ -89,7 +89,7 @@ requests==2.24.0
 ruamel.yaml==0.15.100
 sacrebleu==1.4.14
 sacremoses==0.0.43
-scipy==1.5.4
+#scipy==1.5.4
 sentencepiece==0.1.91
 six==1.15.0
 spacy==2.3.2
@@ -105,12 +105,8 @@ waitress==1.4.4
 wasabi==0.8.0
 watchdog==0.10.3
 Werkzeug==1.0.1
-zipp==3.4.0
+#zipp==3.4.0
 # pre-procesing
-tqdm
-omegaconf==2.0.6
-hydra-core==1.0.7
-regex
 bitarray
-sacrebleu
-transformers
+hydra-core==1.0.7
+omegaconf==2.0.6

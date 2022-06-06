@@ -12,8 +12,8 @@ from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
 from functools import partial
 
-#from dataset_config import DATASET_CONFIG
-#from data_utils import update_config, Instance
+# from dataset_config import DATASET_CONFIG
+# from data_utils import update_config, Instance
 
 MODEL_CLASSES = {
     'gpt2': (GPT2LMHeadModel, GPT2Tokenizer)
@@ -49,7 +49,7 @@ def init_gpt2_model(checkpoint_dir, args, model_class, tokenizer_class=None):
     """Load a trained model and vocabulary that you have fine-tuned."""
 
     model = model_class.from_pretrained(checkpoint_dir)
-    #model.to(args.device)
+    model.to(args.device)
 
     if tokenizer_class:
         tokenizer = tokenizer_class.from_pretrained(checkpoint_dir, do_lower_case=args.do_lower_case)

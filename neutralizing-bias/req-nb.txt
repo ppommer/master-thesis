@@ -6,6 +6,6 @@ simplediff
 nltk==3.4.5
 sklearn
 mwparserfromhell
-python-Levenshtein
+#python-Levenshtein
 autocorrect
 future
