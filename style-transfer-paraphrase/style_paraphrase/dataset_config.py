@@ -39,10 +39,9 @@ DATASET_CONFIG = {
     "datasets/coha_3_bins_1810s-1820s": BASE_CONFIG,
     "datasets/coha_3_bins_1890s-1900s": BASE_CONFIG,
     "datasets/coha_3_bins_1990s-2000s": BASE_CONFIG,
-    "/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/TEST": BASE_CONFIG,
-    "/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/WNC_biased": BASE_CONFIG,
-    "/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/WNC_neutral": BASE_CONFIG,
-    "/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/WNC_neutral_large": BASE_CONFIG,
+    "/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/WNC/WNC_biased_word": BASE_CONFIG,
+    "/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/WNC/WNC_biased_full": BASE_CONFIG,
+    "/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/WNC/WNC_large": BASE_CONFIG,
 }
 
 # Fill in DATASET_CONFIG with keys it was missing previously
