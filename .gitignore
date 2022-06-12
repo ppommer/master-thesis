@@ -1,4 +1,5 @@
 .venv
+.venv-nb
 .venv-stp
 .vscode
 __pycache__

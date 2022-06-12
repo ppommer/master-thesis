@@ -72,11 +72,13 @@ else:
         
 if ARGS.tagger_checkpoint:
     print('LOADING TAGGER FROM ' + ARGS.tagger_checkpoint)
-    tagging_model.load_state_dict(torch.load(ARGS.tagger_checkpoint))
+    # tagging_model.load_state_dict(torch.load(ARGS.tagger_checkpoint))
+    tagging_model.load_state_dict(torch.load(ARGS.tagger_checkpoint, map_location=torch.device("cpu")))
     print('DONE.')
 if ARGS.debias_checkpoint:
     print('LOADING DEBIASER FROM ' + ARGS.debias_checkpoint)
-    debias_model.load_state_dict(torch.load(ARGS.debias_checkpoint))
+    # debias_model.load_state_dict(torch.load(ARGS.debias_checkpoint))
+    debias_model.load_state_dict(torch.load(ARGS.debias_checkpoint, map_location=torch.device("cpu")))
     print('DONE.')
 
 
