@@ -266,16 +266,16 @@ def get_dataloader(data_path, tok2id, batch_size,
         # pickle.dump(examples, open(pickle_path, 'wb'))
 
     data = TensorDataset(
-        torch.tensor(examples['pre_ids'], dtype=torch.long),
-        torch.tensor(examples['pre_masks'], dtype=torch.uint8), # byte for masked_fill()
-        torch.tensor(examples['pre_lens'], dtype=torch.long),
-        torch.tensor(examples['post_in_ids'], dtype=torch.long),
-        torch.tensor(examples['post_out_ids'], dtype=torch.long),
-        torch.tensor(examples['pre_tok_label_ids'], dtype=torch.float),  # for compartin to enrichment stuff
-        torch.tensor(examples['post_tok_label_ids'], dtype=torch.float),  # for loss multiplying
-        torch.tensor(examples['rel_ids'], dtype=torch.long),
-        torch.tensor(examples['pos_ids'], dtype=torch.long),
-        torch.tensor(examples['categories'], dtype=torch.float))
+        torch.tensor(np.array(examples['pre_ids']), dtype=torch.long),
+        torch.tensor(np.array(examples['pre_masks']), dtype=torch.uint8), # byte for masked_fill()
+        torch.tensor(np.array(examples['pre_lens']), dtype=torch.long),
+        torch.tensor(np.array(examples['post_in_ids']), dtype=torch.long),
+        torch.tensor(np.array(examples['post_out_ids']), dtype=torch.long),
+        torch.tensor(np.array(examples['pre_tok_label_ids']), dtype=torch.float),  # for compartin to enrichment stuff
+        torch.tensor(np.array(examples['post_tok_label_ids']), dtype=torch.float),  # for loss multiplying
+        torch.tensor(np.array(examples['rel_ids']), dtype=torch.long),
+        torch.tensor(np.array(examples['pos_ids']), dtype=torch.long),
+        torch.tensor(np.array(examples['categories']), dtype=torch.float))
 
     dataloader = DataLoader(
         data,
