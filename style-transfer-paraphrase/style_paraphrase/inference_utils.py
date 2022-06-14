@@ -92,9 +92,9 @@ class GPT2Generator(object):
             instances.append(instance)
 
         output, _, scores = self.gpt2_model.generate(
-            gpt2_sentences=torch.tensor([inst.sentence for inst in instances]).to(args.device),
-            segments=torch.tensor([inst.segment for inst in instances]).to(args.device),
-            global_dense_vectors=torch.tensor([inst.gdv for inst in instances]).to(args.device),
+            gpt2_sentences=torch.tensor(np.array([inst.sentence for inst in instances])).to(args.device),
+            segments=torch.tensor(np.array([inst.segment for inst in instances])).to(args.device),
+            global_dense_vectors=torch.tensor(np.array([inst.gdv for inst in instances])).to(args.device),
             init_context_size=instances[0].init_context_size,
             eos_token_id=tokenizer.eos_token_id,
             get_scores=get_scores,
