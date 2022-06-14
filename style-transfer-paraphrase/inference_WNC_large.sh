@@ -17,7 +17,7 @@ python -m strap_many.py \
     --batch_size 64 \
     --model_dir $MODEL_DIR \
     --top_p_value 0.6 \
-    --input $INPUT \
+    --input $INPUT_DIR/test.txt \
     --output $OUTPUT_DIR/output_6.txt
 
 # top_p 0.9
@@ -25,5 +25,5 @@ python -m strap_many.py \
     --batch_size 64 \
     --model_dir $MODEL_DIR \
     --top_p_value 0.9 \
-    --input $INPUT \
+    --input $INPUT_DIR/test.txt \
     --output $OUTPUT_DIR/output_9.txt

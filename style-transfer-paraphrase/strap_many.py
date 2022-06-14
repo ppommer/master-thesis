@@ -2,6 +2,7 @@ import argparse
 import sys
 import torch
 import tqdm
+import os
 
 from style_paraphrase.inference_utils import GPT2Generator
 
@@ -32,5 +33,6 @@ for i in tqdm.tqdm(range(0, len(data), args.batch_size), desc="minibatches done.
     generations, _ = paraphraser.generate_batch(data[i:i + args.batch_size])
     outputs.extend(generations)
 
+os.makedirs(os.path.dirname(args.output), exist_ok=True)
 with open(args.output, "w") as f:
     f.write("\n".join(outputs) + "\n")

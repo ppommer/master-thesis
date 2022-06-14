@@ -5,7 +5,7 @@ INPUT_DIR=datasets/WNC/$DATASET
 OUTPUT_DIR=inference/$DATASET
 
 # top_p 0.0
-python -m strap_many.py \
+python strap_many.py \
     --batch_size 64 \
     --model_dir $MODEL_DIR \
     --top_p_value 0.0 \
@@ -13,17 +13,17 @@ python -m strap_many.py \
     --output $OUTPUT_DIR/output_0.txt
 
 # top_p 0.6
-python -m strap_many.py \
+python strap_many.py \
     --batch_size 64 \
     --model_dir $MODEL_DIR \
     --top_p_value 0.6 \
-    --input $INPUT \
+    --input $INPUT_DIR/test.txt \
     --output $OUTPUT_DIR/output_6.txt
 
 # top_p 0.9
-python -m strap_many.py \
+python strap_many.py \
     --batch_size 64 \
     --model_dir $MODEL_DIR \
     --top_p_value 0.9 \
-    --input $INPUT \
+    --input $INPUT_DIR/test.txt \
     --output $OUTPUT_DIR/output_9.txt
