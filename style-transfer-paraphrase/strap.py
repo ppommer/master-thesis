@@ -10,7 +10,6 @@ for more details).
 """
 
 import argparse
-import logging
 import sys
 import torch
 

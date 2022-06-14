@@ -1,0 +1,11 @@
+python joint/inference.py \
+    --bert_encoder \
+    --bert_full_embeddings \
+    --coverage \
+    --debias_checkpoint models/concurrent.ckpt \
+    --debias_weight 1.3 \
+    --inference_output inference_concurrent/output_concurrent.txt \
+    --no_tok_enrich \
+    --pointer_generator \
+    --test bias_data/WNC/biased.word.test \
+    --working_dir inference_concurrent/

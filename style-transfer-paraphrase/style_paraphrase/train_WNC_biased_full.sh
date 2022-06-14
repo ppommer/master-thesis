@@ -1,13 +1,9 @@
-########################################################################################
-# Configure hyperparameters_config.py and dataset_config.py before running the script. #
-########################################################################################
-
 export DATA_DIR=/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/WNC/WNC_biased_full
 
 BASE_DIR=/home/ppommer/repos/master-thesis/style-transfer-paraphrase/style_paraphrase
 
 python -m torch.distributed.launch --nproc_per_node=1 $BASE_DIR/run_lm_finetuning.py \
-    --output_dir=$BASE_DIR/models/WNC_biased_full_1 \
+    --output_dir=$BASE_DIR/models/WNC_biased_full \
     --model_type=gpt2 \
     --model_name_or_path=gpt2 \
     --do_train \
@@ -23,5 +19,5 @@ python -m torch.distributed.launch --nproc_per_node=1 $BASE_DIR/run_lm_finetunin
     --learning_rate 5e-5 \
     --prefix_input_type paraphrase_250 \
     --global_dense_feature_list none \
-    --specific_style_train 1 \
+    --specific_style_train 0 \
     --optimizer adam

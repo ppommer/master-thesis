@@ -1,0 +1,12 @@
+python joint/inference.py \
+    --activation_hidden \
+    --bert_full_embeddings \
+    --checkpoint models/modular.ckpt \
+    --coverage --debias_weight 1.3 \
+    --extra_features_top \
+    --inference_output inference_modular/output_modular.txt \
+    --pointer_generator \
+    --pre_enrich \
+    --test bias_data/WNC/biased.word.test \
+    --token_softmax \
+    --working_dir inference_modular/
