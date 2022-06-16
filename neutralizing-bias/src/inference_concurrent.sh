@@ -4,7 +4,7 @@ python joint/inference.py \
     --coverage \
     --debias_checkpoint models/concurrent.ckpt \
     --debias_weight 1.3 \
-    --inference_output inference_concurrent/output_concurrent.txt \
+    --inference_output inference/output_concurrent.txt \
     --no_tok_enrich \
     --pointer_generator \
     --test bias_data/WNC/biased.word.test \
