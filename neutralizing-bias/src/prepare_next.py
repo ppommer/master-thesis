@@ -72,9 +72,6 @@ with open(ARGS.input, "r") as f:
             pred_seqs.append(pred_seq)
 
 # Write output
-print("#########################################")
-print(ARGS.output)
-print("#########################################")
 with open(ARGS.output, "w") as f:
     for s in pred_seqs:
         tok = tokenize(s)
