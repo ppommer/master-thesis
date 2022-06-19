@@ -10,7 +10,7 @@ python strap_many.py \
     --model_dir $MODEL_DIR \
     --top_p_value 0.0 \
     --input $INPUT_DIR/test.txt \
-    --output $OUTPUT_DIR/output_0.txt
+    --output $OUTPUT_DIR/output_strap_full_0.txt
 
 # top_p 0.6
 python strap_many.py \
@@ -18,7 +18,7 @@ python strap_many.py \
     --model_dir $MODEL_DIR \
     --top_p_value 0.6 \
     --input $INPUT_DIR/test.txt \
-    --output $OUTPUT_DIR/output_6.txt
+    --output $OUTPUT_DIR/output_strap_full_6.txt
 
 # top_p 0.9
 python strap_many.py \
@@ -26,4 +26,4 @@ python strap_many.py \
     --model_dir $MODEL_DIR \
     --top_p_value 0.9 \
     --input $INPUT_DIR/test.txt \
-    --output $OUTPUT_DIR/output_9.txt
+    --output $OUTPUT_DIR/output_strap_full_9.txt

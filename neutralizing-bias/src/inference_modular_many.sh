@@ -7,7 +7,7 @@ COUNTER=1
 TEST=$BASE_DIR/bias_data/WNC/biased.word.test
 
 for _ in $(seq $ITERATIONS); do
-    INFERENCE_OUTPUT=$BASE_DIR/inference/modular/iter_$ITERATIONS/output_modular_$COUNTER.txt
+    INFERENCE_OUTPUT=$BASE_DIR/inference/modular/iter_$ITERATIONS/results_modular_$COUNTER.txt
 
     echo "**********"
     echo $COUNTER
