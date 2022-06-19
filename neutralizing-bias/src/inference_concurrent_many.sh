@@ -7,7 +7,7 @@ COUNTER=1
 TEST=$BASE_DIR/bias_data/WNC/biased.word.test
 
 for _ in $(seq $ITERATIONS); do
-    INFERENCE_OUTPUT=$BASE_DIR/inference/modular/iter_$ITERATIONS/output_modular_$COUNTER.txt
+    INFERENCE_OUTPUT=$BASE_DIR/inference/concurrent/iter_$ITERATIONS/output_concurrent_$COUNTER.txt
 
     echo "**********"
     echo $COUNTER
@@ -18,18 +18,17 @@ for _ in $(seq $ITERATIONS); do
     python joint/inference.py \
         --test $TEST \
         --inference_output $INFERENCE_OUTPUT \
-        --checkpoint $BASE_DIR/models/modular.ckpt \
-        --activation_hidden \
+        --bert_encoder \
         --bert_full_embeddings \
-        --coverage --debias_weight 1.3 \
-        --extra_features_top \
+        --coverage \
+        --debias_checkpoint $BASE_DIR/models/concurrent.ckpt \
+        --debias_weight 1.3 \
+        --no_tok_enrich \
         --pointer_generator \
-        --pre_enrich \
-        --token_softmax \
-        --working_dir inference_modular/
+        --working_dir inference_concurrent/
 
     COUNTER=$(( COUNTER + 1 ))
-    TEST=$BASE_DIR/inference/modular/iter_$ITERATIONS/input_modular_$COUNTER.txt
+    TEST=$BASE_DIR/inference/concurrent/iter_$ITERATIONS/input_concurrent_$COUNTER.txt
 
     if [ $COUNTER -le $ITERATIONS ]; then
         echo "**********"

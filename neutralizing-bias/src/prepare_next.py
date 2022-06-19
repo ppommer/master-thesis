@@ -14,6 +14,9 @@ ARGS = parser.parse_args()
 NLP = spacy.load("en_core_web_sm") # run "python -m spacy download en_core_web_sm" to initially download the model
 TOKENIZER = BertTokenizer.from_pretrained("bert-base-uncased", cache_dir="cache")
 
+assert ARGS.input, "Need to specify input arg!"
+assert ARGS.output, "Need to specify output arg!"
+
 # Define functions
 def get_pos_dep(s: str) -> Tuple[str, str]:
     """Get POS and dependency tags for a given string.
@@ -69,6 +72,9 @@ with open(ARGS.input, "r") as f:
             pred_seqs.append(pred_seq)
 
 # Write output
+print("#########################################")
+print(ARGS.output)
+print("#########################################")
 with open(ARGS.output, "w") as f:
     for s in pred_seqs:
         tok = tokenize(s)

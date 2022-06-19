@@ -4,7 +4,7 @@ python joint/inference.py \
     --checkpoint models/modular.ckpt \
     --coverage --debias_weight 1.3 \
     --extra_features_top \
-    --inference_output inference/output_modular.txt \
+    --inference_output inference/modular/output_modular.txt \
     --pointer_generator \
     --pre_enrich \
     --test bias_data/WNC/biased.word.test \
