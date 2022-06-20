@@ -106,11 +106,9 @@ hits, preds, golds, srcs = joint_utils.run_eval(
     joint_model, eval_dataloader, tok2id, ARGS.inference_output,
     ARGS.max_seq_len, ARGS.beam_width)
 
-# print('eval/bleu', seq2seq_utils.get_bleu(preds, golds), 0)
-# print('eval/true_hits', np.mean(hits), 0)
+print('eval/bleu', seq2seq_utils.get_bleu(preds, golds), 0)
+print('eval/true_hits', np.mean(hits), 0)
 
-# with open(ARGS.working_dir + '/stats.txt', 'w') as f:
-#     f.write('eval/bleu %d' % seq2seq_utils.get_bleu(preds, golds))
-#     f.write('eval/true_hits %d' % np.mean(hits))
-
-
+with open(ARGS.working_dir + '/stats.txt', 'w') as f:
+    f.write('eval/bleu %d' % seq2seq_utils.get_bleu(preds, golds))
+    f.write('eval/true_hits %d' % np.mean(hits))
