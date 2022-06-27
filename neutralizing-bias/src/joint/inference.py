@@ -106,9 +106,16 @@ hits, preds, golds, srcs = joint_utils.run_eval(
     joint_model, eval_dataloader, tok2id, ARGS.inference_output,
     ARGS.max_seq_len, ARGS.beam_width)
 
-print('eval/bleu', seq2seq_utils.get_bleu(preds, golds), 0)
-print('eval/true_hits', np.mean(hits), 0)
+print("\nBLEU: {:>5,.2f}".format(seq2seq_utils.get_bleu(preds, golds)))
+print("ACC:  {:>5,.2f}\n".format(np.mean(hits)))
 
-with open(ARGS.working_dir + '/stats.txt', 'w') as f:
-    f.write('eval/bleu %d' % seq2seq_utils.get_bleu(preds, golds))
-    f.write('eval/true_hits %d' % np.mean(hits))
+with open(os.path.join(ARGS.working_dir, "stats.txt"), "a") as f:
+    f.write("=============\n")
+    f.write("BLEU: {:>7,.2f}\n".format(seq2seq_utils.get_bleu(preds, golds)))
+    f.write("ACC:  {:>7,.2f}\n".format(np.mean(hits)))
+    f.write("=============\n")
+
+    for i, (p, g) in enumerate(zip(preds, golds)):
+        f.write("{} - {:>6.2f}\n".format(str(i + 1).zfill(4), seq2seq_utils.get_bleu(p, g)))
+
+    f.write("=============\n")
