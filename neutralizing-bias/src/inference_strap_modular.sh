@@ -1,13 +1,18 @@
-DATA=/home/ppommer/repos/master-thesis/style-transfer-paraphrase/inference/WNC_large/output_strap_large_6.txt
-BASE_DIR=/home/ppommer/repos/master-thesis/neutralizing-bias/src/inference/modular/strap_modular
+DATA=/home/ppommer/repos/master-thesis/style-transfer-paraphrase/inference/strap_large/output_strap_large_6.txt
+BASE_DIR=inference/strap_modular
 
-python prepare_strap.py \
+INPUT=$BASE_DIR/input.txt
+OUTPUT=$BASE_DIR/results_strap_modular.txt
+
+python utils/prepare_strap.py \
     --input $DATA \
-    --output $BASE_DIR/input_strap_modular.txt
+    --output $INPUT \
+    --gold bias_data/WNC/test.txt
 
 python joint/inference.py \
-    --test $BASE_DIR/input_strap_modular.txt \
-    --inference_output $BASE_DIR/results_strap_modular.txt \
+    --test $INPUT \
+    --inference_output $OUTPUT \
+    --working_dir $BASE_DIR \
     --activation_hidden \
     --bert_full_embeddings \
     --checkpoint models/modular.ckpt \
@@ -16,4 +21,11 @@ python joint/inference.py \
     --pointer_generator \
     --pre_enrich \
     --token_softmax \
-    --working_dir inference_modular/
+    --test_batch_size 1
+
+python utils/generate_output.py \
+    --in_file $OUTPUT \
+    --out_file $BASE_DIR/output_strap_modular.txt
+    --html_file $BASE_DIR/output_strap_modular.html
+
+rm $BASE_DIR/input.txt

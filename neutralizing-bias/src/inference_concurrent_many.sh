@@ -1,13 +1,13 @@
 #############
 ITERATIONS=10
-BASE_DIR=/home/ppommer/repos/master-thesis/neutralizing-bias/src
+BASE_DIR=inference/concurrent_many
 #############
 
 COUNTER=1
-TEST=$BASE_DIR/bias_data/WNC/biased.word.test
+TEST=bias_data/WNC/biased.word.test
 
 for _ in $(seq $ITERATIONS); do
-    INFERENCE_OUTPUT=$BASE_DIR/inference/concurrent/iter_$ITERATIONS/results_concurrent_$COUNTER.txt
+    INFERENCE_OUTPUT=$BASE_DIR/results_concurrent_$COUNTER.txt
 
     echo "**********"
     echo $COUNTER
@@ -18,17 +18,21 @@ for _ in $(seq $ITERATIONS); do
     python joint/inference.py \
         --test $TEST \
         --inference_output $INFERENCE_OUTPUT \
+        --working_dir $BASE_DIR \
         --bert_encoder \
         --bert_full_embeddings \
         --coverage \
-        --debias_checkpoint $BASE_DIR/models/concurrent.ckpt \
+        --debias_checkpoint models/concurrent.ckpt \
         --debias_weight 1.3 \
         --no_tok_enrich \
         --pointer_generator \
-        --working_dir inference_concurrent/
+        --test_batch_size 1
+
+    python utils/generate_output.py \
+        --in_file $INFERENCE_OUTPUT \
+        --out_file $BASE_DIR/output_concurrent_$COUNTER.txt
 
     COUNTER=$(( COUNTER + 1 ))
-    TEST=$BASE_DIR/inference/concurrent/iter_$ITERATIONS/input_concurrent_$COUNTER.txt
 
     if [ $COUNTER -le $ITERATIONS ]; then
         echo "**********"
@@ -36,8 +40,12 @@ for _ in $(seq $ITERATIONS); do
         echo "prepare_next.py OUPUT: $TEST"
         echo "**********"
 
-        python prepare_next.py \
+        TEST=$BASE_DIR/input.txt
+
+        python utils/prepare_next.py \
             --input $INFERENCE_OUTPUT \
             --output $TEST
     fi
 done
+
+rm $BASE_DIR/input.txt

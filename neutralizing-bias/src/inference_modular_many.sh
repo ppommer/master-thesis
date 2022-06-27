@@ -1,13 +1,13 @@
 #############
 ITERATIONS=10
-BASE_DIR=/home/ppommer/repos/master-thesis/neutralizing-bias/src
+BASE_DIR=inference/modular_many
 #############
 
 COUNTER=1
-TEST=$BASE_DIR/bias_data/WNC/biased.word.test
+TEST=bias_data/WNC/biased.word.test
 
 for _ in $(seq $ITERATIONS); do
-    INFERENCE_OUTPUT=$BASE_DIR/inference/modular/iter_$ITERATIONS/results_modular_$COUNTER.txt
+    INFERENCE_OUTPUT=$BASE_DIR/results_modular_$COUNTER.txt
 
     echo "**********"
     echo $COUNTER
@@ -18,7 +18,8 @@ for _ in $(seq $ITERATIONS); do
     python joint/inference.py \
         --test $TEST \
         --inference_output $INFERENCE_OUTPUT \
-        --checkpoint $BASE_DIR/models/modular.ckpt \
+        --working_dir $BASE_DIR \
+        --checkpoint models/modular.ckpt \
         --activation_hidden \
         --bert_full_embeddings \
         --coverage --debias_weight 1.3 \
@@ -26,10 +27,14 @@ for _ in $(seq $ITERATIONS); do
         --pointer_generator \
         --pre_enrich \
         --token_softmax \
-        --working_dir inference_modular/
+        --test_batch_size 1
+
+    python utils/generate_output.py \
+        --in_file $INFERENCE_OUTPUT \
+        --out_file $BASE_DIR/output_modular_$COUNTER.txt \
+        --html_file $BASE_DIR/output_modular_$COUNTER.html
 
     COUNTER=$(( COUNTER + 1 ))
-    TEST=$BASE_DIR/inference/modular/iter_$ITERATIONS/input_modular_$COUNTER.txt
 
     if [ $COUNTER -le $ITERATIONS ]; then
         echo "**********"
@@ -37,8 +42,12 @@ for _ in $(seq $ITERATIONS); do
         echo "prepare_next.py OUPUT: $TEST"
         echo "**********"
 
-        python prepare_next.py \
+        TEST=$BASE_DIR/input.txt
+
+        python utils/prepare_next.py \
             --input $INFERENCE_OUTPUT \
             --output $TEST
     fi
 done
+
+rm $BASE_DIR/input.txt

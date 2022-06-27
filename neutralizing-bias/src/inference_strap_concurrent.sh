@@ -1,13 +1,18 @@
-DATA=/home/ppommer/repos/master-thesis/style-transfer-paraphrase/inference/WNC_large/output_strap_large_6.txt
-BASE_DIR=/home/ppommer/repos/master-thesis/neutralizing-bias/src/inference/concurrent/strap_concurrent
+DATA=/home/ppommer/repos/master-thesis/style-transfer-paraphrase/inference/strap_large/output_strap_large_6.txt
+BASE_DIR=inference/strap_concurrent
 
-python prepare_strap.py \
+INPUT=$BASE_DIR/input.txt
+OUTPUT=$BASE_DIR/results_strap_concurrent.txt
+
+python utils/prepare_strap.py \
     --input $DATA \
-    --output $BASE_DIR/input_strap_concurrent.txt
+    --output $INPUT \
+    --gold bias_data/WNC/biased.word.test
 
 python joint/inference.py \
-    --test $BASE_DIR/input_strap_concurrent.txt \
-    --inference_output $BASE_DIR/results_strap_concurrent.txt \
+    --test $INPUT \
+    --inference_output $OUTPUT \
+    --working_dir $BASE_DIR \
     --bert_encoder \
     --bert_full_embeddings \
     --coverage \
@@ -15,4 +20,10 @@ python joint/inference.py \
     --debias_weight 1.3 \
     --no_tok_enrich \
     --pointer_generator \
-    --working_dir inference_concurrent/
+    --test_batch_size 1
+
+python utils/generate_output.py \
+    --in_file $OUTPUT \
+    --out_file $BASE_DIR/output_strap_concurrent.txt
+
+rm $BASE_DIR/input.txt
