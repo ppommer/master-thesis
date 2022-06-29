@@ -1,39 +1,39 @@
-MODEL_DIR=style_paraphrase/models/WNC_biased_word
-INPUT=datasets/WNC/test_biased.txt
-OUTPUT_DIR=inference/strap_word
+##########
+MODEL=word
+##########
 
-# top_p 0.0
-python strap_many.py \
-    --input $INPUT \
-    --output $OUTPUT_DIR/output_strap_word_0.txt \
-    --model_dir $MODEL_DIR \
-    --batch_size 1 \
-    --top_p_value 0.0
+MODEL_DIR=style_paraphrase/models/WNC_$MODEL
+OUTPUT_DIR=inference/strap_$MODEL
 
-python utils/evaluate.py \
-    --pred_data $OUTPUT_DIR/output_strap_word_0.txt \
-    --output $OUTPUT_DIR/stats_0.txt
+INPUT_SINGLE=datasets/WNC/singleword_biased_test.txt
+INPUT_MULTI=datasets/WNC/multiword_biased_test.txt
+GOLD_SINGLE=datasets/WNC/singleword_neutral_test.txt
+GOLD_MULTI=datasets/WNC/multiword_neutral_test.txt
 
-# top_p 0.6
-python strap_many.py \
-    --input $INPUT \
-    --output $OUTPUT_DIR/output_strap_word_6.txt \
-    --model_dir $MODEL_DIR \
-    --batch_size 1 \
-    --top_p_value 0.6
+for i in 0 6 9; do
+    python strap_many.py \
+        --input $INPUT_SINGLE \
+        --output $OUTPUT_DIR/output_strap_$MODEL_single_$i.txt \
+        --model_dir $MODEL_DIR \
+        --batch_size 1 \
+        --top_p_value 0.$i
 
-python utils/evaluate.py \
-    --pred_data $OUTPUT_DIR/output_strap_word_6.txt \
-    --output $OUTPUT_DIR/stats_6.txt
+    python utils/evaluate.py \
+        --pred_data $OUTPUT_DIR/output_strap_$MODEL_single_$i.txt \
+        --output $OUTPUT_DIR/stats_single_$i.txt
+        --gold_data $GOLD_SINGLE \
+        --in_data $INPUT_SINGLE
 
-# top_p 0.9
-python strap_many.py \
-    --input $INPUT \
-    --output $OUTPUT_DIR/output_strap_word_9.txt \
-    --model_dir $MODEL_DIR \
-    --batch_size 1 \
-    --top_p_value 0.9
+    python strap_many.py \
+        --input $INPUT_MULTI \
+        --output $OUTPUT_DIR/output_strap_$MODEL_multi_$i.txt \
+        --model_dir $MODEL_DIR \
+        --batch_size 1 \
+        --top_p_value 0.$i
 
-python utils/evaluate.py \
-    --pred_data $OUTPUT_DIR/output_strap_word_9.txt \
-    --output $OUTPUT_DIR/stats_9.txt
+    python utils/evaluate.py \
+        --pred_data $OUTPUT_DIR/output_strap_$MODEL_multi_$i.txt \
+        --output $OUTPUT_DIR/stats_multi_$i.txt
+        --gold_data $GOLD_MULTI \
+        --in_data $INPUT_MULTI
+done

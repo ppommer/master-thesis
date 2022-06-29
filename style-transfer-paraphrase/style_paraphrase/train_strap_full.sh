@@ -1,13 +1,11 @@
-export DATA_DIR=/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/WNC/WNC_biased_full
+DATA_DIR=../datasets/WNC/WNC_biased_full
 
-BASE_DIR=/home/ppommer/repos/master-thesis/style-transfer-paraphrase/style_paraphrase
-
-python -m torch.distributed.launch --nproc_per_node=1 $BASE_DIR/run_lm_finetuning.py \
-    --output_dir=$BASE_DIR/models/WNC_biased_full \
-    --model_type=gpt2 \
-    --model_name_or_path=gpt2 \
+python -m torch.distributed.launch --nproc_per_node 1 run_lm_finetuning.py \
+    --output_dir models/OUT/WNC_biased_full \
+    --model_type gpt2 \
+    --model_name_or_path gpt2 \
     --do_train \
-    --data_dir=$DATA_DIR \
+    --data_dir $DATA_DIR \
     --save_steps 500 \
     --logging_steps 20 \
     --save_total_limit -1 \

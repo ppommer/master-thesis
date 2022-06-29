@@ -7,10 +7,9 @@ from tqdm import tqdm
 from style_paraphrase.evaluation.similarity.test_sim import find_similarity
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--pred_data', type=str)
-parser.add_argument('--output', type=str)
-parser.add_argument('--gold_data', type=str, default="datasets/WNC/singleword_neutral_test.txt")
-parser.add_argument('--in_data', type=str, default="datasets/WNC/singleword_biased_test.txt")
+parser.add_argument('--output', type=str, default="inference/stats_multiword_baseline.txt")
+parser.add_argument('--gold_data', type=str, default="datasets/WNC/multiword_neutral_test.txt")
+parser.add_argument('--in_data', type=str, default="datasets/WNC/multiword_biased_test.txt")
 parser.add_argument('--batch_size', type=int, default=16)
 ARGS = parser.parse_args()
 
@@ -52,13 +51,8 @@ def get_bleu(hypotheses, reference):
     return 100 * bleu(stats)
 
 
-sim_scores_gold = []
-sim_scores_in = []
-bleu_scores_gold = []
-bleu_scores_in = []
-
-with open(ARGS.pred_data, "r") as f:
-    pred_data = f.read().strip().split("\n")
+sim_scores = []
+bleu_scores = []
 
 with open(ARGS.gold_data, "r") as f:
     gold_data = f.read().strip().split("\n")
@@ -66,37 +60,27 @@ with open(ARGS.gold_data, "r") as f:
 with open(ARGS.in_data, "r") as f:
     in_data = f.read().strip().split("\n")
 
-assert len(pred_data) == len(gold_data) == len(in_data)
+assert len(gold_data) == len(in_data)
 
-for i in tqdm(range(0, len(pred_data), ARGS.batch_size), desc="Calculate similarity..."):
-    sim_scores_gold.extend(
+for i in tqdm(range(0, len(gold_data), ARGS.batch_size), desc="Calculate similarity..."):
+    sim_scores.extend(
         find_similarity(
-            pred_data[i:i + ARGS.batch_size], 
-            gold_data[i:i + ARGS.batch_size]
-        )
-    )
-
-    sim_scores_in.extend(
-        find_similarity(
-            pred_data[i:i + ARGS.batch_size], 
+            gold_data[i:i + ARGS.batch_size], 
             in_data[i:i + ARGS.batch_size]
         )
     )
 
-for p, g, i in tqdm(zip(pred_data, gold_data, in_data), desc="Calculate bleu..."):
-    bleu_scores_gold.append(get_bleu(p.split(" "), g.split(" ")))
-    bleu_scores_in.append(get_bleu(p.split(" "), i.split(" ")))
+for g, i in tqdm(zip(gold_data, in_data), desc="Calculate bleu..."):
+    bleu_scores.append(get_bleu(g.split(" "), i.split(" ")))
 
 with open(ARGS.output, "w") as f:
-    f.write("=" * 46 + "\n")
-    f.write("BLEU GOLD:   {:>33,.2f}\n".format(np.mean(bleu_scores_gold)))
-    f.write("BLEU IN:   {:>35,.2f}\n".format(np.mean(bleu_scores_in)))
-    f.write("SIM GOLD: {:>36,.4f}\n".format(np.mean(sim_scores_gold)))
-    f.write("SIM IN:   {:>36,.4f}\n".format(np.mean(sim_scores_in)))
-    f.write("=" * 46 + "\n")
-    f.write(" " * 7 + "BLEU GOLD | BLEU IN | SIM GOLD | SIM IN\n")
+    f.write("======================\n")
+    f.write("BLEU: {:>16,.2f}\n".format(np.mean(bleu_scores)))
+    f.write("SIM:  {:>16,.4f}\n".format(np.mean(sim_scores)))
+    f.write("======================\n")
+    f.write(" " * 9 + "BLEU | SIM\n")
 
-    for i, (bsg, bsi, ssg, ssi) in tqdm(enumerate(zip(bleu_scores_gold, bleu_scores_in, sim_scores_gold, sim_scores_in)), desc="Write output..."):
-        f.write("{} - {:>9.2f} | {:>7.2f} | {:>8.2f} | {:>6.2f}\n".format(str(i + 1).zfill(4), bsg, bsi, ssg, ssi))
+    for i, (ss, bs) in tqdm(enumerate(zip(sim_scores, bleu_scores)), desc="Write output..."):
+        f.write("{} - {:>6.2f} | {:>4.4f}\n".format(str(i + 1).zfill(4), bs, ss))
 
-    f.write("=" * 46 + "\n")
+    f.write("======================\n")
