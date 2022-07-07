@@ -1,4 +1,4 @@
-DATA=/home/ppommer/repos/master-thesis/style-transfer-paraphrase/inference/strap_large/output_strap_large_6.txt
+DATA=/home/ppommer/repos/master-thesis/style-transfer-paraphrase/inference/strap_large/output_strap_large_single_6.txt
 BASE_DIR=inference/strap_concurrent
 
 INPUT=$BASE_DIR/input.txt
