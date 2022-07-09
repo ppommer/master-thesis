@@ -10,21 +10,48 @@ Attributes/Flavors:
 - PROFANITY: Swear words, curse words, or other obscene or profane language.
 - THREAT: Describes an intention to inflict pain, injury, or violence against an individual or group.
 """
-
-import argparse
+import os
+import numpy as np
 from googleapiclient import discovery
 from time import sleep
 from tqdm import tqdm
 
-
-parser = argparse.ArgumentParser()
-parser.add_argument('--pred_data', type=str)
-parser.add_argument('--in_data', type=str)
-parser.add_argument('--gold_data', type=str)
-parser.add_argument('--output', type=str)
-ARGS = parser.parse_args()
 API_KEY = "AIzaSyAgMnXDNEnCktdqwOznAp5SScv6B6-g5E8"
 flavors = ["TOXICITY", "SEVERE_TOXICITY", "IDENTITY_ATTACK", "INSULT", "PROFANITY", "THREAT"]
+
+files = [
+    "single_biased_test.txt",
+    "multi_biased_test.txt",
+    "output_modular_single.txt",
+    "output_modular_multi.txt",
+    "output_concurrent_single.txt",
+    "output_concurrent_multi.txt",
+    "output_strap_large_single_6.txt",
+    "output_strap_large_multi_6.txt",
+    "output_modular_concurrent_single.txt",
+    "output_modular_concurrent_multi.txt",
+    "output_concurrent_modular_single.txt",
+    "output_concurrent_modular_multi.txt",
+    "single_neutral_test.txt",
+    "multi_neutral_test.txt",
+]
+
+folders = [
+    "source_single",
+    "source_multi",
+    "modular_single",
+    "modular_multi",
+    "concurrent_single",
+    "concurrent_multi",
+    "strap_large_single",
+    "strap_large_multi",
+    "modular_concurrent_single",
+    "modular_concurrent_multi",
+    "concurrent_modular_single",
+    "concurrent_modular_multi",
+    "target_single",
+    "target_multi",
+]
 
 client = discovery.build(
     "commentanalyzer",
@@ -51,17 +78,27 @@ analyze_request = {
     "spanAnnotations": True # return scores at per-sentence-level
 }
 
-with open(ARGS.input, "r") as in_file:
-    with open(ARGS.output, "w") as out_file:
-        for line in tqdm(in_file, desc="Evaluate toxicity..."):
-            analyze_request["comment"]["text"] = line.replace("\n", "")
-            response = client.comments().analyze(body=analyze_request).execute()
-            
-            #TODO: write output in stats style [0000 - tox_in | tox_pred | tox_gold]
+for file, folder in zip(files, folders):
+    scores = {}
 
-            toxicity_score = response["attributeScores"]["TOXICITY"]["summaryScore"]["value"]
+    for flavor in flavors:
+        scores[flavor] = []
 
-            # for flavor in flavors:
-            #     out_file.write("{}: {:.2f}".format(flavor, response["attributeScores"][flavor]["summaryScore"]["value"]))
+    for line in tqdm(open(os.path.join("data", file), "r").readlines(), desc="Evaluating toxicity for {}...".format(file)):
+        analyze_request["comment"]["text"] = line.replace("\n", "")
+        response = client.comments().analyze(body=analyze_request).execute()
 
-            sleep(1)
+        for flavor in flavors:
+            scores[flavor].append(response["attributeScores"][flavor]["summaryScore"]["value"])
+        
+        sleep(1)
+
+
+    with open(os.path.join(folder, "summary.txt"), "w") as f:
+        for flavor in flavors:
+            f.write("{}: {:.4f}\n".format(flavor, np.mean(scores[flavor])))
+
+    for flavor in flavors:
+        with open(os.path.join(folder, flavor + ".txt"), "w") as f:
+            for score in scores[flavor]:
+                f.write("{:.4f}".format(score) + "\n")
