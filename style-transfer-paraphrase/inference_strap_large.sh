@@ -5,10 +5,10 @@ MODEL=large
 MODEL_DIR=style_paraphrase/models/WNC_${MODEL}
 OUTPUT_DIR=inference/strap_${MODEL}
 
-INPUT_SINGLE=datasets/WNC/singleword_biased_test.txt
-INPUT_MULTI=datasets/WNC/multiword_biased_test.txt
-GOLD_SINGLE=datasets/WNC/singleword_neutral_test.txt
-GOLD_MULTI=datasets/WNC/multiword_neutral_test.txt
+INPUT_SINGLE=datasets/WNC/single_biased_test.txt
+INPUT_MULTI=datasets/WNC/multi_biased_test.txt
+GOLD_SINGLE=datasets/WNC/single_neutral_test.txt
+GOLD_MULTI=datasets/WNC/multi_neutral_test.txt
 
 for i in 0 1 2 3 4 5 6 7 8 9; do
 
