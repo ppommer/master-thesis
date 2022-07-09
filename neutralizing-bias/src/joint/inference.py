@@ -112,7 +112,7 @@ print("ACC:  {:>5,.2f}\n".format(np.mean(hits)))
 with open(os.path.join(ARGS.working_dir, "stats.txt"), "a") as f:
     f.write("=============\n")
     f.write("BLEU: {:>7,.2f}\n".format(seq2seq_utils.get_bleu(preds, golds)))
-    f.write("ACC:  {:>7,.2f}\n".format(np.mean(hits)))
+    f.write("ACC:  {:>7,.4f}\n".format(np.mean(hits)))
     f.write("=============\n")
 
     for i, (p, g) in enumerate(zip(preds, golds)):
