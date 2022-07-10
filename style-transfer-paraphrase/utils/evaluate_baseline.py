@@ -4,6 +4,19 @@ import sys; sys.path.append('.')
 from collections import Counter
 from tqdm import tqdm
 from style_paraphrase.evaluation.similarity.test_sim import find_similarity
+from pytorch_pretrained_bert.tokenization import BertTokenizer
+
+
+TOKENIZER = BertTokenizer.from_pretrained("bert-base-uncased", cache_dir="cache")
+
+
+def tokenize(s: str) -> str:
+    """BERT-tokenize a given string.
+    """
+    global TOKENIZER
+    tok_list = TOKENIZER.tokenize(s.strip())
+    return " ".join(tok_list)
+
 
 def bleu_stats(hypothesis, reference):
     """Compute statistics for BLEU."""
@@ -63,12 +76,15 @@ for i in tqdm(range(0, len(gold_data), 16), desc="Calculate similarity..."):
         )
     )
 
-for g, i in tqdm(zip(gold_data, in_data), desc="Calculate bleu..."):
-    bleu_scores.append(get_bleu(g.split(" "), i.split(" ")))
+gold_data = [tokenize(x).split(" ") for x in gold_data]
+in_data = [tokenize(x).split(" ") for x in in_data]
+
+for g, i in tqdm(zip(gold_data, in_data), desc="Calculate bleu...", total=len(gold_data)):
+    bleu_scores.append(get_bleu(g, i))
 
 with open("inference/stats_source_copy_single.txt", "w") as f:
     f.write("======================\n")
-    f.write("BLEU: {:>16,.2f}\n".format(np.mean(bleu_scores)))
+    f.write("BLEU: {:>16,.2f}\n".format(np.mean(get_bleu(gold_data, in_data))))
     f.write("SIM:  {:>16,.4f}\n".format(np.mean(sim_scores)))
     f.write("======================\n")
     f.write(" " * 9 + "BLEU | SIM\n")
@@ -100,12 +116,15 @@ for i in tqdm(range(0, len(gold_data), 16), desc="Calculate similarity..."):
         )
     )
 
-for g, i in tqdm(zip(gold_data, in_data), desc="Calculate bleu..."):
-    bleu_scores.append(get_bleu(g.split(" "), i.split(" ")))
+gold_data = [tokenize(x).split(" ") for x in gold_data]
+in_data = [tokenize(x).split(" ") for x in in_data]
+
+for g, i in tqdm(zip(gold_data, in_data), desc="Calculate bleu...", total=len(gold_data)):
+    bleu_scores.append(get_bleu(g, i))
 
 with open("inference/stats_target_copy_single.txt", "w") as f:
     f.write("======================\n")
-    f.write("BLEU: {:>16,.2f}\n".format(np.mean(bleu_scores)))
+    f.write("BLEU: {:>16,.2f}\n".format(get_bleu(gold_data, in_data)))
     f.write("SIM:  {:>16,.4f}\n".format(np.mean(sim_scores)))
     f.write("======================\n")
     f.write(" " * 9 + "BLEU | SIM\n")
@@ -138,12 +157,15 @@ for i in tqdm(range(0, len(gold_data), 16), desc="Calculate similarity..."):
         )
     )
 
-for g, i in tqdm(zip(gold_data, in_data), desc="Calculate bleu..."):
-    bleu_scores.append(get_bleu(g.split(" "), i.split(" ")))
+gold_data = [tokenize(x).split(" ") for x in gold_data]
+in_data = [tokenize(x).split(" ") for x in in_data]
+
+for g, i in tqdm(zip(gold_data, in_data), desc="Calculate bleu...", total=len(gold_data)):
+    bleu_scores.append(get_bleu(g, i))
 
 with open("inference/stats_source_copy_multi.txt", "w") as f:
     f.write("======================\n")
-    f.write("BLEU: {:>16,.2f}\n".format(np.mean(bleu_scores)))
+    f.write("BLEU: {:>16,.2f}\n".format(get_bleu(gold_data, in_data)))
     f.write("SIM:  {:>16,.4f}\n".format(np.mean(sim_scores)))
     f.write("======================\n")
     f.write(" " * 9 + "BLEU | SIM\n")
@@ -175,12 +197,15 @@ for i in tqdm(range(0, len(gold_data), 16), desc="Calculate similarity..."):
         )
     )
 
-for g, i in tqdm(zip(gold_data, in_data), desc="Calculate bleu..."):
-    bleu_scores.append(get_bleu(g.split(" "), i.split(" ")))
+gold_data = [tokenize(x).split(" ") for x in gold_data]
+in_data = [tokenize(x).split(" ") for x in in_data]
+
+for g, i in tqdm(zip(gold_data, in_data), desc="Calculate bleu...", total=len(gold_data)):
+    bleu_scores.append(get_bleu(g, i))
 
 with open("inference/stats_target_copy_multi.txt", "w") as f:
     f.write("======================\n")
-    f.write("BLEU: {:>16,.2f}\n".format(np.mean(bleu_scores)))
+    f.write("BLEU: {:>16,.2f}\n".format(get_bleu(gold_data, in_data)))
     f.write("SIM:  {:>16,.4f}\n".format(np.mean(sim_scores)))
     f.write("======================\n")
     f.write(" " * 9 + "BLEU | SIM\n")

@@ -5,14 +5,26 @@ import sys; sys.path.append('.')
 from collections import Counter
 from tqdm import tqdm
 from style_paraphrase.evaluation.similarity.test_sim import find_similarity
+from pytorch_pretrained_bert.tokenization import BertTokenizer
+
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--pred_data', type=str)
-parser.add_argument('--output', type=str)
-parser.add_argument('--gold_data', type=str, default="datasets/WNC/singleword_neutral_test.txt")
-parser.add_argument('--in_data', type=str, default="datasets/WNC/singleword_biased_test.txt")
+parser.add_argument('--pred_data', type=str, default="inference/strap_large/output_strap_large_multi_9.txt")
+parser.add_argument('--output', type=str, default="inference/strap_large/stats_strap_large_multi_9.txt")
+parser.add_argument('--gold_data', type=str, default="datasets/WNC/multi_neutral_test.txt")
+parser.add_argument('--in_data', type=str, default="datasets/WNC/multi_biased_test.txt")
 parser.add_argument('--batch_size', type=int, default=16)
 ARGS = parser.parse_args()
+
+TOKENIZER = BertTokenizer.from_pretrained("bert-base-uncased", cache_dir="cache")
+
+
+def tokenize(s: str) -> str:
+    """BERT-tokenize a given string.
+    """
+    global TOKENIZER
+    tok_list = TOKENIZER.tokenize(s.strip())
+    return " ".join(tok_list)
 
 
 def bleu_stats(hypothesis, reference):
@@ -83,20 +95,24 @@ for i in tqdm(range(0, len(pred_data), ARGS.batch_size), desc="Calculate similar
         )
     )
 
-for p, g, i in tqdm(zip(pred_data, gold_data, in_data), desc="Calculate bleu..."):
-    bleu_scores_gold.append(get_bleu(p.split(" "), g.split(" ")))
-    bleu_scores_in.append(get_bleu(p.split(" "), i.split(" ")))
+pred_data = [tokenize(x).split(" ") for x in pred_data]
+gold_data = [tokenize(x).split(" ") for x in gold_data]
+in_data = [tokenize(x).split(" ") for x in in_data]
+
+for p, g, i in tqdm(zip(pred_data, gold_data, in_data), desc="Calculate bleu...", total=len(pred_data)):
+    bleu_scores_gold.append(get_bleu(p, g))
+    bleu_scores_in.append(get_bleu(p, i))
 
 with open(ARGS.output, "w") as f:
     f.write("=" * 46 + "\n")
-    f.write("BLEU GOLD:   {:>33,.2f}\n".format(np.mean(bleu_scores_gold)))
-    f.write("BLEU IN:   {:>35,.2f}\n".format(np.mean(bleu_scores_in)))
+    f.write("BLEU GOLD:   {:>33,.2f}\n".format(get_bleu(pred_data, gold_data)))
+    f.write("BLEU IN:   {:>35,.2f}\n".format(get_bleu(pred_data, in_data)))
     f.write("SIM GOLD: {:>36,.4f}\n".format(np.mean(sim_scores_gold)))
     f.write("SIM IN:   {:>36,.4f}\n".format(np.mean(sim_scores_in)))
     f.write("=" * 46 + "\n")
     f.write(" " * 7 + "BLEU GOLD | BLEU IN | SIM GOLD | SIM IN\n")
 
-    for i, (bsg, bsi, ssg, ssi) in tqdm(enumerate(zip(bleu_scores_gold, bleu_scores_in, sim_scores_gold, sim_scores_in)), desc="Write output..."):
+    for i, (bsg, bsi, ssg, ssi) in tqdm(enumerate(zip(bleu_scores_gold, bleu_scores_in, sim_scores_gold, sim_scores_in)), desc="Write output...", total=len(bleu_scores_gold)):
         f.write("{} - {:>9.2f} | {:>7.2f} | {:>8.2f} | {:>6.2f}\n".format(str(i + 1).zfill(4), bsg, bsi, ssg, ssi))
 
     f.write("=" * 46 + "\n")
