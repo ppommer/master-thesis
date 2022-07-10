@@ -10,7 +10,7 @@ INPUT_MULTI=datasets/WNC/multi_biased_test.txt
 GOLD_SINGLE=datasets/WNC/single_neutral_test.txt
 GOLD_MULTI=datasets/WNC/multi_neutral_test.txt
 
-for i in 0 1 2 3 4 5 6 7 8 9; do
+for i in 0 6 9; do
 
     echo output_strap_${MODEL}_single_${i} ...
 
