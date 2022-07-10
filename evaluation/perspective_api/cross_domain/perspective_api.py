@@ -8,10 +8,13 @@ API_KEY = "AIzaSyAgMnXDNEnCktdqwOznAp5SScv6B6-g5E8"
 flavors = ["TOXICITY", "SEVERE_TOXICITY", "IDENTITY_ATTACK", "INSULT", "PROFANITY", "THREAT"]
 
 files = [
-    # "output_modular_ibc.txt",
-    # "output_modular_news.txt",
-    # "output_modular_speeches.txt",
-    # "output_concurrent_ibc.txt",
+    "ibc_biased.txt",
+    "news_biased.txt",
+    "speeches_biased.txt",
+    "output_modular_ibc.txt",
+    "output_modular_news.txt",
+    "output_modular_speeches.txt",
+    "output_concurrent_ibc.txt",
     "output_concurrent_news.txt",
     "output_concurrent_speeches.txt",
     "output_strap_ibc.txt",
@@ -26,10 +29,13 @@ files = [
 ]
 
 folders = [
-    # "modular_ibc",
-    # "modular_news",
-    # "modular_speeches",
-    # "concurrent_ibc",
+    "source_ibc",
+    "source_news",
+    "source_speeches",
+    "modular_ibc",
+    "modular_news",
+    "modular_speeches",
+    "concurrent_ibc",
     "concurrent_news",
     "concurrent_speeches",
     "strap_ibc",
