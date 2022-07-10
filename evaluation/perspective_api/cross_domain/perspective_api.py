@@ -8,10 +8,10 @@ API_KEY = "AIzaSyAgMnXDNEnCktdqwOznAp5SScv6B6-g5E8"
 flavors = ["TOXICITY", "SEVERE_TOXICITY", "IDENTITY_ATTACK", "INSULT", "PROFANITY", "THREAT"]
 
 files = [
-    "output_modular_ibc.txt",
-    "output_modular_news.txt",
-    "output_modular_speeches.txt",
-    "output_concurrent_ibc.txt",
+    # "output_modular_ibc.txt",
+    # "output_modular_news.txt",
+    # "output_modular_speeches.txt",
+    # "output_concurrent_ibc.txt",
     "output_concurrent_news.txt",
     "output_concurrent_speeches.txt",
     "output_strap_ibc.txt",
@@ -26,10 +26,10 @@ files = [
 ]
 
 folders = [
-    "modular_ibc",
-    "modular_news",
-    "modular_speeches",
-    "concurrent_ibc",
+    # "modular_ibc",
+    # "modular_news",
+    # "modular_speeches",
+    # "concurrent_ibc",
     "concurrent_news",
     "concurrent_speeches",
     "strap_ibc",
@@ -75,6 +75,9 @@ for file, folder in zip(files, folders):
         scores[flavor] = []
 
     for line in tqdm(open(os.path.join("data", file), "r").readlines(), desc="Evaluating toxicity for {}...".format(file)):
+        if line == "\n":
+            continue
+
         analyze_request["comment"]["text"] = line.replace("\n", "")
         response = client.comments().analyze(body=analyze_request).execute()
 
