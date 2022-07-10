@@ -4,7 +4,7 @@ BASE_DIR=inference/modular_many
 #############
 
 COUNTER=1
-TEST=bias_data/WNC/biased.word.test
+TEST=bias_data/WNC_edit/single_test.txt
 
 for _ in $(seq $ITERATIONS); do
     INFERENCE_OUTPUT=$BASE_DIR/results_modular_$COUNTER.txt
