@@ -24,14 +24,22 @@ files = [
     "multi_biased_test.txt",
     "output_modular_single.txt",
     "output_modular_multi.txt",
-    "output_concurrent_single.txt",
-    "output_concurrent_multi.txt",
-    "output_strap_large_single_6.txt",
-    "output_strap_large_multi_6.txt",
+    "output_modular_2.txt",
+    "output_modular_multi_2.txt",
     "output_modular_concurrent_single.txt",
     "output_modular_concurrent_multi.txt",
+    "output_concurrent_single.txt",
+    "output_concurrent_multi.txt",
+    "output_concurrent_2.txt",
+    "output_concurrent_multi_2.txt",
     "output_concurrent_modular_single.txt",
     "output_concurrent_modular_multi.txt",
+    "output_strap_word_single_0.txt",
+    "output_strap_word_multi_0.txt",
+    "output_strap_full_single_0.txt",
+    "output_strap_full_multi_0.txt",
+    "output_strap_large_single_0.txt",
+    "output_strap_large_multi_0.txt",
     "single_neutral_test.txt",
     "multi_neutral_test.txt",
 ]
@@ -41,14 +49,22 @@ folders = [
     "source_multi",
     "modular_single",
     "modular_multi",
-    "concurrent_single",
-    "concurrent_multi",
-    "strap_large_single",
-    "strap_large_multi",
+    "modular_modular_single",
+    "modular_modular_multi",
     "modular_concurrent_single",
     "modular_concurrent_multi",
+    "concurrent_single",
+    "concurrent_multi",
+    "concurrent_concurrent_single",
+    "concurrent_concurrent_multi",
     "concurrent_modular_single",
     "concurrent_modular_multi",
+    "strap_word_single",
+    "strap_word_multi",
+    "strap_full_single",
+    "strap_full_multi",
+    "strap_large_single",
+    "strap_large_multi",
     "target_single",
     "target_multi",
 ]
@@ -93,6 +109,8 @@ for file, folder in zip(files, folders):
         
         sleep(1)
 
+    if not os.path.exists(folder):
+        os.mkdir(folder)
 
     with open(os.path.join(folder, "summary.txt"), "w") as f:
         for flavor in flavors:
