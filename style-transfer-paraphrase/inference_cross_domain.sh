@@ -1,16 +1,18 @@
-MODEL_DIR=style_paraphrase/models/WNC_large
+MODEL_DIR=style_paraphrase/models/WNC_
 
-for SET in ibc news speeches; do
+for MODEL in word full large; do
+    for SET in ibc news speeches; do
 
-    echo strap_large_${SET}
-    INPUT=datasets/cross_domain/${SET}_biased.txt
-    OUTPUT=inference/cross_domain/output_strap_${SET}.txt
+        echo strap_${MODEL}_${SET}
+        INPUT=datasets/cross_domain/${SET}_biased.txt
+        OUTPUT=inference/cross_domain/output_${MODEL}_${SET}.txt
 
-    python strap_many.py \
-        --input ${INPUT} \
-        --output ${OUTPUT} \
-        --model_dir ${MODEL_DIR} \
-        --batch_size 1 \
-        --top_p_value 0.6
+        python strap_many.py \
+            --input ${INPUT} \
+            --output ${OUTPUT} \
+            --model_dir ${MODEL_DIR}${MODEL} \
+            --batch_size 1 \
+            --top_p_value 0.0
 
+    done
 done
