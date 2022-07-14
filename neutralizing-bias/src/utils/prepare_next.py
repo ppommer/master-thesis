@@ -95,7 +95,10 @@ with open(ARGS.input, "r") as f:
 
 # Write output
 with open(ARGS.output, "w") as f:
-    for ps_tok, gs_tok, ps, gs in zip(pred_seqs_tok, gold_seqs_tok, pred_seqs, gold_seqs):
+    for i , (ps_tok, gs_tok, ps, gs) in enumerate(zip(pred_seqs_tok, gold_seqs_tok, pred_seqs, gold_seqs)):        
+        if ps_tok.startswith("##"):
+            continue
+
         pos, dep = get_pos_dep(ps_tok)
 
         # if pos and dep:

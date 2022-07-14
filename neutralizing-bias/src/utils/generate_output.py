@@ -3,8 +3,8 @@ import argparse
 from typing import Tuple
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--in_file", type=str)
-parser.add_argument("--out_file", type=str)
+parser.add_argument("--in_file", type=str, default="inference/concurrent_many/multi/results_concurrent_multi_10.txt")
+parser.add_argument("--out_file", type=str, default="inference/concurrent_many/multi/output_concurrent_multi_10.txt")
 parser.add_argument("--html_file", type=str, default=None)
 ARGS = parser.parse_args()
 
@@ -42,14 +42,12 @@ with open(ARGS.in_file, "r") as f:
 
     for line in lines:
         if re.match(r'^IN SEQ:', line):
-            in_seq_tok = line.split("\t")[1][3:-2]
-            in_seq = in_seq_tok.replace(" ##", "")
-            in_seq = re.sub(r'\s([.,;?!"])', r'\1', in_seq)
+            in_seq_tok = line.split("\t")[1][3:-2].rstrip()
+            in_seq = detokenize(in_seq_tok)
 
         if re.match(r'^PRED SEQ:', line):
-            pred_seq_tok = line.split("\t")[1][3:-2]
-            pred_seq = pred_seq_tok.replace(" ##", "")
-            pred_seq = re.sub(r'\s([.,;?!"])', r'\1', pred_seq)
+            pred_seq_tok = line.split("\t")[1][3:-2].rstrip()
+            pred_seq = detokenize(pred_seq_tok)
 
         if re.match(r'^PRED DIST:', line):
             pred_dist = line.split("\t")[1]
@@ -63,9 +61,7 @@ with open(ARGS.in_file, "r") as f:
 
 # write output
 with open(ARGS.out_file, "w") as f:
-    text = "\n".join([result["pred_seq"] for result in results]) + "\n"
-    text = detokenize(text)
-    f.write(text)
+    f.write("\n".join([result["pred_seq"] for result in results]) + "\n")
 
 # write HTML output
 if ARGS.html_file is not None:
