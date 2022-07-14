@@ -68,6 +68,8 @@ sim_scores_gold = []
 sim_scores_in = []
 bleu_scores_gold = []
 bleu_scores_in = []
+hits_gold = []
+hits_in = []
 
 with open(ARGS.pred_data, "r") as f:
     pred_data = f.read().strip().split("\n")
@@ -99,16 +101,20 @@ pred_data = [tokenize(x).split(" ") for x in pred_data]
 gold_data = [tokenize(x).split(" ") for x in gold_data]
 in_data = [tokenize(x).split(" ") for x in in_data]
 
-for p, g, i in tqdm(zip(pred_data, gold_data, in_data), desc="Calculate bleu...", total=len(pred_data)):
+for p, g, i in tqdm(zip(pred_data, gold_data, in_data), desc="Calculate BLEU and accuracy...", total=len(pred_data)):
     bleu_scores_gold.append(get_bleu(p, g))
     bleu_scores_in.append(get_bleu(p, i))
+    hits_gold.append(1) if p == g else hits_gold.append(0)
+    hits_in.append(1) if p == i else hits_in.append(0)
 
 with open(ARGS.output, "w") as f:
     f.write("=" * 46 + "\n")
-    f.write("BLEU GOLD:   {:>33,.2f}\n".format(get_bleu(pred_data, gold_data)))
+    f.write("BLEU GOLD: {:>35,.2f}\n".format(get_bleu(pred_data, gold_data)))
     f.write("BLEU IN:   {:>35,.2f}\n".format(get_bleu(pred_data, in_data)))
-    f.write("SIM GOLD: {:>36,.4f}\n".format(np.mean(sim_scores_gold)))
-    f.write("SIM IN:   {:>36,.4f}\n".format(np.mean(sim_scores_in)))
+    f.write("ACC GOLD:  {:>35,.4f}\n".format(np.mean(hits_gold)))
+    f.write("ACC IN:    {:>35,.4f}\n".format(np.mean(hits_in)))
+    f.write("SIM GOLD:  {:>35,.4f}\n".format(np.mean(sim_scores_gold)))
+    f.write("SIM IN:    {:>35,.4f}\n".format(np.mean(sim_scores_in)))
     f.write("=" * 46 + "\n")
     f.write(" " * 7 + "BLEU GOLD | BLEU IN | SIM GOLD | SIM IN\n")
 
