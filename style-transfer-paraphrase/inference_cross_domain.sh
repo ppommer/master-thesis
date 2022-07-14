@@ -1,4 +1,4 @@
-MODEL_DIR=style_paraphrase/models/WNC_
+MODEL_DIR=style_paraphrase/models/strap_
 
 for MODEL in word full large; do
     for SET in ibc news speeches; do

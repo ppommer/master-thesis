@@ -2,7 +2,7 @@
 MODEL=full
 ##########
 
-MODEL_DIR=style_paraphrase/models/WNC_${MODEL}
+MODEL_DIR=style_paraphrase/models/strap_${MODEL}
 OUTPUT_DIR=inference/strap_${MODEL}
 
 INPUT_SINGLE=datasets/WNC/single_biased_test.txt

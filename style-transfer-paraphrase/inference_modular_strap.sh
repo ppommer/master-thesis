@@ -1,5 +1,5 @@
 ###############
-MODEL=WNC_large
+MODEL=strap_large
 TOP_P=0.6
 ###############
 

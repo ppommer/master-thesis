@@ -1,7 +1,7 @@
 DATA_DIR=/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/WNC/WNC_large
 
 python -m torch.distributed.launch --nproc_per_node 1 run_lm_finetuning.py \
-    --output_dir models/OUT/WNC_large \
+    --output_dir models/OUT/strap_large \
     --model_type gpt2 \
     --model_name_or_path gpt2 \
     --do_train \
