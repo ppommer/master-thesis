@@ -1,4 +1,4 @@
-# Towards Fairness in NLP: Neural Methods for Flavor Extraction and Bias Mitigation
+# Towards Fairness in NLP: Neural Methods for Flavor Detection and Bias Mitigation
 
 ## Requirements
 Requirement | Comment
