@@ -16,7 +16,7 @@ from googleapiclient import discovery
 from time import sleep
 from tqdm import tqdm
 
-API_KEY = "AIzaSyAgMnXDNEnCktdqwOznAp5SScv6B6-g5E8"
+API_KEY = ""
 flavors = ["TOXICITY", "SEVERE_TOXICITY", "IDENTITY_ATTACK", "INSULT", "PROFANITY", "THREAT"]
 
 files = [

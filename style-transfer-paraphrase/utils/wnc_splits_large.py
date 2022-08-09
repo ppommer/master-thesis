@@ -3,8 +3,8 @@ import re
 from tqdm import tqdm
 
 
-source_path = "../../neutralizing-bias/src/bias_data"
-target_path = "../datasets/WNC"
+source_path = "../../neutralizing-bias/src/data"
+target_path = "../data/WNC"
 
 sentences = set()
 test_sentences = set()
@@ -38,12 +38,12 @@ with open(os.path.join(source_path, "WNC/neutral"), "r") as in_file:
 print("{} sentences prepared".format(len(sentences)))
 
 # Remove test sentences from set
-with open(os.path.join(source_path, "WNC_edit/multiword_neutral_test.txt"), "r") as in_file:
+with open(os.path.join(source_path, "WNC/multiword_neutral_test.txt"), "r") as in_file:
     for line in in_file:
         test_list.append(line.replace("\n", ""))
         test_sentences.add(line.replace("\n", ""))
 
-with open(os.path.join(source_path, "WNC_edit/singleword_neutral_test.txt"), "r") as in_file:
+with open(os.path.join(source_path, "WNC/singleword_neutral_test.txt"), "r") as in_file:
     for line in in_file:
         test_list.append(line.replace("\n", ""))
         test_sentences.add(line.replace("\n", ""))

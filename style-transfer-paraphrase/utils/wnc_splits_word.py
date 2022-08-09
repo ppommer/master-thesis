@@ -2,8 +2,8 @@ import os
 import re
 
 
-source_path = "../../neutralizing-bias/src/bias_data"
-target_path = "../datasets/WNC"
+source_path = "../../neutralizing-bias/src/data"
+target_path = "../data/WNC"
 
 train_set = set()
 dev_set = set()
@@ -34,10 +34,10 @@ for line in open(os.path.join(source_path, "WNC/biased.word.dev"), "r"):
 for line in open(os.path.join(source_path, "WNC/biased.word.test"), "r"):
     test_set.add(clean(line.split("\t")[4].rstrip()))
 
-for line in open(os.path.join(source_path, "WNC_edit/single_neutral_test.txt"), "r"):
+for line in open(os.path.join(source_path, "WNC/single_neutral_test.txt"), "r"):
     neutral_test_set.add(line.rstrip())
 
-for line in open(os.path.join(source_path, "WNC_edit/multi_neutral_test.txt"), "r"):
+for line in open(os.path.join(source_path, "WNC/multi_neutral_test.txt"), "r"):
     neutral_test_set.add(line.rstrip())
 
 print("Read {} train sentences".format(len(train_set)))

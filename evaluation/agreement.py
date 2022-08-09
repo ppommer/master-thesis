@@ -1,5 +1,4 @@
 import krippendorff
-import numpy as np
 
 
 bias_str = (

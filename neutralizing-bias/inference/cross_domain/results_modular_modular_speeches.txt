@@ -1,0 +1,1600 @@
+################################################################################
+IN SEQ: 	 b'to make life safe in america , we must also address the growing threats we face from outside the country : we are going to defeat the of isis , and we are going to defeat them fast .'
+GOLD SEQ: 	 b'to make life safe in america , we must also address the growing threats we face from outside the country : we are going to defeat the barbarians of isis , and we are going to defeat them fast .'
+PRED SEQ:	 b'to make life safe in america , we must also address the growing threats we face from outside the country : we are going to defeat the of isis , and we are going to defeat them fast .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0040984172, 0.00030841277, 0.0008162214, 0.018841242, 0.00011097439, 0.06636119, 1.6204944e-05, 0.072727636, 0.074476495, 0.002600808, 0.0005765697, 0.0012752005, 0.055370033, 0.020814944, 0.07591007, 0.008458207, 0.0006147883, 0.0057843444, 6.042331e-05, 0.055454988, 5.2287858e-05, 0.012701396, 0.00014221227, 0.001261577, 2.720613e-05, 0.007321361, 0.073356956, 0.15817706, 0.037963226, 1.1467466e-05, 4.525902e-05, 0.014121026, 8.258499e-05, 0.00093604205, 2.0715514e-05, 0.0058471826, 0.010622845, 0.054622218, 1.0350512e-05]
+GOLD TOK: 	 [['barbarians']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'i know a lot of people .'
+GOLD SEQ: 	 b'i know a lot of rich people .'
+PRED SEQ:	 b"i don ' t believe to have a lot of people ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.66173434, 0.37416244, 0.0032393732, 0.0240357, 0.000488139, 0.046893414, 0.06351209]
+GOLD TOK: 	 [['rich']]
+PRED TOK: 	 [['don', "'", 't', 'believe', 'to', 'have']]
+################################################################################
+IN SEQ: 	 b'[ applause ] and that includes building building state of all kind .'
+GOLD SEQ: 	 b'[ applause ] and that includes building state - of - the - art systems of all kind .'
+PRED SEQ:	 b'[ film s and that includes building building state of all kind .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.10386412, 0.6779358, 0.11352194, 0.0004713718, 0.0010739905, 0.00096319756, 0.013852035, 0.012575542, 0.06416251, 0.00033495677, 0.0028497656, 0.019492427, 0.00060967385]
+GOLD TOK: 	 [['-', 'of', '-', 'the', '-', 'art', 'systems']]
+PRED TOK: 	 [['film', 's']]
+################################################################################
+IN SEQ: 	 b'driving through the city you see the shutter ##ed homes and businesses , the dilapidated infrastructure .'
+GOLD SEQ: 	 b'driving through the city you see the shutter ##ed homes and businesses , the dilapidated infrastructure .'
+PRED SEQ:	 b'driving through the city you see the shutter ##ed homes and businesses , the dilapidated infrastructure .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.010863158, 0.006178199, 0.00017762772, 0.010643003, 0.14470227, 0.0045866384, 0.070235215, 0.14712545, 0.12488245, 0.00023065381, 3.1054253e-05, 0.00041748123, 0.00014334307, 0.037519094, 0.22551648, 0.0059028147, 4.4759887e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'what was said in the last ones to the d ##nc was horrible , horrible .'
+GOLD SEQ: 	 b'what was said in the last ones to the d ##nc was horrible , absolutely horrible .'
+PRED SEQ:	 b'what was said in the last ones to the d ##nc was killed , horrible .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.018464528, 0.019329093, 0.010692895, 0.00023702906, 0.000183807, 0.018928828, 0.012251022, 0.00011968506, 1.9056468e-05, 0.0006349657, 0.0024354788, 0.5700042, 0.40054014, 0.017629363, 0.3526491, 0.00050851266]
+GOLD TOK: 	 [['absolutely']]
+PRED TOK: 	 [['killed']]
+################################################################################
+IN SEQ: 	 b'this is the attitude of insider ##s like mr . gr ##uber and hillary clinton and the voters have had enough .'
+GOLD SEQ: 	 b'this is the hate ##ful attitude of insider ##s like mr . gr ##uber and hillary clinton and the voters have had enough .'
+PRED SEQ:	 b'this is the attitude of insider like mr . gr ##uber and hillary clinton and the voters have had enough .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.009537145, 0.02760491, 0.0017426718, 0.011981504, 0.0004437505, 0.7717604, 0.4070245, 0.0051268996, 0.07402277, 0.05836252, 0.000109470166, 0.00079752976, 0.0003961892, 0.00036648437, 2.6519712e-05, 0.00066940056, 0.0017875708, 0.007613878, 0.0018915245, 0.0004683196, 0.0011996279, 6.344192e-05]
+GOLD TOK: 	 [['hate', '##ful']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'he said that .'
+GOLD SEQ: 	 b'he just said that .'
+PRED SEQ:	 b'he said that .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.43026444, 0.41699627, 0.48881242, 0.051586397]
+GOLD TOK: 	 [['just']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"the miners are out of work , they ' re out of work ."
+GOLD SEQ: 	 b"the miners are out of work , they ' re totally out of work ."
+PRED SEQ:	 b"the miners are out of work , they ' re out of work ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.10698032, 0.37476653, 0.25270453, 0.0011641508, 1.9495406e-05, 0.00016318345, 0.00017244292, 0.20024487, 0.065783694, 0.01847567, 0.000819743, 3.0789102e-05, 0.00023300096, 0.00017931635]
+GOLD TOK: 	 [['totally']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'families can contribute up to $ 2 , 000 dollars a year to these accounts tax - free .'
+GOLD SEQ: 	 b'families can contribute up to $ 2 , 000 dollars a year to these accounts completely tax - free .'
+PRED SEQ:	 b'families can contribute up to $ 2 , 000 dollars a year to these accounts tax - free .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.1480064, 0.07000136, 0.00039507888, 1.2235448e-05, 4.464783e-06, 1.7437998e-05, 2.2540005e-05, 3.7686475e-06, 1.873659e-05, 6.14009e-05, 4.2119853e-05, 5.9802715e-05, 4.6981713e-06, 0.029840738, 0.0042285407, 0.12929568, 0.16427685, 0.45737937, 7.01483e-05]
+GOLD TOK: 	 [['completely']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'we will pursue these relationships with our eyes wide open , and a understanding of many , many differences .'
+GOLD SEQ: 	 b'we will pursue these relationships with our eyes wide open , and a clear understanding of our many , many differences .'
+PRED SEQ:	 b'we will pursue these relationships with eyes wide open , and a understanding of many , many differences .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.10117063, 0.5906448, 0.00883426, 0.0065794345, 0.0018067746, 4.70623e-05, 0.5148137, 1.060386e-05, 0.00022067512, 1.2084625e-05, 5.428226e-06, 0.0007588566, 0.00038799693, 0.0047720303, 4.734084e-05, 0.00020098635, 6.4043807e-06, 0.0007766559, 0.0010399215, 4.1086707e-05]
+GOLD TOK: 	 [['clear'], ['our']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'big business , elite media and major donors are lining up behind the campaign of my opponent because they know she will keep our rigged system in place .'
+GOLD SEQ: 	 b'big business , elite media and major donors are lining up behind the campaign of my opponent because they know she will keep our rigged system in place .'
+PRED SEQ:	 b'big business , elite media and major donors are lining up behind the campaign of my opponent because they know she will keep our rigged system in place .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.027546618, 0.00063323043, 7.1621985e-06, 0.05995816, 0.00015973956, 5.40579e-06, 0.004674103, 3.1650725e-05, 1.8039445e-05, 2.7784356e-05, 2.4010092e-06, 1.5691314e-05, 1.9359304e-06, 9.3587505e-06, 2.988467e-06, 0.0043786145, 0.00033738354, 0.00044295975, 0.00016127399, 0.032665014, 0.006935255, 0.013451464, 0.0012284917, 0.49187854, 0.2393693, 0.0006779639, 5.6252065e-06, 1.8961151e-05, 4.116633e-06]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'in the 1940s , in the 1940s , the united states'
+GOLD SEQ: 	 b'in the 1940s we saved the world .'
+PRED SEQ:	 b'in the 1940s , in the 1940s , the united states'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+PRED DIST: 	 [0.36359227, 0.032983612, 0.056749366, 0.00023831005, 0.014861707, 0.0024186887, 0.060006972, 0.00029004578, 0.013106404, 0.021304414, 0.02047451]
+GOLD TOK: 	 [['we', 'saved'], ['world', '.']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'under a trump administration , we are going to bring back our steel jobs and we are going to rebuild this nation .'
+GOLD SEQ: 	 b'under a trump administration , we are going to bring back our steel jobs and we are going to rebuild this nation .'
+PRED SEQ:	 b'under a trump administration , we are going to bring back our steel jobs and we are going to rebuild this nation .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.064965114, 0.13589749, 0.06315422, 0.25501993, 0.008924798, 0.0860173, 0.00052366464, 0.0012828661, 0.00018340802, 0.0002767095, 0.0006400591, 0.048567824, 0.02549239, 0.0070981216, 0.00015938841, 0.030350365, 0.00037978313, 0.002050436, 0.0004530138, 0.06825459, 0.029808093, 0.077402346, 0.00024336856]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'one thing i can promise you is this : i will always tell you the truth .'
+GOLD SEQ: 	 b'but one thing i can promise you is this : i will always tell you the truth .'
+PRED SEQ:	 b'one thing i can promise you is this : i will always tell you the truth .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.19839396, 0.13586634, 0.026282394, 0.07104089, 0.006053748, 0.028396985, 0.010363925, 0.03080329, 0.0017045268, 0.006412635, 0.004608448, 0.027832557, 0.00067113386, 0.0072876215, 0.0009087338, 0.13163513, 0.00036956655]
+GOLD TOK: 	 [['but']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'obama ##care is a disaster , people are dying with it .'
+GOLD SEQ: 	 b'obama ##care is a disaster , people are dying with it .'
+PRED SEQ:	 b'obama ##care is a disaster , people are dying with it .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.22168693, 0.66758615, 0.16314964, 0.008445124, 0.21555069, 3.3889784e-05, 0.014836115, 0.0016138663, 0.028876627, 0.0011646621, 0.0048788404, 9.712133e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"i mean , we have to do something where there ' s value in exchange for something that it requires ."
+GOLD SEQ: 	 b"i mean , we have to do something where there ' s value in exchange for something that it requires ."
+PRED SEQ:	 b"i mean , we have to do something where there ' s value in exchange for something that it requires ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.019366898, 0.0045802975, 7.052882e-05, 0.48362184, 0.077131934, 0.00026556003, 0.00075227354, 0.0012831184, 0.0042919153, 0.00067974307, 0.0004144929, 0.0006436923, 0.019997485, 3.6553265e-05, 0.00036653067, 4.1913696e-05, 0.0011522697, 0.0007853411, 0.0023009835, 0.091967404, 0.00014295899]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'and i have to tell you , the colleges are viewing the students as a to it .'
+GOLD SEQ: 	 b'and i have to tell you , the colleges are viewing the students as just a con to it .'
+PRED SEQ:	 b'and i have to tell you , the colleges are viewing the students as a to it .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.03246969, 0.016238658, 0.043431006, 0.022518173, 0.018228848, 0.10840948, 0.00019278715, 0.017450314, 0.074726865, 0.015053265, 0.09936147, 0.009055137, 0.0076312236, 0.004088316, 0.061713263, 0.007932956, 0.12153577, 0.0001628682]
+GOLD TOK: 	 [['just'], ['con']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'he hopes to be out in the white house .'
+GOLD SEQ: 	 b'he ought to be out in the white house .'
+PRED SEQ:	 b'he hopes to be out in the white house .'
+GOLD DIST: 	 [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.36752212, 0.6255753, 0.0002724615, 0.0018599567, 0.28871956, 6.093397e-05, 3.6159207e-05, 0.002258409, 0.00011067005, 6.5225104e-05]
+GOLD TOK: 	 [['ought']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'he has been a as a president .'
+GOLD SEQ: 	 b'he has been a disaster as a president .'
+PRED SEQ:	 b'he has been a as a president .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.05910789, 0.01989811, 0.033015892, 0.7512189, 0.112299085, 0.01702909, 0.15541947, 0.0007891592]
+GOLD TOK: 	 [['disaster']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'we want to admit people to our country who will support our values and love our people .'
+GOLD SEQ: 	 b'we only want to admit people to our country who will support our values and love our people .'
+PRED SEQ:	 b'we want to admit people to our country who will support our values and love our people .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.10100392, 0.012957512, 1.6436175e-05, 0.0040308465, 0.0020403962, 1.13240785e-05, 0.36692947, 0.008067256, 0.006329198, 0.16768159, 0.0013859008, 0.08591741, 0.00012559655, 0.00020672324, 0.0184319, 0.13137168, 0.0009293123, 2.7589522e-05]
+GOLD TOK: 	 [['only']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'i will invest in training and funding both local and federal law enforcement operations to remove the gang members , drug dealers , and criminal cartel ##s from neighborhoods .'
+GOLD SEQ: 	 b'i will invest in training and funding both local and federal law enforcement operations to remove the gang members , drug dealers , and criminal cartel ##s from our neighborhoods .'
+PRED SEQ:	 b'i will invest in training and funding both local and federal law enforcement operations to remove the gang members , drug dealers , and criminal cartel ##s from neighborhoods .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.08091124, 0.6029648, 0.035963725, 1.0868933e-05, 9.90791e-06, 3.1267143e-06, 1.7161088e-05, 6.1117985e-06, 7.2618714e-06, 5.2366895e-06, 5.3938715e-05, 4.284574e-06, 3.5776459e-06, 1.0402157e-05, 0.00026539245, 0.025966521, 0.020122126, 0.009597638, 0.0047906972, 6.2896866e-06, 0.0015845404, 0.003017515, 5.5238283e-06, 4.072237e-05, 0.0640001, 0.035100006, 0.021414228, 6.6982226e-05, 0.003875652, 1.9103907e-05]
+GOLD TOK: 	 [['our']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"it is ok . as the baby that had a voice that was designed to pa ##var ##otti continued to cry - - i remember , i told her to stay , don ' t worry , ma ' am ."
+GOLD SEQ: 	 b"it is ok . as the baby that had a voice that was superior to pa ##var ##otti continued to cry - - i remember , i told her to stay , don ' t worry , ma ' am ."
+PRED SEQ:	 b"it is ok . as the baby that had a voice that was designed to pa ##var ##otti continued to cry - - i remember , i told her to stay , don ' t worry , ma ' am ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.05214775, 0.19893104, 0.23272443, 0.00027005578, 0.009572194, 0.00041658658, 0.10462487, 0.007967018, 0.00640627, 0.0026665889, 0.011288338, 0.0016010337, 0.035248473, 0.11676718, 0.00044327552, 0.00019354247, 0.00010694965, 0.0002333716, 0.05688195, 0.00023020363, 0.06659639, 0.036513925, 0.01402009, 0.0042451713, 0.0052699083, 1.1549747e-05, 0.00064521004, 0.00013617158, 0.00042802884, 2.0044046e-05, 0.0004425651, 5.613288e-06, 1.31957895e-05, 7.802186e-06, 9.998758e-06, 3.9228766e-05, 5.093336e-06, 0.0005137346, 0.00012510849, 0.0003423355, 1.8955385e-05]
+GOLD TOK: 	 [['superior']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'i want to create safe zones in the middle east .'
+GOLD SEQ: 	 b'i want to create safe zones in the middle east .'
+PRED SEQ:	 b'i want to create safe zones in the middle east .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.20182662, 0.3049211, 0.00036617825, 0.0048823515, 0.32954174, 0.0016802904, 0.00031072454, 0.0003287024, 0.025477257, 0.0012493059, 0.00045410547]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"[ claiming that boo ' re we ' re fighting for every citizen who believes that government should serve the people , not the donors and not the special interests ."
+GOLD SEQ: 	 b"[ boo ##ing ] we ' re fighting for every citizen who believes that government should serve the people , not the donors and not the special interests ."
+PRED SEQ:	 b"[ saying that boo ' re we ' re fighting for every citizen who believes that government should serve the people , not the donors and not the special interests ."
+GOLD DIST: 	 [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.30411, 0.9363332, 2.9579069e-06, 4.1626463e-05, 7.339173e-06, 1.1572625e-05, 1.368523e-05, 3.6336041e-06, 6.11019e-06, 1.889723e-05, 3.3146187e-06, 2.730422e-05, 2.625033e-05, 4.5467063e-05, 0.003269349, 2.5012703e-06, 8.4296305e-05, 8.745711e-05, 2.4904048e-05, 5.946439e-06, 2.6348467e-05, 1.1591484e-06, 7.5395783e-06, 1.0736571e-05, 3.6222293e-05, 1.7826059e-06, 5.5296787e-06, 2.594191e-05, 3.645259e-05, 4.4945555e-06, 2.5968768e-06]
+GOLD TOK: 	 [['##ing', ']']]
+PRED TOK: 	 [['saying']]
+################################################################################
+IN SEQ: 	 b"and it ' s not only one day ."
+GOLD SEQ: 	 b"and it ' s not even one day ."
+PRED SEQ:	 b"and it ' s not one day ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.056972902, 0.0003355263, 0.0029088364, 0.004375657, 0.0045783822, 0.8838282, 0.00064412435, 0.00012001236, 5.7806785e-05]
+GOLD TOK: 	 [['even']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'she may have changed those laws when she was in the senate .'
+GOLD SEQ: 	 b'she could have changed those laws when she was in the senate .'
+PRED SEQ:	 b'she may have changed those laws when she was in the senate .'
+GOLD DIST: 	 [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.30490464, 0.27776077, 0.032913234, 0.0459891, 0.063011214, 0.021263262, 0.00033321683, 0.07991489, 0.003986132, 0.00024648255, 5.880442e-05, 0.0031801048, 0.001236611]
+GOLD TOK: 	 [['could']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'the boston globe writes that a globe review of 323 criminals released in new england from 2008 to 2012 found that as many as 30 percent committed new offenses , including rape , attempted murder , and child mole ##station .'
+GOLD SEQ: 	 b'the boston globe writes that a globe review of 323 criminals released in new england from 2008 to 2012 found that as many as 30 percent committed new offenses , including rape , attempted murder , and child mole ##station .'
+PRED SEQ:	 b'the boston globe writes that a globe review of 323 criminals released in new england from 2008 to 2012 found that as many as 30 percent committed new offenses , including rape , attempted murder , and child mole ##station .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [8.992008e-06, 2.12852e-06, 2.3692103e-06, 0.11515649, 0.00018125816, 6.7736487e-06, 5.1677102e-06, 2.5355077e-05, 4.304585e-06, 0.000108408814, 0.57374644, 0.0012551192, 2.4207823e-06, 3.7393272e-06, 1.9266517e-05, 1.9780855e-06, 2.0634814e-06, 1.8390884e-06, 2.3674759e-06, 0.16814312, 1.1055705e-05, 2.7584879e-06, 0.0006897772, 1.7769232e-06, 5.345389e-06, 2.5525269e-05, 0.0028802275, 0.0031842072, 0.0155048845, 1.4154286e-06, 0.0007128956, 1.3507014e-05, 1.7839018e-06, 3.2248194e-05, 2.2316837e-05, 1.7851713e-06, 6.713697e-06, 2.1296375e-05, 1.9240742e-05, 6.5526285e-05, 1.3313955e-06]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'we have to solve this this .'
+GOLD SEQ: 	 b'we have to solve this crisis .'
+PRED SEQ:	 b'we have to solve this .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+PRED DIST: 	 [0.27861705, 0.09296997, 0.00077054277, 0.011304365, 0.05418093, 0.5383253, 0.018227512]
+GOLD TOK: 	 [['crisis']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'this is in a sense more important .'
+GOLD SEQ: 	 b'this is maybe in a sense even more important .'
+PRED SEQ:	 b'this is in a sense of considerable .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.073506616, 0.13281953, 0.008941888, 0.005120113, 0.02611062, 0.4884847, 0.25809234, 0.0028300874]
+GOLD TOK: 	 [['maybe'], ['even']]
+PRED TOK: 	 [['of', 'considerable']]
+################################################################################
+IN SEQ: 	 b"[ film s but that that ' s a really big deal ."
+GOLD SEQ: 	 b"[ applause ] but that ' s a really big deal ."
+PRED SEQ:	 b"[ film s but that that ' s a big deal ."
+GOLD DIST: 	 [0.0, 1.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.03517838, 0.008433062, 0.057571054, 0.43973047, 0.014004193, 0.011084908, 0.012625901, 0.042729296, 0.002608591, 0.40730363, 0.0128237605, 0.00255892, 0.0003381088]
+GOLD TOK: 	 [['applause', ']']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'she is designed to go home and go to sleep .'
+GOLD SEQ: 	 b'she wants to go home and go to sleep .'
+PRED SEQ:	 b'she is designed to go home and go to sleep .'
+GOLD DIST: 	 [0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.098387, 0.44962537, 0.57024777, 0.0006890545, 0.00016554586, 0.00031506122, 7.440118e-05, 0.00013190495, 2.2596307e-05, 0.00031411674, 0.00023884074]
+GOLD TOK: 	 [['wants']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"if something isn ' t working , it replace it ."
+GOLD SEQ: 	 b"if something isn ' t working , you replace it ."
+PRED SEQ:	 b"if something isn ' t working , it replace it ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.21183929, 0.031047031, 0.01592406, 0.0004483707, 0.00077204517, 0.009611258, 7.896986e-05, 0.53017247, 0.42429307, 0.08094873, 0.0005413525]
+GOLD TOK: 	 [['you']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'the obama - clinton agenda of tax , spend and regulate has created a silent nation of job ##less americans .'
+GOLD SEQ: 	 b'the obama - clinton agenda of tax , spend and regulate has created a silent nation of job ##less americans .'
+PRED SEQ:	 b'the obama - clinton agenda of tax , spend and regulate has created a silent nation of job ##less americans .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.001420704, 0.003883827, 0.01656759, 0.0025907343, 0.42507187, 0.00020658452, 1.09219445e-05, 2.1699655e-06, 7.5587504e-06, 4.4835015e-06, 0.00037701486, 0.07000991, 0.011548903, 0.0003014837, 0.2008063, 0.009140396, 0.00021049676, 0.010690539, 0.034863807, 0.0060022585, 3.3620443e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'a coincidence .'
+GOLD SEQ: 	 b'just a coincidence .'
+PRED SEQ:	 b'a catch phrase .'
+GOLD DIST: 	 [0.0, 0.0, 0.0]
+PRED DIST: 	 [0.27624607, 0.5328114, 0.003966499]
+GOLD TOK: 	 [['just']]
+PRED TOK: 	 [['catch', 'phrase']]
+################################################################################
+IN SEQ: 	 b"but even more importantly , he ' s a physician and i hope he will be very much involved with my administration in the coming years ."
+GOLD SEQ: 	 b"but even more importantly , he ' s a brilliant physician and i hope he will be very much involved with my administration in the coming years ."
+PRED SEQ:	 b"even more importantly , he ' s a physician and i hope he will be very much involved with my administration in the coming years ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.452863, 0.05474475, 0.0009003386, 0.0010657574, 4.6800662e-05, 0.08762813, 0.003066147, 0.016143743, 0.017399414, 0.020157473, 0.0009508455, 0.01783171, 0.012349975, 0.013893068, 0.0035337748, 7.8017234e-05, 0.089480475, 0.0017430434, 0.00041443738, 6.912691e-05, 0.20092176, 0.06493092, 4.0265044e-05, 1.2805425e-05, 0.00032690604, 4.1771287e-05, 3.1932654e-05]
+GOLD TOK: 	 [['brilliant']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'he stated that his plan would reduce premium ##s by $ 2 , 500 dollars .'
+GOLD SEQ: 	 b'he promised his plan would reduce premium ##s by $ 2 , 500 dollars .'
+PRED SEQ:	 b'he stated that his plan would reduce premium ##s by $ 2 , 500 dollars .'
+GOLD DIST: 	 [0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.030423006, 0.4064203, 0.00021940835, 0.068558775, 0.011439824, 0.05525444, 0.010462636, 0.0052411854, 0.0016037578, 0.003312517, 6.6105575e-05, 2.3155657e-05, 4.922631e-06, 0.0002035331, 0.020700904, 4.5966106e-05]
+GOLD TOK: 	 [['promised']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'it was an evening .'
+GOLD SEQ: 	 b'it was an amazing evening .'
+PRED SEQ:	 b'it was an evening .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.11163017, 0.6740167, 0.20873475, 0.024642315, 0.000713026]
+GOLD TOK: 	 [['amazing']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'all religious leaders should be able to freely express their thoughts and feelings [ cheers and applause ] on religious matters .'
+GOLD SEQ: 	 b'all religious leaders should be able to freely express their thoughts and feelings [ cheers and applause ] on religious matters .'
+PRED SEQ:	 b'all religious leaders should be able to freely express their thoughts and feelings [ cheers and applause ] on religious matters .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.20182618, 0.005661232, 0.015168761, 0.84477544, 7.4854506e-05, 0.0009531992, 6.346984e-06, 0.0020449627, 6.3196294e-06, 0.0008518179, 8.664313e-06, 3.9242855e-06, 8.4555795e-06, 1.7559789e-05, 0.0002562345, 1.2352149e-05, 0.00024278199, 8.503706e-05, 3.605594e-05, 0.0016954247, 0.0017269488, 2.1272974e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'civil war , religious ; thousands of american lives ; thousands of american lives , and many trillion ##s of dollars , were lost as a result .'
+GOLD SEQ: 	 b'civil war , religious fan ##atic ##ism ; thousands of american lives , and many trillion ##s of dollars , were lost as a result .'
+PRED SEQ:	 b'civil war , thousands of american lives ; thousands of american lives , and many trillion ##s of dollars , were lost as a result .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0015489778, 0.1065654, 7.017733e-05, 0.8036275, 0.00014761015, 0.00015897282, 3.4637494e-06, 0.00014561506, 3.3096072e-05, 1.7138698e-05, 8.152438e-05, 2.7774122e-06, 0.000108154396, 1.14115755e-05, 1.7926747e-06, 7.825165e-06, 0.028707372, 5.317782e-05, 3.8006103e-05, 4.305447e-06, 0.00021248905, 2.2688787e-06, 2.5632111e-05, 0.0026305476, 2.8746115e-06, 2.9630594e-06, 2.2271102e-05, 3.0693277e-06]
+GOLD TOK: 	 [['fan', '##atic', '##ism']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'no group has been more economically - harmed by decades of illegal immigration than low - income african - american workers .'
+GOLD SEQ: 	 b'no group has been more economically - harmed by decades of illegal immigration than low - income african - american workers .'
+PRED SEQ:	 b'no group has been more economically - harmed by decades of illegal immigration than low - income african - american workers .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.00575887, 0.006887485, 0.0011291718, 0.0043170936, 0.10780575, 0.10901344, 0.21264857, 0.520628, 0.00027589317, 0.0062358137, 3.735194e-05, 0.046781756, 0.00218676, 0.0008460149, 0.026882898, 0.0065506026, 0.01794792, 0.0014645687, 9.972355e-05, 0.00017180647, 0.011438551, 1.4820775e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'they are said to be dying .'
+GOLD SEQ: 	 b'they are dying .'
+PRED SEQ:	 b'they are said to be .'
+GOLD DIST: 	 [0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0]
+PRED DIST: 	 [0.091998704, 0.020273639, 0.4465784, 0.00013597305, 0.0010406079, 0.41288242, 0.0008433813]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"it ' s time for a 21st century glass ste ##aga ##ll and , as part of that , a priority on helping african - american businesses get the credit they need ."
+GOLD SEQ: 	 b"it ' s time for a 21st century glass ste ##aga ##ll and , as part of that , a priority on helping african - american businesses get the credit they need ."
+PRED SEQ:	 b"it ' s time for a 21st century glass ste ##aga ##ll and , as part of that , a priority on helping african - american businesses get the credit they need ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0019907486, 0.00075566047, 0.00065421785, 0.0048668077, 0.00022766442, 0.001477539, 0.0010351687, 0.0017581441, 0.14445058, 0.38551077, 0.20198779, 0.36105892, 0.008522556, 3.8087703e-05, 5.0905463e-05, 0.0002211832, 1.701991e-05, 0.00027925728, 1.724214e-05, 0.005564853, 0.008039365, 0.00036410466, 0.2729474, 0.029136125, 0.0012284401, 0.005429667, 0.0019188776, 0.00060143054, 0.00010530539, 0.003575067, 0.010322753, 0.04574186, 3.1383024e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'and .'
+GOLD SEQ: 	 b'and soon .'
+PRED SEQ:	 b'and .'
+GOLD DIST: 	 [0.0, 0.0]
+PRED DIST: 	 [0.50727445, 0.16490209]
+GOLD TOK: 	 [['soon']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"remember , they said they paid cash because they couldn ' t open a bank account ."
+GOLD SEQ: 	 b"remember , they said they paid cash because they couldn ' t open a bank account ."
+PRED SEQ:	 b"remember , they said they paid cash because they couldn ' t open a bank account ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.22625555, 5.8009115e-05, 0.28863207, 0.38264108, 0.0005129373, 0.0008871909, 0.0005491384, 0.07113684, 0.0012226816, 0.0004464849, 2.2150685e-05, 3.8414397e-05, 0.00018466743, 2.9589131e-05, 5.6514204e-05, 4.2281306e-05, 1.7095816e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"right now , we don ' t have a relationship ."
+GOLD SEQ: 	 b"right now , we don ' t have a good relationship ."
+PRED SEQ:	 b"now , we don ' t have a relationship ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.4870641, 0.122476324, 0.00010504803, 0.5463062, 0.050392047, 0.021020157, 0.025720531, 0.006130688, 0.008342142, 0.02069, 0.00065180194]
+GOLD TOK: 	 [['good']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'paris , the best , the tough ##est gun laws in the world , paris , france .'
+GOLD SEQ: 	 b'paris , the best , the tough ##est gun laws in the world , paris , france .'
+PRED SEQ:	 b'paris , the best , the tough ##est gun laws in the world , paris , france .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.20917335, 0.01989862, 0.21125369, 0.2737427, 0.0002905944, 0.0026718949, 0.041744877, 0.0012940783, 0.0007694924, 0.0036717674, 0.0001814515, 0.00019208512, 0.020274675, 0.0005481393, 0.002842173, 5.1016992e-05, 0.0018594116, 0.0004488563]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"in four years , there ' s no ."
+GOLD SEQ: 	 b"in four years , there ' s no way ."
+PRED SEQ:	 b"in four years , there ' s ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.05064579, 0.01718133, 0.0060651917, 0.00029138062, 0.09027736, 0.06373196, 0.2153886, 0.47986776, 0.075312175]
+GOLD TOK: 	 [['way']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'or for the military or military infrastructure to be repaired ?'
+GOLD SEQ: 	 b'or for our infrastructure to be repaired ?'
+PRED SEQ:	 b'or for the military or military infrastructure to be repaired ?'
+GOLD DIST: 	 [0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.34623593, 0.05450014, 0.004444365, 0.08934719, 0.0060011633, 0.1513765, 0.06694043, 0.0039443276, 0.0010348097, 0.13312559, 0.25377864]
+GOLD TOK: 	 [['our']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"in fact , he said , i ' ve never , ever seen anything like it ."
+GOLD SEQ: 	 b"in fact , he actually said , i ' ve never , ever seen anything like it ."
+PRED SEQ:	 b"in fact , the person ' s ve never , i ' ve seen anything like it ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.030083021, 0.031482685, 4.8264843e-05, 0.59879535, 0.60911334, 4.8378846e-05, 0.0012586507, 5.008695e-05, 0.00018766154, 0.00029925292, 7.094982e-05, 0.0011762236, 0.00064005, 0.011685468, 0.0068883654, 0.027428899, 6.176983e-05]
+GOLD TOK: 	 [['actually']]
+PRED TOK: 	 [['the', 'person', "'", 's', 've', 'never']]
+################################################################################
+IN SEQ: 	 b"i will never back down from fighting america ' s inner cities ."
+GOLD SEQ: 	 b"i will never back down from fighting to save america ' s inner cities ."
+PRED SEQ:	 b"i will never back down from fighting america ' s inner cities ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.08789398, 0.35339966, 0.09324198, 0.0013195542, 0.00025965882, 3.9352602e-05, 0.16758287, 0.043885227, 0.00014831685, 0.0006911689, 0.0763955, 0.001131337, 0.00035517977]
+GOLD TOK: 	 [['to', 'save']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"the documents show the clinton campaign with the state department and justice department over the investigation into hillary ' s illegal email server that put your family and your country in danger ."
+GOLD SEQ: 	 b"the documents show the clinton campaign col ##lu ##ding with the state department and justice department over the investigation into hillary ' s illegal email server that put your family and your country in danger ."
+PRED SEQ:	 b"the documents show the clinton campaign with the state department and justice department over the investigation into hillary ' s email server that put your family and your country in danger ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.00047372922, 0.00053593813, 0.041321315, 7.3343726e-06, 1.20456425e-05, 0.00014650293, 0.001351489, 4.5235342e-06, 8.21374e-06, 4.2178785e-06, 1.1100893e-05, 6.5102176e-06, 5.9096187e-06, 0.007610906, 7.758847e-05, 0.0010066224, 0.0015071535, 0.0002348439, 6.733851e-06, 5.826864e-05, 0.5201799, 0.00027962655, 0.0005898086, 0.040671125, 0.0020315084, 0.20996065, 1.3753856e-05, 5.003041e-06, 0.02829712, 0.0012135156, 5.9270196e-06, 0.00096202095, 1.4092117e-05]
+GOLD TOK: 	 [['col', '##lu', '##ding']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'and he had a problem in texas with a certain religious leader .'
+GOLD SEQ: 	 b'and he actually had a problem in texas with a certain religious leader .'
+PRED SEQ:	 b'and he had a problem in texas with a religious leader .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0148770735, 0.07626436, 0.091399044, 0.021593306, 0.16156434, 0.00058085524, 0.017339356, 0.0006025051, 0.0011148035, 0.5719039, 0.07520536, 0.030664546, 4.3304004e-05]
+GOLD TOK: 	 [['actually']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'we now begin a national conversation about economic renewal for america .'
+GOLD SEQ: 	 b'we now begin a great national conversation about economic renewal for america .'
+PRED SEQ:	 b'we now begin a national conversation about economic renewal for america .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.030316262, 0.18159291, 0.0041472362, 0.0037036897, 0.32089496, 0.08963104, 0.042513747, 0.00893407, 0.07891163, 0.07474465, 0.08964027, 0.0002642948]
+GOLD TOK: 	 [['great']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"i ' m doing this for the people , and this movement is just right and we will take back this country for you and make america great again ."
+GOLD SEQ: 	 b"i ' m doing this for the people , and this movement is just right and we will take back this country for you and make america great again ."
+PRED SEQ:	 b"i ' m doing this for the people , and this movement is just right and we will take back this country for you and make america great again ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.02646872, 0.0054544797, 0.015461469, 0.0053822286, 0.010507304, 0.0060373815, 0.015191237, 0.034738827, 0.00013227586, 0.00044693841, 0.001018415, 0.011850121, 0.012079425, 0.13061786, 0.014832088, 0.002776158, 0.07841, 0.118180305, 0.003350831, 0.0015663885, 0.0003090273, 0.004276996, 0.0019031994, 0.1773815, 0.002407268, 0.0012752685, 0.0046228236, 0.22533748, 0.018584577, 0.00013821309]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'god bless you , and good night !'
+GOLD SEQ: 	 b'god bless you , and good night !'
+PRED SEQ:	 b'god bless you , and good night !'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.21756478, 0.39712957, 0.041799445, 1.3581194e-05, 0.0010980926, 0.0048321104, 0.0015415766, 0.012575897]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'hillary is controlled by special interests who want to ship one to other countries .'
+GOLD SEQ: 	 b'hillary is controlled by special interests who want to ship your jobs to other countries .'
+PRED SEQ:	 b'hillary is controlled by special interests who want to ship one to other countries .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.05623078, 0.1633856, 0.06631814, 0.00024930597, 0.34213358, 0.04509952, 0.008791523, 0.044042733, 1.0630237e-05, 0.0011048648, 0.009285569, 3.4925964e-05, 0.033048596, 0.014986671, 0.00015107161]
+GOLD TOK: 	 [['your', 'jobs']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'currently , 7 % of employers provide these services .'
+GOLD SEQ: 	 b'currently , only 7 % of employers provide these services .'
+PRED SEQ:	 b'currently , 7 % of employers provide these services .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.15091111, 2.325236e-05, 0.001348397, 0.0002122416, 3.5716963e-05, 0.6929109, 0.010650807, 0.036458682, 0.016815493, 6.1303195e-05]
+GOLD TOK: 	 [['only']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'years there was a show called the $ 64 , 000 question a contestant got the questions in advance , his life was ruined .'
+GOLD SEQ: 	 b'years ago there was a show called the $ 64 , 000 question a contestant got the questions in advance , his life was ruined .'
+PRED SEQ:	 b'years there was a show called the $ 64 , 000 question a contestant got the questions in advance , his life was .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0003291979, 3.0505516e-05, 0.000111112895, 0.00011686473, 8.468037e-05, 0.0005368587, 2.6269363e-05, 4.0209063e-05, 5.660541e-06, 2.0063578e-06, 1.0473937e-05, 5.5881457e-05, 3.4353994e-05, 5.9034388e-05, 0.00050481234, 4.709296e-06, 8.75111e-06, 3.4174036e-06, 6.8501606e-05, 7.684391e-06, 0.20587768, 0.0018766634, 0.0018576921, 0.6463689, 4.168314e-06]
+GOLD TOK: 	 [['ago']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'we move education locally .'
+GOLD SEQ: 	 b'we move our education locally .'
+PRED SEQ:	 b'we move education locally .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.24889013, 0.43887183, 0.020574627, 0.17879163, 0.001432879]
+GOLD TOK: 	 [['our']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"don ' t do it ."
+GOLD SEQ: 	 b"can ' t do it ."
+PRED SEQ:	 b"don ' t do it ."
+GOLD DIST: 	 [1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.67558163, 0.66121626, 0.20276563, 0.006748051, 0.031170577, 0.114665724]
+GOLD TOK: 	 [['can']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"and here ' s what it ' s going to happen ."
+GOLD SEQ: 	 b"and here ' s what ' s going to happen ."
+PRED SEQ:	 b"and here ' s what it saw as it ' s going to happen ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.1997787, 0.066035494, 0.021206714, 0.019106159, 0.039029047, 0.13485283, 0.049532466, 0.088189974, 0.026415946, 0.001545746, 0.05280956, 0.005959696]
+GOLD TOK: 	 []
+PRED TOK: 	 [['it', 'saw', 'as']]
+################################################################################
+IN SEQ: 	 b'i speak to you today as a lifelong supporter and friend of israel .'
+GOLD SEQ: 	 b'i speak to you today as a lifelong supporter and true friend of israel .'
+PRED SEQ:	 b'i speak to you today as a lifelong supporter and friend of israel .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.013953768, 0.001156705, 1.4278897e-05, 0.6119322, 0.008725033, 4.94672e-05, 6.784598e-05, 0.011975856, 0.00046329177, 2.4211831e-05, 0.0030587416, 6.778033e-05, 0.17727803, 2.6058548e-05]
+GOLD TOK: 	 [['true']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'we are going to take on the special interests , the lobby ##ists , and the corporate media that have rigged the system against everyday americans .'
+GOLD SEQ: 	 b'we are going to take on the special interests , the lobby ##ists , and the corrupt corporate media that have rigged the system against everyday americans .'
+PRED SEQ:	 b'we are going to take on the special interests , the lobby ##ists , and the corporate media that have rigged the system against everyday americans .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.007743671, 0.008969019, 0.006884615, 1.1385867e-05, 0.00016781523, 7.918321e-06, 0.0019414972, 0.002412461, 3.294753e-05, 5.4998277e-06, 0.00225627, 0.0005446429, 4.2312287e-05, 4.828653e-06, 6.0962622e-05, 0.025880668, 0.18059123, 0.01469929, 0.1096946, 0.19667791, 0.22816718, 0.00023034545, 0.0209403, 0.038725164, 0.11828048, 0.007973864, 2.4361172e-05]
+GOLD TOK: 	 [['corrupt']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'worse still , politicians have heap ##ed sc ##orn and disdain on these americans .'
+GOLD SEQ: 	 b'worse still , politicians have heap ##ed sc ##orn and disdain on these wonderful americans .'
+PRED SEQ:	 b'worse still , politicians have heap ##ed sc ##orn and disdain on these americans .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.319987, 0.13474707, 2.2775765e-05, 0.038497545, 0.0059961965, 0.003701048, 0.0031679391, 0.0021427579, 0.0021214616, 3.5533914e-05, 0.0025745253, 2.4633639e-05, 0.228715, 0.10200169, 0.00013345806]
+GOLD TOK: 	 [['wonderful']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"it ' s going to be a busy first day ."
+GOLD SEQ: 	 b"it ' s going to be a very busy first day ."
+PRED SEQ:	 b"it ' s going to be a first day ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.113142714, 0.011866667, 0.022747777, 0.046656277, 0.0008846834, 0.0013005913, 0.0012049864, 0.5466454, 0.06079719, 0.004464971, 0.0011365527]
+GOLD TOK: 	 [['very']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"our politicians don ' t have a clue , they don ' t know what they ' re doing ##or other things , ok . we will also stop the job killing trans - pacific partnership ."
+GOLD SEQ: 	 b"our politicians don ' t have a clue , they don ' t know what they ' re doing ##or other things , ok . we will also immediately stop the job killing trans - pacific partnership ."
+PRED SEQ:	 b"our politicians don ' t have a clue , they don ' t know what they ' re doing ##or other things , ok . we will also stop the job killing trans - pacific partnership ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.013279403, 0.0022161799, 1.0656942e-05, 1.0305158e-06, 1.5835124e-06, 2.051506e-06, 1.5978753e-06, 7.0063234e-06, 1.6018437e-06, 0.00016978059, 4.7263075e-06, 1.1988442e-06, 1.8329163e-06, 2.8670004e-06, 1.6869136e-06, 5.5684045e-06, 1.4106608e-06, 2.3073155e-06, 2.7100477e-06, 0.00052675675, 7.9528705e-05, 8.278287e-06, 2.6332525e-06, 0.0037953893, 1.7185159e-06, 0.004060219, 0.0004537723, 7.9749174e-05, 2.0049247e-05, 5.223417e-06, 0.00023566978, 0.9211761, 6.0595674e-05, 1.6942875e-05, 1.0407565e-05, 0.0003418333, 8.73261e-06]
+GOLD TOK: 	 [['immediately']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'model to be leading the world in production , exports and manufacturing .'
+GOLD SEQ: 	 b'we want to be leading the world in production , exports and manufacturing .'
+PRED SEQ:	 b'model is considered to be leading the world in production , exports and manufacturing .'
+GOLD DIST: 	 [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.34347287, 0.3734962, 0.03900551, 0.2018008, 4.98418e-05, 0.016737146, 4.762018e-06, 7.893085e-06, 2.3297205e-06, 1.2997009e-05, 2.7835824e-06, 1.40175525e-05, 5.3533735e-05]
+GOLD TOK: 	 [['we', 'want']]
+PRED TOK: 	 [['is', 'considered']]
+################################################################################
+IN SEQ: 	 b'we will fight for every last american job .'
+GOLD SEQ: 	 b'we will fight for every last american job .'
+PRED SEQ:	 b'we will fight for every last american job .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.058212433, 0.65392774, 0.024422608, 0.000119295146, 0.0008665579, 0.066089146, 0.014777721, 0.006342646, 3.9074086e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"it ' s most well known to be here today ."
+GOLD SEQ: 	 b"it ' s great to be here today ."
+PRED SEQ:	 b"it ' s most well known to be here ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.025566291, 0.001559031, 0.0021212415, 0.14270984, 0.5114474, 0.15827106, 0.0009462762, 0.000324391, 0.2477688, 0.023702838, 0.00021939246]
+GOLD TOK: 	 [['great']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'they wanted their patents and all their secrets before they agreed to buy planes from boeing .'
+GOLD SEQ: 	 b'they wanted their patents and all their secrets before they agreed to buy planes from boeing .'
+PRED SEQ:	 b'they wanted their patents and all their secrets before they agreed to buy planes from boeing .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.02825944, 0.06637705, 0.023565762, 0.00096352346, 7.372523e-05, 0.054586332, 0.0044469438, 0.57812864, 0.00012830233, 0.0005320257, 7.5682154e-05, 4.4678586e-06, 0.0011085338, 0.006394098, 6.5073706e-05, 0.0030836465, 0.00028196577]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"you ' re a successful film ."
+GOLD SEQ: 	 b"you ' re african - american ."
+PRED SEQ:	 b"you ' re a film ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0]
+PRED DIST: 	 [0.010239836, 0.004177657, 0.136353, 0.004186562, 0.682014, 0.0014519444, 0.00015443256]
+GOLD TOK: 	 [['african', '-', 'american']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"if we don ' t get the deal we want , we ' ll leave na ##ft ##a and start over to get a better deal ."
+GOLD SEQ: 	 b"if we don ' t get the deal we want , we ' ll leave na ##ft ##a and start over to get a much better deal ."
+PRED SEQ:	 b"if we don ' t get the deal we want , we ' ll leave na ##ft ##a and start over to get a large deal ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.20389996, 0.10291764, 0.00042577033, 0.0001295798, 0.00022579191, 0.00015835042, 3.919197e-05, 0.0004816295, 0.016678572, 0.0018449102, 0.00010667872, 0.12649077, 0.0015961607, 0.02106992, 0.0031473357, 0.00392165, 0.009741356, 0.008409036, 0.00093348767, 0.0011585386, 0.0061743883, 0.00021091843, 0.0013863946, 0.001629972, 0.48304826, 0.000894659, 0.00021255005]
+GOLD TOK: 	 [['much']]
+PRED TOK: 	 [['large']]
+################################################################################
+IN SEQ: 	 b'democrats have run these inner cities for half a century .'
+GOLD SEQ: 	 b'democrats have run these inner cities for half a century .'
+PRED SEQ:	 b'democrats have run these inner cities for half a century .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.48792952, 0.22632688, 0.1379578, 0.08568809, 0.10506304, 0.0008638087, 0.0029606742, 0.0002961705, 0.00013398044, 0.00046656377, 0.005282837]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"she stated that she believes it is said to expose whatever ' s going on up ."
+GOLD SEQ: 	 b"she doesn ' t expose whatever ' s going on up here ."
+PRED SEQ:	 b"she stated that she believes it is said to expose whatever ' s going on up ."
+GOLD DIST: 	 [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.034865264, 0.52809834, 0.00010964797, 0.022465093, 0.102499224, 0.0028819114, 0.0022765994, 0.100638986, 0.00019698602, 0.039433975, 0.006140062, 0.0030861266, 0.006127534, 0.00013763574, 0.00019708181, 0.01716743, 4.4686483e-05]
+GOLD TOK: 	 [['doesn', "'", 't'], ['here']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'we will have one american nation .'
+GOLD SEQ: 	 b'we will have one american nation .'
+PRED SEQ:	 b'we will have one american nation .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.06835232, 0.5540816, 0.004021382, 0.01180508, 0.08977, 0.10318255, 6.336096e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"you ' ve taken in harder than most states ."
+GOLD SEQ: 	 b"you ' ve taken in harder than most states ."
+PRED SEQ:	 b"you ' ve taken in harder than most states ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.03700367, 0.0040307087, 0.006047703, 0.029457945, 0.005794675, 0.64656174, 0.021374775, 0.054212544, 0.027028756, 0.00017846977]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'those end beginning on november 8th .'
+GOLD SEQ: 	 b'those failures end beginning on november 8th .'
+PRED SEQ:	 b'those on november 8th .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.5790145, 0.405343, 0.26255322, 0.0015596322, 0.012670036, 0.003025839, 0.0009926724]
+GOLD TOK: 	 [['failures']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'japan is possible us off with the cars .'
+GOLD SEQ: 	 b'japan is ripping us off with the cars .'
+PRED SEQ:	 b'japan is possible us off with the cars .'
+GOLD DIST: 	 [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0006384343, 0.00017053893, 0.03465403, 0.6707128, 0.3850863, 4.6697456e-05, 5.1203668e-05, 0.0018533106, 1.6502569e-05]
+GOLD TOK: 	 [['ripping']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'now , to present time .'
+GOLD SEQ: 	 b'now , fast - forward to present time .'
+PRED SEQ:	 b'now , to present time .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.49928382, 0.00015826891, 0.004889733, 0.19635476, 0.0052037146, 0.00054928544]
+GOLD TOK: 	 [['fast', '-', 'forward']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'this obama - clinton directive will shut down most , if not all , coal - powered electricity plans in america .'
+GOLD SEQ: 	 b'this obama - clinton directive will shut down most , if not all , coal - powered electricity plans in america .'
+PRED SEQ:	 b'this obama - clinton directive will shut down most , if not all , coal - powered electricity plans in america .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0035838338, 0.007603872, 0.043660257, 0.00478777, 0.3303829, 0.34874272, 0.00030392027, 7.789865e-05, 0.00042198502, 2.5375189e-06, 6.431348e-06, 5.530101e-06, 4.092868e-05, 9.813366e-06, 0.0063666077, 0.0017685401, 0.003270557, 0.003666634, 0.09424209, 0.0014906824, 0.029164195, 1.9562305e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'[ applause ] i want to express our support for the people of france , and we mo ##urn their loss as a nation .'
+GOLD SEQ: 	 b'[ applause ] i want to express our un ##yi ##eld ##ing support for the people of france , and we mo ##urn their loss as a nation .'
+PRED SEQ:	 b'[ applause ] i want to express our support for the people of france , and we mo ##urn their loss as a nation .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.019950608, 0.01651983, 0.005740846, 0.0004453661, 0.00077058765, 1.0869419e-05, 1.3328284e-05, 0.0383629, 0.00012268595, 6.391903e-06, 8.4549665e-06, 0.0025997332, 1.2207976e-05, 0.0031840433, 6.3560515e-06, 8.585725e-05, 0.017677622, 0.0062270556, 0.022980185, 0.068031795, 0.6567283, 5.2662366e-05, 8.7958935e-05, 0.0058926987, 6.088163e-06]
+GOLD TOK: 	 [['un', '##yi', '##eld', '##ing']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'they kept cash in .'
+GOLD SEQ: 	 b'they kept cash ##ing in .'
+PRED SEQ:	 b'they kept cash in .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.44987348, 0.55369216, 0.14033228, 0.009834432, 0.0008417716]
+GOLD TOK: 	 [['##ing']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"they ' ve just assumed they ' ll get your support and done nothing in return for it ."
+GOLD SEQ: 	 b"they ' ve just assumed they ' ll get your support and done nothing in return for it ."
+PRED SEQ:	 b"they ' ve just assumed they ' ll get your support and done nothing in return for it ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.22698481, 0.010972221, 0.023046503, 0.3348774, 0.1453235, 0.1490222, 0.0023037745, 0.008048816, 0.0062667956, 0.19124101, 0.0036461463, 0.002276216, 0.005214815, 0.00775207, 0.00016748128, 0.00093758217, 0.0001291643, 0.012405136, 0.0021602279]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'on top of that she promises un ##con ##tro ##lled , low - skilled immigration that continues to reduce jobs and wages for american workers , and especially for african - american and hispanic workers within country .'
+GOLD SEQ: 	 b'on top of that she promises un ##con ##tro ##lled , low - skilled immigration that continues to reduce jobs and wages for american workers , and especially for african - american and hispanic workers within our country .'
+PRED SEQ:	 b'on top of that she promises un ##con ##tro ##lled , low - skilled immigration that continues to reduce jobs and wages for american workers , and especially for african - american and hispanic workers within country .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0004010895, 0.0005838163, 3.1899492e-06, 1.8897103e-05, 0.007464638, 0.58195895, 0.003795562, 0.0030325311, 0.0029662917, 0.0057095313, 9.5746036e-05, 0.012176465, 0.0034640292, 0.018366985, 0.011922479, 0.0014618571, 0.045141477, 0.00010026057, 0.0063084196, 0.0001589792, 5.0101744e-06, 0.00017633694, 6.5604145e-06, 0.010410573, 0.0027646865, 1.6320248e-06, 9.311035e-06, 0.017092438, 1.4432283e-05, 0.00014958487, 4.2255433e-05, 6.0130908e-05, 1.0064004e-05, 0.00365479, 0.0019910736, 0.002196905, 0.07043333, 3.8041724e-06]
+GOLD TOK: 	 [['our']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'[ applause ] and hillary is going to cut your social security and in ##jure medicare .'
+GOLD SEQ: 	 b'[ applause ] and hillary is going to cut your social security and really in ##jure medicare .'
+PRED SEQ:	 b'[ applause ] and hillary is going to cut your social security and in ##jure medicare .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0007384592, 0.0008554857, 0.00023289968, 7.5723865e-06, 0.00022062045, 4.6985708e-05, 0.00017306788, 9.264745e-06, 0.00057499553, 0.82647216, 5.6184886e-06, 3.0207457e-06, 0.00032465617, 0.01623363, 0.41747096, 0.0012997047, 3.51458e-06]
+GOLD TOK: 	 [['really']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'just let your product come right in , no tax , no nothing .'
+GOLD SEQ: 	 b'but just let your product come right in , no tax , no nothing .'
+PRED SEQ:	 b'let your product come right in , no tax , no nothing .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.90664035, 0.00050981744, 0.010163967, 0.0020658898, 5.9681995e-05, 0.003121582, 1.4004593e-05, 1.6979925e-06, 0.0005226857, 0.00021857505, 1.9242166e-06, 0.0015741071, 0.0005651507, 9.392217e-06]
+GOLD TOK: 	 [['but']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"america is far less safe and the world is less stable than when obama made the decision to put hillary clinton in charge of america ' s foreign policy ."
+GOLD SEQ: 	 b"america is far less safe and the world is far less stable than when obama made the decision to put hillary clinton in charge of america ' s foreign policy ."
+PRED SEQ:	 b"america is less safe and the world is less stable than when obama made the decision to put hillary clinton in charge of america ' s foreign policy ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.043584358, 0.017206414, 0.74981403, 0.0010187908, 0.026733695, 0.00027868277, 0.00027067523, 0.004468316, 0.0044106264, 0.002049249, 0.007918264, 0.0002003601, 0.002137119, 0.00022786486, 0.00015067511, 1.8800414e-05, 0.00014018174, 1.848769e-05, 0.00027479162, 0.00030193818, 2.1266787e-05, 4.251006e-05, 5.682326e-05, 7.6281394e-06, 0.00061778, 1.062064e-05, 2.4377809e-05, 3.6615584e-05, 1.8988947e-05, 3.437454e-05]
+GOLD TOK: 	 [['far']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"we ' re soon going to be at $ 20 trillion ."
+GOLD SEQ: 	 b"we ' re soon going to be at $ 20 trillion ."
+PRED SEQ:	 b"we ' re soon going to be at $ 20 trillion ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.27258736, 0.01793918, 0.03430776, 0.33534506, 0.028681694, 0.00047033682, 0.0011761474, 0.07850974, 0.009700292, 0.002537285, 0.16666134, 0.0028778608]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'my opponent dismissed the va as being not widespread one more sign of how out of touch she really is .'
+GOLD SEQ: 	 b'my opponent dismissed the va scandal as being not widespread one more sign of how out of touch she really is .'
+PRED SEQ:	 b'my opponent dismissed the va as being not widespread one more sign of how out of touch she really is .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.2012389, 0.066901796, 0.13188273, 0.00032236427, 0.065259844, 0.0001529084, 0.00020427091, 0.00039405836, 0.0064806812, 0.012525018, 0.040491093, 0.012283025, 0.000135039, 0.004374793, 0.0006048907, 1.6892423e-05, 0.0006204373, 0.044619933, 0.0971971, 0.004514496, 6.035219e-05]
+GOLD TOK: 	 [['scandal']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"and the player ' s going to win that fight ."
+GOLD SEQ: 	 b"and he ' s going to win that fight ."
+PRED SEQ:	 b"and the player ' s going to win ."
+GOLD DIST: 	 [0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.18170309, 0.0029163973, 0.031292353, 0.0096804965, 0.04078299, 0.043439344, 0.00015735612, 0.010533881, 0.48460257, 0.20120208, 0.00050123275]
+GOLD TOK: 	 [['he']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"it ' s time for the united states to start thinking big once again ."
+GOLD SEQ: 	 b"but it ' s time for our country to start thinking big once again ."
+PRED SEQ:	 b"it ' s time for the united states to start thinking big once again ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0868205, 0.04093957, 0.03934634, 0.10304359, 0.0046726232, 0.0024945056, 0.005300758, 0.0043654875, 0.00094351405, 0.0021158452, 0.13056657, 0.27283618, 0.27008426, 0.061741475, 0.005227143]
+GOLD TOK: 	 [['but'], ['our', 'country']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'some have claimed to claim that in this building .'
+GOLD SEQ: 	 b'many are in this building .'
+PRED SEQ:	 b'some have claimed to claim that in this building .'
+GOLD DIST: 	 [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.5872482, 0.003358236, 0.44969302, 0.00010862623, 0.060837116, 0.0011795008, 4.163254e-05, 0.004165991, 0.002763803, 1.2390067e-05]
+GOLD TOK: 	 [['many', 'are']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'the clinton ##s made almost $ 60 , 000 in gross income while she was secretary of state .'
+GOLD SEQ: 	 b'the clinton ##s made almost $ 60 , 000 in gross income while she was secretary of state .'
+PRED SEQ:	 b'the clinton ##s made almost $ 60 , 000 in gross income while she was secretary of state .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.006805675, 0.008211564, 0.8380201, 0.026914565, 0.023422934, 0.00014965847, 2.4109806e-05, 6.3378807e-06, 2.3912376e-05, 1.56353e-05, 0.00472878, 0.00016743658, 2.5990126e-05, 0.00072730664, 0.00011100065, 2.8947192e-05, 6.751192e-06, 3.482552e-05, 1.2775139e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"new e - mail ##s revealed by abc news just yesterday show that during the earthquake in haiti , which killed over 150 , 000 people , the clinton ##s couldn ' t stop cash ##ing in ."
+GOLD SEQ: 	 b"new e - mail ##s revealed by abc news just yesterday show that during the deadly earthquake in haiti , which killed over 150 , 000 people , the clinton ##s couldn ' t stop cash ##ing in ."
+PRED SEQ:	 b"new e - mail ##s revealed by abc news just yesterday that during the earthquake in haiti , which killed over 150 , 000 people , the clinton ##s couldn ' t stop cash ##ing in ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0032551682, 4.0027912e-06, 4.690185e-06, 4.895113e-06, 8.832329e-06, 0.22440653, 2.6983626e-06, 2.4610056e-06, 1.8627358e-06, 2.117515e-05, 1.6411916e-05, 0.5014823, 2.7829728e-05, 8.0569625e-06, 3.9736956e-06, 4.9779526e-05, 5.4248826e-06, 5.7901234e-05, 1.6735416e-06, 0.00029170635, 0.042803925, 8.4942316e-05, 7.6798415e-06, 1.7316869e-06, 6.4107417e-06, 3.032409e-05, 2.9800372e-06, 0.000107886575, 6.748713e-05, 7.794272e-05, 0.0006026395, 2.9437932e-05, 4.0252988e-05, 3.9967985e-05, 0.03692202, 0.007729834, 0.0006697885, 2.7838134e-06]
+GOLD TOK: 	 [['deadly']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'they were never like that .'
+GOLD SEQ: 	 b'they were never like that .'
+PRED SEQ:	 b'they were never like that .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.19477868, 0.1574206, 0.5092166, 0.1412317, 0.2521498, 0.0078118853]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"she couldn ' t remember whether she was trained on handling classified information ."
+GOLD SEQ: 	 b"she couldn ' t even remember whether she was trained on handling classified information ."
+PRED SEQ:	 b"she couldn ' t remember whether she was trained on handling classified information ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.1277126, 0.06547535, 0.00097341667, 0.0022197678, 0.008971266, 0.0022244554, 0.014034134, 0.001619935, 0.025560781, 0.00022147446, 0.36260635, 0.20204139, 0.008477144, 0.0016123735]
+GOLD TOK: 	 [['even']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"i ' s you ' d ."
+GOLD SEQ: 	 b'i love you , too .'
+PRED SEQ:	 b"i ' d ."
+GOLD DIST: 	 [0.0, 1.0, 1.0, 0.0, 1.0, 1.0, 0.0]
+PRED DIST: 	 [0.0010993372, 7.57433e-05, 0.0016442835, 0.85650474, 0.25767255, 0.9355138, 0.053791285]
+GOLD TOK: 	 [['love'], [',', 'too']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"people don ' t know ."
+GOLD SEQ: 	 b"i don ' t know ."
+PRED SEQ:	 b"don ' t know ."
+GOLD DIST: 	 [1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.9034036, 0.026328802, 0.0002552645, 0.0011277766, 0.0045204787, 0.00042932897]
+GOLD TOK: 	 [['i']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"the political powers trying to stop us are the people who ' ve stripped the jobs form inner cities , trapped millions of african - americans and hispanic - americans in impoverished , crime - besieged neighborhoods , and left 70 million american women and child in poverty or near the brink of poverty ."
+GOLD SEQ: 	 b"the political powers trying to stop us are the people who ' ve stripped the jobs form our inner cities , trapped millions of african - americans and hispanic - americans in impoverished , crime - besieged neighborhoods , and left 70 million american women and child in poverty or near the brink of poverty ."
+PRED SEQ:	 b"the political powers trying to stop us are the people who ' ve stripped the jobs form inner cities , trapped millions of african - americans and hispanic - americans in impoverished , crime - besieged neighborhoods , and left 70 million american women and child in poverty or near the brink of poverty ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.013958295, 0.0050567174, 0.009661804, 0.005553398, 3.1855125e-05, 0.0010322616, 0.09843049, 0.01873655, 0.033012968, 0.046952084, 0.05798879, 0.02333138, 0.04542138, 0.06357774, 0.0005069898, 0.00190412, 0.00061579276, 0.0038639014, 5.23701e-05, 0.0032002542, 0.13825549, 0.0048059765, 4.2961205e-05, 0.00052181404, 6.908822e-05, 0.00021172603, 7.349308e-05, 0.0012415164, 0.0005676137, 0.0006257077, 4.4177053e-05, 0.008396153, 0.00024439074, 0.034763902, 0.016800622, 0.03562787, 0.0003866098, 1.8003717e-05, 0.0014693708, 0.010097347, 0.00015210059, 0.00025127517, 0.011028627, 0.007972435, 0.00010672461, 0.0040802555, 1.6802243e-05, 0.00013439797, 0.00043233339, 0.00019658224, 7.2185026e-06, 0.000144613, 8.340907e-06, 0.00013519528, 3.869138e-05]
+GOLD TOK: 	 [['our']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'one of the biggest problems facing young people and families today is the cost of college education .'
+GOLD SEQ: 	 b'one of the biggest problems facing young people and families today is the cost of college education .'
+PRED SEQ:	 b'one of the biggest problems facing young people and families today is the cost of college education .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.122626394, 0.0011326364, 0.0033504951, 0.43783072, 0.08492616, 0.14436506, 0.008576196, 0.0005498155, 3.9815775e-05, 0.00014379101, 0.016543493, 0.03041056, 0.00053032226, 0.003252609, 1.846399e-05, 0.00022481965, 0.00012871235, 4.834149e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"people can ' t bring it back ."
+GOLD SEQ: 	 b"we can ' t bring it back ."
+PRED SEQ:	 b'people can bring it back .'
+GOLD DIST: 	 [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.79998815, 0.5400691, 0.02142615, 0.012256829, 0.00026848845, 0.00081077503, 0.0016589881, 0.004940776]
+GOLD TOK: 	 [['we']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'[ the same people paying bill clinton for speeches were lobbying hillary clinton at the same time , same time .'
+GOLD SEQ: 	 b'[ boo ##ing ] the same people paying bill clinton for speeches were lobbying hillary clinton at the same the same time , same time .'
+PRED SEQ:	 b'[ the same people paying bill clinton for speeches were lobbying hillary clinton at the same time , same time .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.35889408, 0.0019009056, 0.023240086, 0.022828948, 0.17179987, 0.0010724417, 2.0875139e-05, 6.0651575e-05, 0.009722433, 0.06824568, 0.46540442, 0.030664561, 0.00039417445, 8.6349e-05, 3.792142e-05, 0.0004283566, 0.0001650582, 9.401527e-05, 0.012951194, 0.00022194417, 0.00011151433]
+GOLD TOK: 	 [['boo', '##ing', ']'], ['the', 'same']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'the t ##pp will not only destroy destroy our manufacturing , but it will make america subject to the ruling ##s of foreign governments .'
+GOLD SEQ: 	 b'the t ##pp will not only destroy our manufacturing , but it will make america subject to the ruling ##s of foreign governments .'
+PRED SEQ:	 b'the t ##pp will not only destroy destroy the left - wing manufacturing , but it will make america subject to the ruling ##s of foreign governments .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0023495571, 0.000463003, 0.0012613737, 0.017691718, 0.00013023756, 0.0005573924, 0.11887708, 0.043836106, 0.54873383, 0.0015482805, 8.84326e-06, 9.6908e-05, 0.004203356, 0.036265407, 0.00049432117, 0.02321191, 0.00039119768, 8.886756e-06, 3.399057e-05, 0.003063536, 0.00037316346, 3.5226072e-05, 0.022727499, 0.000107129286, 1.9506528e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 [['the', 'left', '-', 'wing']]
+################################################################################
+IN SEQ: 	 b'but we must use ideological warfare as well .'
+GOLD SEQ: 	 b'but we must use ideological warfare as well .'
+PRED SEQ:	 b'but we must use ideological warfare as well .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.193633, 0.26694822, 0.08522755, 0.0075726174, 0.041134715, 0.06730594, 4.59523e-05, 0.00083903165, 7.868744e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'[ applause ] the e - mail ##s also reveal that hillary clinton believes in global governments , unlimited immigration unlimited , more than obama .'
+GOLD SEQ: 	 b'[ applause ] the e - mail ##s also reveal that hillary clinton believes in global governments , unlimited immigration unlimited , much more than obama .'
+PRED SEQ:	 b'[ applause ] the e - mail ##s also reveal that hillary clinton believes in global governments , unlimited immigration unlimited , more than obama .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0016619585, 0.018574942, 0.0025845794, 0.00036424331, 5.8557007e-06, 4.8073016e-06, 5.1162456e-06, 7.2971307e-06, 0.006959345, 0.44102067, 7.171589e-05, 0.00046589473, 8.049229e-06, 0.059958518, 0.00025341476, 0.024299432, 0.008916642, 3.575104e-05, 0.039269675, 0.011693175, 0.08598844, 1.4667667e-05, 0.041186374, 0.010123605, 0.019412966, 6.3645675e-06]
+GOLD TOK: 	 [['much']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"she stated that , to be truly united as a country , we can ' t simply turn to government or to politicians ."
+GOLD SEQ: 	 b"she understood that , to be truly united as a country , we can ' t simply turn to government or to politicians ."
+PRED SEQ:	 b"she stated that , to be truly united as a country , we can ' t simply turn to government or to politicians ."
+GOLD DIST: 	 [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.01104695, 0.6544878, 1.0672939e-05, 1.719106e-06, 2.9054552e-06, 3.999418e-06, 0.04569619, 7.281127e-05, 2.2277868e-06, 3.1366778e-06, 7.236902e-05, 2.0243187e-06, 0.12301501, 9.703496e-06, 6.0986167e-06, 4.96104e-06, 0.006255939, 6.8937654e-05, 5.858589e-06, 0.00031751877, 1.16210995e-05, 4.9756577e-06, 0.0005228983, 3.3323618e-06]
+GOLD TOK: 	 [['understood']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"we can ' t give you the money ."
+GOLD SEQ: 	 b"but we can ' t give you the money ."
+PRED SEQ:	 b"we can give ' t you the money ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.46733597, 0.26444775, 0.004652707, 0.009937469, 0.0005478557, 0.061353266, 0.0024696891, 0.06098504, 0.010855431]
+GOLD TOK: 	 [['but']]
+PRED TOK: 	 [['give']]
+################################################################################
+IN SEQ: 	 b'[ applause ] we will reject big ##ot ##ry and hatred , and oppression , in all of its forms , and seek a new future built on our common culture and values as one american people .'
+GOLD SEQ: 	 b'[ applause ] we will reject big ##ot ##ry and hatred , and oppression , in all of its ugly forms , and seek a new future built on our common culture and values as one american people .'
+PRED SEQ:	 b'[ applause ] we will reject big ##ot ##ry and hatred , and oppression , in all of its forms , and seek a new future built on our common culture and values as one american people .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.10857297, 0.35657507, 0.113778286, 0.17816721, 0.111039594, 0.0033234667, 0.0033538195, 0.0033391123, 0.0014950295, 0.0002671329, 0.025818495, 8.904019e-06, 0.009379599, 0.05605278, 1.5395603e-05, 1.7297496e-05, 5.4857508e-05, 7.4557993e-06, 9.522112e-05, 0.00020437807, 1.7575605e-05, 0.0041641276, 0.0028921703, 9.323586e-05, 0.003490909, 0.0003536563, 0.00027124587, 1.1483838e-05, 0.056057923, 0.0032929184, 3.225201e-05, 7.1681507e-06, 6.535342e-05, 6.752706e-05, 0.011826599, 0.015092596, 0.0062049576, 1.7053575e-05]
+GOLD TOK: 	 [['ugly']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'[ [ ] right here in this community , you have lost 1 in 7 manufacturing jobs since bill clinton put china into the world trade organization .'
+GOLD SEQ: 	 b'[ boo ##ing ] right here in this community , you have lost 1 in 7 manufacturing jobs since bill clinton put china into the world trade organization .'
+PRED SEQ:	 b'[ [ ] right here in this community , you have lost 1 in 7 manufacturing jobs since bill clinton put china into the world trade organization .'
+GOLD DIST: 	 [0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.02005126, 0.0020477166, 0.0012521108, 0.0012983202, 0.0007828847, 2.0119021e-05, 0.0005197204, 0.008854185, 5.6714935e-06, 0.3776236, 8.118171e-05, 0.0031877565, 1.7347385e-05, 4.69338e-06, 8.3502324e-05, 0.00040809196, 4.2003932e-05, 0.00018177356, 0.000108500964, 1.2288514e-05, 0.4005543, 0.0082951905, 0.0023666597, 2.4776838e-05, 2.1685812e-05, 1.48396e-05, 1.0158433e-05, 8.81945e-06]
+GOLD TOK: 	 [['boo', '##ing']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'this is what i saw to african - americans , hispanic - americans , and all americans .'
+GOLD SEQ: 	 b'this is what i promise to african - americans , hispanic - americans , and all americans .'
+PRED SEQ:	 b'this is what i saw to african - americans , hispanic - americans , and all americans .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.008148907, 0.0037632752, 0.0005884366, 0.027411858, 0.47711512, 0.00011904106, 8.158823e-05, 8.390563e-06, 1.1593924e-05, 2.6776452e-06, 0.00013767405, 1.5629756e-05, 2.3711727e-05, 3.0326062e-06, 2.0120038e-05, 0.25537467, 0.0037141382, 6.774947e-06]
+GOLD TOK: 	 [['promise']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'i say it all the time .'
+GOLD SEQ: 	 b'i say it all the time .'
+PRED SEQ:	 b'i say it all the time .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.7010946, 0.12063412, 0.05312853, 0.058424566, 0.0017153592, 0.009735181, 0.023539454]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'you are voting to believe in your country .'
+GOLD SEQ: 	 b'you are voting to believe in your country .'
+PRED SEQ:	 b'you are voting to believe in your country .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.079471104, 0.121203825, 0.020779261, 8.5556894e-05, 0.017771099, 0.00019439934, 0.4617959, 0.117768474, 4.147383e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"there ' s something nice about that ."
+GOLD SEQ: 	 b"but there ' s something nice about that ."
+PRED SEQ:	 b"there ' s something about that ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.24099936, 0.10291262, 0.10561023, 0.37299404, 0.5145794, 0.04160475, 0.14359273, 0.013218429]
+GOLD TOK: 	 [['but']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"our campaign is about representing the great majority of americans republicans , democrats , independents , conservatives and liberals who read the newspaper , or turn on the tv , and don ' t hear anyone speaking for them ."
+GOLD SEQ: 	 b"our campaign is about representing the great majority of americans republicans , democrats , independents , conservatives and liberals who read the newspaper , or turn on the tv , and don ' t hear anyone speaking for them ."
+PRED SEQ:	 b"our campaign is about representing the great majority of americans republicans , democrats , independents , conservatives and liberals who read the newspaper , or turn on the tv , and don ' t hear anyone speaking for them ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.17091548, 0.00013306463, 0.0010742652, 0.007857584, 0.008159865, 3.852335e-05, 0.40134788, 0.004953729, 9.642071e-06, 0.036273945, 0.00052748097, 2.1017006e-06, 0.00037635543, 1.9451447e-06, 0.0052796956, 3.2034545e-06, 0.042520728, 4.4643886e-05, 0.107341215, 0.00025611144, 6.584932e-05, 8.19676e-06, 0.00021283882, 1.9956237e-06, 2.693835e-05, 4.8432306e-05, 1.0124379e-05, 1.2556564e-05, 0.000106086896, 1.8010302e-06, 0.00019733586, 0.00037403425, 1.248305e-05, 9.170967e-05, 1.5348836e-05, 0.00064218923, 0.00021617809, 0.00014859911, 0.00032347688, 4.8158595e-06]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'its emptied out michigan , its emptied out new england .'
+GOLD SEQ: 	 b'its emptied out michigan , its emptied out new england .'
+PRED SEQ:	 b'its emptied out michigan , its emptied out new england .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.07093518, 0.18858892, 0.0038235518, 0.019456977, 2.856094e-05, 0.4534681, 0.28701127, 0.0033739049, 0.0011357113, 0.0070172357, 3.879484e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"[ applause ] while this is really a meeting and that ' s what it is , it ' s a meeting of very , very special people and i appreciate you all here ."
+GOLD SEQ: 	 b"[ applause ] while this is really a meeting and that ' s what it is , it ' s a meeting of very , very special people and i appreciate you all being here ."
+PRED SEQ:	 b"[ applause ] while this is really a meeting and that ' s what it is , it ' s a meeting of very , very special people and i appreciate you all here ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.13953006, 0.07651675, 0.040386815, 0.001989667, 0.0029977742, 0.0062072743, 0.2879662, 0.00095289736, 0.008587499, 0.00021738787, 0.003776104, 0.00029421452, 0.0023756316, 0.0038750046, 0.0023244792, 0.00591122, 0.0002954057, 0.0020914057, 0.00093862606, 0.004023693, 0.0004822722, 0.0014150281, 0.00034971337, 0.01546234, 0.00019104818, 0.04382162, 0.03055114, 0.003931469, 0.00029827538, 0.008817528, 0.03650572, 0.09697957, 0.060012154, 0.17522341, 0.000180957]
+GOLD TOK: 	 [['being']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"that ' s just political - speak for a new tax on coal and shale production a tax on american consumers ."
+GOLD SEQ: 	 b"that ' s just political - speak for a massive new tax on coal and shale production a tax on american consumers ."
+PRED SEQ:	 b"that ' s just political - speak for a new tax on coal and shale production a tax on american consumers ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.14354749, 0.03584884, 0.09434032, 0.51918364, 0.2223806, 0.28886682, 0.31481585, 0.0053117773, 0.0003716004, 0.002507132, 0.0010674421, 2.306578e-05, 0.0011137691, 0.00012849394, 0.004390024, 0.0011361344, 0.0015932119, 0.0016963142, 0.00017285746, 0.063219704, 0.016822627, 0.0007222711]
+GOLD TOK: 	 [['massive']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'the disdain that hillary clinton expressed towards millions of americans di ##s ##qual ##ifies her from public service .'
+GOLD SEQ: 	 b'the disdain that hillary clinton expressed towards millions of decent americans di ##s ##qual ##ifies her from public service .'
+PRED SEQ:	 b'the disdain that hillary clinton expressed towards millions of americans and lai ##sse ##z - fair ##e in public service .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0038401315, 0.06083387, 0.00020637443, 2.8710676e-05, 4.2644488e-06, 0.0010200969, 0.000614329, 0.0045732087, 6.7693086e-06, 0.00016408184, 0.89120775, 0.9057672, 0.7240778, 0.9387477, 0.00068545307, 0.0003327673, 5.250981e-05, 4.101088e-05, 1.43415655e-05]
+GOLD TOK: 	 [['decent']]
+PRED TOK: 	 [['and', 'lai', '##sse', '##z', '-', 'fair', '##e', 'in']]
+################################################################################
+IN SEQ: 	 b'no , it appears 26 days before the election .'
+GOLD SEQ: 	 b'no , it only appears 26 days before the election .'
+PRED SEQ:	 b'no , it appears 26 days before the election .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.09178254, 6.20373e-05, 0.06671957, 0.6558927, 0.012970899, 0.0039485036, 0.0001856933, 0.00016969204, 0.112168014, 6.944504e-05]
+GOLD TOK: 	 [['only']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'[ applause ] and this is our chance to break free from the failures of the past and to create a new american future .'
+GOLD SEQ: 	 b'[ applause ] and this is our chance to break free from the bitter failures of the past and to create a new american future .'
+PRED SEQ:	 b'[ applause ] and this is our chance to break free from the failures of the past and to create a new american future .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.12602136, 0.11242014, 0.092607565, 0.00066321174, 0.0009098207, 0.014036808, 0.1248751, 0.004650667, 6.209833e-05, 0.0006800654, 0.0011136614, 0.00010851659, 0.07692328, 0.2950302, 0.00054240593, 0.012931041, 0.008826477, 0.00027954468, 0.00013406096, 0.00029138895, 0.00019373045, 0.0018678736, 0.04713448, 0.0003967847, 0.0001001462]
+GOLD TOK: 	 [['bitter']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"i speak to border guards and they tell us what we ' re getting ."
+GOLD SEQ: 	 b"but i speak to border guards and they tell us what we ' re getting ."
+PRED SEQ:	 b"i speak to border guards and they tell us what we ' re getting ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.20305307, 0.021162057, 0.0005456799, 0.12490987, 0.050847143, 0.009045907, 0.09322836, 0.021763002, 0.22102758, 0.0052828444, 0.09295262, 0.00059914996, 0.0015289779, 0.033181403, 0.0016518411]
+GOLD TOK: 	 [['but']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"i ' m going to fight for every worker who deserves a raise , and for every community whose jobs and dreams have been ripped out and shipped to other countries ."
+GOLD SEQ: 	 b"i ' m going to fight for every worker who deserves a raise , and for every community whose jobs and dreams have been ripped out and shipped to other countries ."
+PRED SEQ:	 b"i ' m going to fight for every worker who deserves a raise , and for every community whose jobs and dreams have been ripped out and shipped to other countries ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.044364467, 0.010196375, 0.029262971, 0.043972682, 0.0023496319, 0.22087939, 0.0016963296, 0.003863892, 0.05556489, 0.0050503616, 0.21815062, 4.2807027e-05, 0.00033084463, 5.3246204e-06, 6.197155e-05, 0.0003411499, 0.0031701112, 0.010063127, 0.00051637, 0.00010491188, 0.00029507186, 0.009977718, 0.000527455, 9.781748e-05, 0.022969814, 1.8884008e-05, 4.1788375e-05, 0.000946112, 1.042007e-05, 0.01370987, 0.004269558, 4.1304193e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'we have a temperament .'
+GOLD SEQ: 	 b'we have a winning temperament .'
+PRED SEQ:	 b'we have a temperament .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.56492805, 0.3254815, 0.0217177, 0.032856878, 0.00751472]
+GOLD TOK: 	 [['winning']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"[ film s he ' s a good man ."
+GOLD SEQ: 	 b"[ applause ] he ' s a good man ."
+PRED SEQ:	 b"[ film s he ' s a good man ."
+GOLD DIST: 	 [0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.47135335, 0.36428118, 0.35598785, 0.037152067, 0.0020285521, 0.0040241117, 0.0003691521, 0.021920532, 0.010454515, 0.00031701545]
+GOLD TOK: 	 [['applause', ']']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'and reporters criticized the clinton ##s with praise .'
+GOLD SEQ: 	 b'and reporters sm ##oth ##ering the clinton ##s with praise .'
+PRED SEQ:	 b'and reporters criticized the clinton ##s with criticism .'
+GOLD DIST: 	 [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.042039447, 0.020161793, 0.03399068, 0.00034622222, 0.0011922574, 0.007065163, 0.18178146, 0.779457, 9.830185e-05]
+GOLD TOK: 	 [['sm', '##oth', '##ering']]
+PRED TOK: 	 [['criticism']]
+################################################################################
+IN SEQ: 	 b'a lot of it in small donations and raised $ 82 million in july .'
+GOLD SEQ: 	 b'a lot of it in small donations and we raised $ 82 million in july .'
+PRED SEQ:	 b'a lot of it in small donations and raised $ 82 million in july .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0024902946, 0.0020762852, 4.1937287e-06, 0.00020645928, 8.243518e-05, 0.9859708, 0.00033719893, 7.6617434e-05, 0.00012428424, 7.2447992e-06, 8.4813755e-06, 6.5746453e-06, 5.9550484e-06, 6.683082e-05, 1.0826466e-05]
+GOLD TOK: 	 [['we']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'allows americans to de ##du ##ct child ##care and elder care from their taxes , inc ##ent employers to provide on - site child ##care services , and you see that with a couple of companies and it is such a great thing to see and creates tax - free dependent care savings accounts for both young and elderly dependent ##s , with matching contributions for low - income families .'
+GOLD SEQ: 	 b'allows americans to de ##du ##ct child ##care and elder care from their taxes , inc ##ent ##iv ##izes employers to provide on - site child ##care services , and you see that with a couple of companies and it is such a great thing to see and creates tax - free dependent care savings accounts for both young and elderly dependent ##s , with matching contributions for low - income families .'
+PRED SEQ:	 b'allows americans to de ##du ##ct child ##care and elder care from their taxes , employers to provide on - site child ##care services , and you see that with a couple of companies and it is such a great thing to see and creates tax - free dependent care savings accounts for both young and elderly dependent ##s , with matching contributions for low - income families .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.16744436, 0.010047881, 8.892578e-05, 0.0016327096, 0.0008753522, 0.002203303, 2.4394762e-05, 3.2791835e-05, 2.051919e-06, 0.0001511696, 1.7385262e-05, 5.6432705e-06, 0.0002001661, 3.0154699e-05, 2.819111e-06, 0.71559995, 0.7046469, 0.002201316, 5.12378e-06, 3.9668535e-06, 1.0900718e-05, 5.5930573e-06, 2.9103585e-05, 2.0325891e-05, 1.3624236e-05, 8.950965e-06, 1.6372878e-06, 3.8451553e-06, 0.0077160546, 1.1912713e-05, 4.216869e-06, 1.25566e-05, 5.34087e-06, 1.550771e-05, 3.0287101e-06, 2.6005446e-05, 4.01619e-06, 3.417848e-05, 0.00045181552, 0.0048958184, 9.140005e-06, 0.014702273, 0.00051338313, 7.836383e-06, 4.799949e-06, 0.00016932837, 0.00028743444, 0.0001988082, 6.6909255e-05, 0.0030059915, 1.6274447e-05, 3.553774e-06, 5.307791e-05, 4.775193e-06, 2.0506043e-06, 6.534888e-06, 1.7011846e-05, 2.0171192e-06, 0.00014645669, 0.0002093283, 1.4734147e-05, 1.9664544e-06, 1.4670016e-05, 0.0004857183, 8.019417e-06, 3.409555e-06, 0.0029447442, 0.0006603874, 0.001133652, 1.1474018e-05, 3.420625e-06]
+GOLD TOK: 	 [['##iv', '##izes']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'there is no more important job than a teacher , and teachers will benefit greatly from these reforms .'
+GOLD SEQ: 	 b'there is no more important job than a teacher , and teachers will benefit greatly from these reforms .'
+PRED SEQ:	 b'there is no more important job than a teacher , and teachers will benefit greatly from these reforms .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.005106093, 0.00048050532, 0.0012933532, 0.00013930014, 0.0011199409, 0.00014954437, 1.3296266e-05, 3.5982157e-05, 0.00024754068, 3.2157257e-06, 0.0007663257, 0.0016276785, 0.12922381, 0.0067356867, 0.10062039, 7.043451e-06, 0.011820103, 0.5185261, 8.170458e-06]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'the people who will suffer the most as a result of these riots , are law - ab ##idi ##ng african - american residents who live in these communities .'
+GOLD SEQ: 	 b'the people who will suffer the most as a result of these riots , are law - ab ##idi ##ng african - american residents who live in these communities .'
+PRED SEQ:	 b'the people who will suffer the most as a result of these riots , are law - ab ##idi ##ng african - american residents who live in these communities .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.001504703, 0.00055846263, 0.00016955844, 0.13470133, 0.035582297, 1.8459024e-05, 0.0012644822, 1.0257661e-05, 6.568121e-06, 1.0521995e-05, 1.9646961e-06, 0.008120183, 0.49731028, 6.673997e-06, 0.005866687, 0.08015815, 0.13337502, 0.098735966, 0.0882141, 0.12362997, 0.0018315634, 0.00013049388, 0.0011949975, 0.0007038235, 9.868825e-05, 0.00012613386, 5.9379504e-06, 0.0061298185, 0.0007406026, 4.3183386e-06]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'[ laughter ] hey , never saw anything like this $ 1 . 7 billion ( dollars ) .'
+GOLD SEQ: 	 b'[ laughter ] hey , never saw anything like this $ 1 . 7 billion ( dollars ) .'
+PRED SEQ:	 b'[ laughter ] hey , never saw anything like this $ 1 . 7 billion ( dollars ) .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.026710778, 0.9501716, 0.055530168, 0.0034749203, 6.0135567e-06, 0.00027661482, 1.0526993e-05, 1.8348073e-05, 1.3300653e-05, 0.00014902723, 9.723559e-05, 1.692448e-05, 2.452662e-06, 5.047303e-06, 1.0516897e-05, 8.656293e-06, 0.0026037334, 2.5901638e-06, 6.159745e-06]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'i always say trojan horse .'
+GOLD SEQ: 	 b'i always say trojan horse .'
+PRED SEQ:	 b'i always say trojan horse .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.057704017, 0.68956286, 0.053671613, 0.01760081, 0.009049621, 0.0007530636]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"it ' s going to be a victory for you , the american people ."
+GOLD SEQ: 	 b"it ' s going to be a victory for you , the american people ."
+PRED SEQ:	 b"it ' s going to be a victory for you , the american people ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.05501566, 0.0062312535, 0.0061006024, 0.010110811, 9.132567e-05, 0.00046468832, 0.001003281, 0.10855069, 0.00036549, 0.35253948, 0.001503688, 0.0062983, 0.17160241, 0.14282317, 0.000284133]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'hillary clinton is the most successful person ever to seek the office of the presidency of the united states .'
+GOLD SEQ: 	 b'hillary clinton is the most corrupt person ever to seek the office of the presidency of the united states .'
+PRED SEQ:	 b'hillary clinton is the most successful person to seek the office of the presidency of the united states .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0047330703, 0.00037403495, 0.23218556, 0.0014851806, 0.0049941796, 0.3129685, 0.049850125, 0.39318284, 3.553805e-05, 0.0008223381, 1.4148202e-05, 0.00039859934, 1.3179629e-05, 6.784167e-06, 2.2534998e-05, 4.139344e-06, 3.747467e-06, 6.5290324e-06, 8.8737825e-06, 8.435002e-06]
+GOLD TOK: 	 [['corrupt']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'the nation - state remains the foundation for happiness and harmony .'
+GOLD SEQ: 	 b'the nation - state remains the true foundation for happiness and harmony .'
+PRED SEQ:	 b'the nation - state remains the foundation for happiness and harmony .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0022163487, 0.01684553, 0.006663509, 0.0092048645, 0.6645074, 0.00072841893, 0.0072918143, 0.0011521736, 0.24282528, 0.0006087936, 0.03527865, 4.6362315e-05]
+GOLD TOK: 	 [['true']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'[ film performance in back to mike pen ##ce .'
+GOLD SEQ: 	 b'[ applause ] back to mike pen ##ce .'
+PRED SEQ:	 b'[ film performance in back to mike pen ##ce .'
+GOLD DIST: 	 [0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.9702739, 0.00014256881, 0.0037226845, 7.640895e-06, 1.2928156e-05, 9.576959e-06, 2.556153e-06, 1.8658507e-06, 1.8223261e-06, 3.89906e-06]
+GOLD TOK: 	 [['applause', ']']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'my opponent has called for a 550 % increase in syrian - - think of this .'
+GOLD SEQ: 	 b'my opponent has called for a radical 550 % increase in syrian - - think of this .'
+PRED SEQ:	 b'my opponent has called for a 550 % increase in syrian - think of this .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.06755426, 0.10512719, 0.00208669, 0.0008857196, 2.5261626e-05, 0.00010515686, 0.005978122, 0.00031819302, 0.0020556522, 0.00042312336, 0.11542032, 0.71545327, 0.59034467, 0.018510846, 2.0372701e-05, 0.00091521343, 3.8167116e-05]
+GOLD TOK: 	 [['radical']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"the democratic party has taken the votes of african americans for granted , and they ' ve done nothing in return ."
+GOLD SEQ: 	 b"the democratic party has taken the votes of african americans totally for granted , and they ' ve done nothing in return ."
+PRED SEQ:	 b"the democratic party has taken the votes of african americans for granted , and they ' ve done nothing in return ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.01220681, 0.0035725473, 0.0004721824, 0.09482707, 0.026404575, 0.0005287575, 0.0005718495, 9.138909e-05, 0.03839122, 0.005279508, 0.017269203, 0.14239037, 1.4092722e-05, 0.0028536955, 0.12684341, 0.012160537, 0.011005404, 0.048848208, 0.022400146, 5.5197233e-05, 0.0013150803, 2.6807678e-05]
+GOLD TOK: 	 [['totally']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'he said one thing about me .'
+GOLD SEQ: 	 b'he said one nice thing about me .'
+PRED SEQ:	 b'he said one thing about me .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.23881173, 0.22270799, 0.21148376, 0.3069009, 0.0145088555, 0.14045265, 0.023717394]
+GOLD TOK: 	 [['nice']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'one order after another .'
+GOLD SEQ: 	 b'one law ##less order after another .'
+PRED SEQ:	 b'one order after another .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.60138667, 0.02633906, 0.0030354015, 0.18353526, 0.0037137647]
+GOLD TOK: 	 [['law', '##less']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"but this counter ##pro ##gram ##ming the democratic convention is different than what we ' ve seen in previous campaigns ."
+GOLD SEQ: 	 b"but this aggressive counter ##pro ##gram ##ming the democratic convention is different than what we ' ve seen in previous campaigns ."
+PRED SEQ:	 b"but this counter ##pro ##gram ##ming the democratic convention is different than what we ' ve seen in previous campaigns ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.16337767, 0.12877063, 0.23043306, 0.22804071, 0.32882512, 0.24505311, 0.0006101278, 0.00026175074, 8.362416e-05, 0.17845963, 0.028202802, 0.00032814065, 0.00084183173, 0.29606777, 4.190043e-05, 0.0001038447, 0.0004842004, 6.0623704e-05, 0.0026040014, 3.689458e-05, 4.4431952e-05]
+GOLD TOK: 	 [['aggressive']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'islamic terrorism has spread within shores .'
+GOLD SEQ: 	 b'islamic terrorism has spread within our shores .'
+PRED SEQ:	 b'islamic law is spread within shores .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.033865947, 0.81211716, 0.026443277, 0.015013704, 0.010682736, 0.0037095216, 1.5696509e-05]
+GOLD TOK: 	 [['our']]
+PRED TOK: 	 [['law', 'is']]
+################################################################################
+IN SEQ: 	 b'this is not another 4 - year election .'
+GOLD SEQ: 	 b'this is not simply another 4 - year election .'
+PRED SEQ:	 b'this is not another 4 - year election .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.039952554, 0.017273478, 0.18848613, 0.351165, 0.25015235, 0.076415814, 0.14586265, 0.08231935, 0.0011479029]
+GOLD TOK: 	 [['simply']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"you ' s claim to show ."
+GOLD SEQ: 	 b'you watch .'
+PRED SEQ:	 b"you ' s claim to show ."
+GOLD DIST: 	 [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0]
+PRED DIST: 	 [0.09053941, 0.03788311, 0.14498854, 0.50011396, 0.0018469486, 0.2820803, 0.0042996164]
+GOLD TOK: 	 [['watch']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'[ [ commentary ] the deadline for voter register who is not registered ?'
+GOLD SEQ: 	 b'[ applause ] the deadline for voter register who is not registered ?'
+PRED SEQ:	 b'[ [ commentary ] the deadline for voter register who is not registered ?'
+GOLD DIST: 	 [0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.18034792, 0.34687516, 0.6836789, 0.004628696, 0.0017766521, 0.014559313, 0.00026618992, 0.028287038, 0.013369834, 0.008891898, 0.012959048, 0.014500063, 0.023440778, 0.013067907]
+GOLD TOK: 	 [['applause']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"you ' re going to be so proud ."
+GOLD SEQ: 	 b"you ' re going to be so proud ."
+PRED SEQ:	 b"you ' re going to be so proud ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.31566858, 0.02877636, 0.079421006, 0.11953193, 0.0015068809, 0.0069024973, 0.29499933, 0.28238073, 0.007308467]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"they ' re going to be ."
+GOLD SEQ: 	 b"they ' re going to be gone ."
+PRED SEQ:	 b"they ' re going to be ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.28697097, 0.080200784, 0.16005604, 0.1921681, 0.017691817, 0.1868265, 0.065285414]
+GOLD TOK: 	 [['gone']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'vocational training is a thing .'
+GOLD SEQ: 	 b'vocational training is a great thing .'
+PRED SEQ:	 b'vocational training is a .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.009654551, 0.00037225548, 0.06770323, 0.006133402, 0.9474612, 0.00017622297]
+GOLD TOK: 	 [['great']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"this state has lost nearly half of its manufacturing jobs since bill and hillary ' s na ##ft ##a , the african - american middle class ."
+GOLD SEQ: 	 b"this state has lost nearly half of its manufacturing jobs since bill and hillary ' s na ##ft ##a , dec ##imating the african - american middle class ."
+PRED SEQ:	 b"this state has lost nearly half of its manufacturing jobs since bill and hillary ' s na ##ft ##a , the african - american middle class ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.00069897005, 0.0011009538, 0.0014887523, 0.0020619652, 0.0007018335, 1.1784374e-05, 2.4353192e-06, 3.4633194e-05, 0.00020291632, 0.00012104144, 0.00231315, 0.0005437756, 8.096879e-05, 3.150233e-05, 4.284963e-05, 0.000260927, 0.05910606, 0.1982068, 0.19215877, 0.00044467527, 0.30518284, 0.045118988, 0.0052546924, 0.00860927, 0.08512156, 0.14133203, 7.146254e-06]
+GOLD TOK: 	 [['dec', '##imating']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'income taxes will be simplified from 7 brackets to 3 , and middle class americans will get a major tax cut including child ##care de ##duction ##s and tax - free child ##care savings accounts .'
+GOLD SEQ: 	 b'income taxes will be simplified from 7 brackets to 3 , and middle class americans will get a major tax cut including child ##care de ##duction ##s and tax - free child ##care savings accounts .'
+PRED SEQ:	 b'income taxes will be simplified from 7 brackets to 3 , and middle class americans will get a major tax cut including child ##care de ##duction ##s and tax - free child ##care savings accounts .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.010450524, 2.6283695e-05, 0.0164555, 3.8143207e-05, 0.040796258, 4.8614215e-06, 0.00021046985, 0.00010400821, 9.888011e-06, 0.00019778946, 1.6292925e-06, 1.9255278e-05, 0.09807239, 0.1327007, 0.11093712, 0.022321211, 0.000646608, 4.0621526e-05, 0.23090783, 2.5906415e-05, 0.0029239485, 0.001546817, 0.0009331898, 0.00062844076, 5.512627e-05, 8.046018e-05, 4.1722633e-05, 3.7049893e-05, 0.0979328, 0.16709122, 0.22982085, 0.0026452532, 0.0012186203, 0.0077197105, 0.00012788863, 4.5806505e-06]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'my trade reforms will raise wages , grow jobs and add trillion ##s in new wealth into country .'
+GOLD SEQ: 	 b'my trade reforms will raise wages , grow jobs and add trillion ##s in new wealth into our country .'
+PRED SEQ:	 b'my trade reforms will raise wages , grow jobs and add trillion ##s in new wealth into country .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.032710213, 0.00011614174, 0.44615492, 0.44313946, 0.00023037707, 2.4144549e-05, 4.520968e-06, 9.308821e-05, 5.480731e-05, 2.524626e-05, 5.4397315e-05, 0.0003910724, 0.0009028973, 6.250449e-06, 0.00018463151, 0.007347419, 0.0001295063, 0.016142001, 9.672934e-06]
+GOLD TOK: 	 [['our']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'i knew these attacks would come .'
+GOLD SEQ: 	 b'i knew these false attacks would come .'
+PRED SEQ:	 b'i said these attacks would come .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.16634159, 0.926151, 0.0018298633, 0.0024385147, 0.0003152051, 0.00054860103, 5.4223914e-05]
+GOLD TOK: 	 [['false']]
+PRED TOK: 	 [['said']]
+################################################################################
+IN SEQ: 	 b'this includes americans like 21 - year - old sarah root .'
+GOLD SEQ: 	 b'this includes incredible americans like 21 - year - old sarah root .'
+PRED SEQ:	 b'this includes americans like 21 - year - old sarah root .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [5.016338e-05, 0.00031709555, 0.0040682326, 0.97167957, 6.7584515e-05, 0.00015606657, 2.953669e-05, 6.95357e-05, 0.00013167558, 6.5572867e-06, 2.5337224e-06, 2.540117e-06]
+GOLD TOK: 	 [['incredible']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'the support networks for radical islam in this country will be stripped out and removed , one - by - one , if necessary - - - vicious ##ly if necessary .'
+GOLD SEQ: 	 b'the support networks for radical islam in this country will be stripped out and removed , one - by - one , vicious ##ly if necessary - - vicious ##ly if necessary .'
+PRED SEQ:	 b'the support networks for radical islam in this country will be stripped out and removed , one - by - one , if necessary - - - - if necessary .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [1.2925191e-06, 7.986651e-07, 7.376555e-07, 7.654115e-07, 0.001489977, 6.2010455e-05, 7.973713e-07, 3.0228175e-06, 3.684424e-06, 4.103072e-06, 6.076209e-07, 8.596107e-07, 6.138127e-07, 5.839751e-07, 8.9161796e-07, 5.7238515e-07, 7.4437895e-07, 7.2905743e-07, 9.124808e-07, 7.4999537e-07, 8.2657544e-07, 5.571165e-07, 6.253247e-07, 7.7701725e-07, 1.2754474e-06, 3.2953387e-06, 5.6506986e-05, 0.99873716, 0.998536, 1.2336352e-06, 7.9979617e-07, 6.1364466e-07]
+GOLD TOK: 	 [['vicious', '##ly']]
+PRED TOK: 	 [['-']]
+################################################################################
+IN SEQ: 	 b"it ' s an asset , it ' s an asset ."
+GOLD SEQ: 	 b"it ' s an asset , it ' s an asset ."
+PRED SEQ:	 b"it ' s an asset , it ' s an asset ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.34206325, 0.15829937, 0.06372848, 0.058066763, 0.08149374, 0.0011386523, 0.07770848, 0.014833801, 0.01847397, 0.013328238, 0.026136702, 0.005046331]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"[ applause ] other people ' s lives have been ruined , destroyed , for doing a fraction of what she did ."
+GOLD SEQ: 	 b"[ applause ] other people ' s lives have been ruined , destroyed , for doing a tiny fraction of what she did ."
+PRED SEQ:	 b"[ film s other people ' s lives have been ruined , destroyed , for doing a fraction of what she did ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.12798484, 0.66357756, 0.13429517, 0.01643624, 0.00051632203, 6.0385896e-06, 1.01096075e-05, 4.1534626e-05, 0.0003426119, 7.135924e-05, 0.060035292, 1.1978788e-05, 0.010529663, 5.386276e-06, 0.0025293783, 0.0050894497, 3.7175287e-05, 0.00097487844, 5.418637e-06, 2.798344e-05, 0.20909086, 0.009538262, 2.1888412e-05]
+GOLD TOK: 	 [['tiny']]
+PRED TOK: 	 [['film', 's']]
+################################################################################
+IN SEQ: 	 b"we ' ve outlined a detailed plan on trade , on immigration , on rebuilding the military , on changing foreign policy ."
+GOLD SEQ: 	 b"we ' ve outlined a detailed plan on trade , on immigration , on rebuilding the military , on changing our foreign policy ."
+PRED SEQ:	 b"we ' ve outlined a detailed plan on trade , on immigration , on the military , on changing foreign policy ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.086984135, 0.030406663, 0.019029444, 0.0009941487, 0.00094043027, 0.039988086, 0.00031556713, 1.8689583e-05, 0.0001860694, 3.8799385e-06, 0.00028768036, 0.0047013345, 4.1331e-06, 0.0011497566, 0.57914174, 0.00085673534, 0.011750214, 4.2669094e-06, 0.0002997429, 0.019948298, 0.00021842106, 3.3204375e-05, 1.6793578e-05]
+GOLD TOK: 	 [['our']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'if we unlock the potential of this country and its people , no dream is outside of our reach .'
+GOLD SEQ: 	 b'if we unlock the potential of this country and its incredible people , no dream is outside of our reach .'
+PRED SEQ:	 b'if we unlock the potential of this country and its people , no dream is outside of our reach .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.033137593, 0.47523692, 0.06811932, 2.8934799e-05, 0.002808235, 7.2050098e-06, 0.0022915965, 0.004489376, 1.6351456e-05, 0.0023820319, 0.002444004, 1.9664767e-05, 0.0457337, 0.045740493, 0.04272656, 0.00033987028, 1.1049698e-05, 0.013054876, 0.00013832266, 1.0132135e-05]
+GOLD TOK: 	 [['incredible']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'i said that in scotland and in the u . k . , that was going to happen .'
+GOLD SEQ: 	 b'i said that in scotland and in the u . k . , that was going to happen .'
+PRED SEQ:	 b'i said that in scotland and in the u . k . , that was going to happen .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.2028534, 0.508016, 0.0006713613, 0.0003009748, 0.27653074, 0.00022021944, 0.00019871023, 0.00014892267, 0.001585186, 0.00024022404, 0.0006720055, 0.000116553776, 3.280018e-05, 0.010443416, 0.0017288652, 0.0036402128, 0.00024631058, 0.057464592, 0.00023476328]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'together , these steps will ensure that every american with addiction has access to the care and the help that he or she needs .'
+GOLD SEQ: 	 b'together , these steps will ensure that every american struggling with addiction has access to the care and the help that he or she needs .'
+PRED SEQ:	 b'together , these steps will ensure that every american with addiction has access to the care and the help that he or she needs .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.024586167, 2.1309539e-05, 0.00096698775, 0.0015953706, 0.33365303, 0.004810093, 2.164511e-05, 0.028969964, 0.034885015, 0.0032913317, 0.007888793, 0.010907156, 0.00021769339, 5.6343556e-06, 0.0007716465, 0.0012515258, 2.501411e-05, 0.00021175244, 0.00366876, 0.00037171858, 0.3905153, 0.0028677667, 0.092057385, 0.034289394, 2.0804007e-05]
+GOLD TOK: 	 [['struggling']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"[ film performance ] we ' re going to have the biggest tax cut since ronald reagan ."
+GOLD SEQ: 	 b"[ applause ] we ' re going to have the biggest tax cut since ronald reagan ."
+PRED SEQ:	 b"[ film performance ] we ' re going to have the biggest tax cut since ronald reagan ."
+GOLD DIST: 	 [0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.19481511, 0.04713845, 0.13246544, 0.22390065, 0.21666682, 0.0056092786, 0.023209332, 0.029920196, 0.0013438731, 0.0037175384, 0.002434127, 0.10175088, 0.0022115977, 0.0063552363, 0.20501511, 0.03767428, 0.003231629, 0.002211404]
+GOLD TOK: 	 [['applause']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'we have no choice .'
+GOLD SEQ: 	 b'we have no choice .'
+PRED SEQ:	 b'we have no choice .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.7021175, 0.24312542, 0.0208011, 0.032187402, 0.0015056324]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'we have nearly an $ 800 billion dollar annual trade deficit in goods with the world , and the the great depression .'
+GOLD SEQ: 	 b'we have nearly an $ 800 billion dollar annual trade deficit in goods with the world , and the worst so - called recovery since the great depression .'
+PRED SEQ:	 b'we have nearly an $ 800 billion dollar annual trade deficit in goods with the world , and the great depression .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.23376644, 0.058148656, 0.00017238226, 0.0003270301, 0.00022724348, 9.710049e-05, 2.7894239e-05, 6.0933446e-05, 6.707215e-05, 3.5117537e-05, 0.0011116606, 1.1979393e-05, 0.00048791617, 0.00026599734, 4.7213027e-05, 0.00362518, 6.584459e-06, 0.00028466524, 0.25600255, 0.44445518, 0.00068765256, 0.00042331836, 1.6026543e-05]
+GOLD TOK: 	 [['worst', 'so', '-', 'called', 'recovery', 'since']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"he doesn ' t respect the u . s ."
+GOLD SEQ: 	 b"he doesn ' t respect our president ."
+PRED SEQ:	 b'he believes that it is possible to respect the u . s .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0]
+PRED DIST: 	 [0.15733275, 0.5914352, 0.11269147, 0.27297333, 0.069729775, 0.001598357, 0.00332059, 0.00016759185, 0.00022485199, 0.0001793945]
+GOLD TOK: 	 [['our', 'president']]
+PRED TOK: 	 [['believes', 'that', 'it', 'is', 'possible', 'to']]
+################################################################################
+IN SEQ: 	 b'the people opposing the campaign are the same people who have left our border open and let innocent people suffer as a result .'
+GOLD SEQ: 	 b'the people opposing our campaign are the same people who have left our border open and let innocent people suffer as a result .'
+PRED SEQ:	 b'the people opposing the campaign are the same people who have left border open and let innocent people suffer as a result .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [8.950616e-05, 1.1375069e-05, 1.020578e-05, 1.6736677e-06, 1.3897332e-05, 0.0005435555, 7.716378e-06, 2.4214256e-05, 1.7125936e-05, 2.1709942e-05, 8.773594e-05, 4.623679e-06, 0.9381483, 4.154408e-06, 4.4811545e-06, 3.5106773e-06, 1.2477361e-05, 0.03282467, 1.5954534e-05, 5.423767e-05, 1.4197981e-06, 1.0310132e-06, 2.9012162e-06, 2.248047e-06]
+GOLD TOK: 	 [['our']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'national security is also immigration security and hillary wants neither .'
+GOLD SEQ: 	 b'national security is also immigration security and hillary wants neither .'
+PRED SEQ:	 b'national security is also immigration security and hillary wants neither .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.015889827, 0.013192581, 0.0039444733, 0.03953139, 0.016634999, 0.039700758, 0.004048314, 0.03699581, 0.4101394, 0.07228877, 0.00016509756]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'a state like ohio will benefit from these new funds .'
+GOLD SEQ: 	 b'a state like ohio will benefit greatly from these new funds .'
+PRED SEQ:	 b'a state like ohio will benefit from these new funds .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.051078368, 0.039962675, 0.3062296, 0.0073477803, 0.27863938, 0.0945993, 1.4534688e-05, 0.0021903152, 0.008742954, 0.0016767858, 0.00013842306]
+GOLD TOK: 	 [['greatly']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'and then humans get them out .'
+GOLD SEQ: 	 b'and then we get them out .'
+PRED SEQ:	 b'and then humans get them out .'
+GOLD DIST: 	 [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.02044783, 0.0055964016, 0.8240726, 0.115334585, 0.017965872, 0.012723655, 0.00013571735]
+GOLD TOK: 	 [['we']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'deals are made when parties come together , they come to a table and they negotiate .'
+GOLD SEQ: 	 b'deals are made when parties come together , they come to a table and they negotiate .'
+PRED SEQ:	 b'deals are made when parties come together , they come to a table and they negotiate .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.118885756, 0.12632506, 0.32525414, 0.0001547672, 0.022442846, 0.0044025574, 0.0008014697, 3.0368801e-05, 0.10793725, 0.023175552, 0.0001511768, 0.00095564366, 0.0010657148, 0.00011649967, 0.08731511, 0.022665655, 7.643303e-05]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'both of these programs have been gut ##ted by this administration .'
+GOLD SEQ: 	 b'both of these programs have been reckless ##ly gut ##ted by this administration .'
+PRED SEQ:	 b'both of these programs have been criticised by this administration .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [8.84752e-06, 1.1872503e-06, 6.450279e-06, 1.0852992e-05, 9.015079e-06, 4.9495807e-06, 0.9996202, 0.9994634, 2.2345469e-06, 0.00014364425, 8.686384e-05, 1.1433212e-06]
+GOLD TOK: 	 [['reckless', '##ly']]
+PRED TOK: 	 [['criticised']]
+################################################################################
+IN SEQ: 	 b"katy , here ' s the problem , simple ."
+GOLD SEQ: 	 b"katy , here ' s the problem , very simple ."
+PRED SEQ:	 b"katy , here ' s the problem , ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.16565773, 5.1646006e-05, 0.008560217, 4.637576e-05, 0.00010485727, 0.00021560234, 0.20631815, 5.8909427e-05, 0.5513215, 0.00048299241]
+GOLD TOK: 	 [['very']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'they det .'
+GOLD SEQ: 	 b'they det ##ach .'
+PRED SEQ:	 b'det .'
+GOLD DIST: 	 [0.0, 0.0, 0.0]
+PRED DIST: 	 [0.5489476, 0.17243879, 0.009351612]
+GOLD TOK: 	 [['##ach']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'prosperity and social change is disappearing .'
+GOLD SEQ: 	 b'prosperity ##real prosperity is disappearing .'
+PRED SEQ:	 b'prosperity and social change is un ##su ##pp ##orted by social change is disappearing .'
+GOLD DIST: 	 [0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.52166146, 0.0010099212, 0.00012728629, 0.00010598376, 0.0091641005, 0.64059556, 0.00015083239]
+GOLD TOK: 	 [['##real', 'prosperity']]
+PRED TOK: 	 [['un', '##su', '##pp', '##orted', 'by', 'social', 'change', 'is']]
+################################################################################
+IN SEQ: 	 b'children , girls sold into slavery , men and women burned alive , cr ##uc ##if ##ix ##ions , be ##head ##ings , and drowning ##s , ethnic minorities targeted for mass execution .'
+GOLD SEQ: 	 b'children slaughtered , girls sold into slavery , men and women burned alive , cr ##uc ##if ##ix ##ions , be ##head ##ings , and drowning ##s , ethnic minorities targeted for mass execution .'
+PRED SEQ:	 b'children , girls sold into slavery , men and women burned alive , cr ##uc ##if ##ix ##ions , be ##head ##ings , and drowning ##s , ethnic minorities targeted for mass execution .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.002397139, 1.5135555e-05, 0.1054775, 0.31247526, 0.008577712, 0.16168627, 3.228284e-06, 0.0011619936, 3.713581e-05, 0.00024128522, 0.0003628629, 0.0020715443, 1.794007e-06, 4.429662e-06, 4.0329933e-06, 3.926434e-06, 6.3184657e-06, 1.9950756e-05, 1.6789706e-06, 3.49188e-05, 0.0002140238, 0.00019506311, 1.9322358e-06, 1.8953973e-05, 0.0014087865, 0.0008861973, 2.9265816e-06, 0.0074857906, 0.009236071, 0.07288712, 0.00016520699, 0.043259304, 0.10614625, 3.794527e-06]
+GOLD TOK: 	 [['slaughtered']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"you know , i go home to my wife , i say how ' s it going ?"
+GOLD SEQ: 	 b"you know , i go home to my wife , i say how ' s it going ?"
+PRED SEQ:	 b"you know , i go home to my wife , i say how ' s it going ?"
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.110613585, 0.2482338, 1.5621677e-05, 0.03582287, 0.00044798193, 0.00031396764, 4.376437e-05, 0.013916061, 0.16836673, 2.2028169e-05, 0.17997499, 0.27347377, 0.0060858633, 0.0001347912, 0.00026106456, 0.00038601356, 0.0041536256, 0.0010519881]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'in business , they call them a soft touch .'
+GOLD SEQ: 	 b'but in business , they call them a soft touch .'
+PRED SEQ:	 b'in business , they call them a soft touch .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.026334265, 0.008695792, 3.4033998e-05, 0.73825955, 0.003280166, 0.015252173, 0.00060840807, 0.020874681, 0.003096432, 8.713679e-05]
+GOLD TOK: 	 [['but']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'we will also lower taxes on american business , from 35 % to 15 % , and we will have the largest regulatory reform in american history .'
+GOLD SEQ: 	 b'we will also lower taxes on american business , from 35 % to 15 % , and we will have the largest regulatory reform in american history .'
+PRED SEQ:	 b'we will also lower taxes on american business , from 35 % to 15 % , and we will have the largest regulatory reform in american history .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0005301903, 0.0003223108, 6.689841e-05, 4.7708574e-05, 1.4736943e-05, 2.6845535e-06, 2.6686239e-05, 1.0071232e-05, 1.91012e-06, 4.712486e-06, 1.9903894e-06, 1.5294219e-06, 1.7075848e-06, 2.2094678e-06, 1.8591012e-06, 1.4986018e-06, 1.4425073e-05, 0.9801223, 0.0013522432, 4.539908e-05, 5.199739e-06, 0.0001076839, 8.348769e-06, 0.0016298828, 2.9678247e-06, 1.8267516e-05, 4.3460823e-06, 2.4005833e-06]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'am i supposed to dislike them ?'
+GOLD SEQ: 	 b'am i supposed to dislike them ?'
+PRED SEQ:	 b'am i supposed to dislike them ?'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.15845482, 0.23292664, 0.49453065, 0.00076075795, 0.06783977, 0.11343709, 0.027602758]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"over the years , i ' ve watched ."
+GOLD SEQ: 	 b"over the years , i ' ve watched ."
+PRED SEQ:	 b"over the years , i ' ve watched ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.021530574, 0.014360344, 0.017079962, 0.00010997142, 0.15013976, 0.0068046786, 0.023430007, 0.7294406, 0.0005774681]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"whether it ' s dangerous materials being smug ##gled across the border , militants entering on visas or americans losing their jobs to foreign workers , these are the problems we must now focus on fixing ."
+GOLD SEQ: 	 b"whether it ' s dangerous materials being smug ##gled across the border , terrorists entering on visas or americans losing their jobs to foreign workers , these are the problems we must now focus on fixing ."
+PRED SEQ:	 b"whether it ' s dangerous materials being smug ##gled across the border , militants entering on visas or americans losing their jobs to foreign workers , these are the problems we must now focus on fixing ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0095368065, 0.00031865234, 0.00015062511, 0.001816752, 0.09786858, 0.0029250556, 3.218834e-05, 0.00050698954, 0.00012556552, 2.3659595e-05, 6.7196665e-06, 0.00022406018, 6.5192326e-06, 0.3103516, 9.60218e-05, 8.339092e-06, 0.00076212396, 0.00013310614, 0.0150375, 0.00010709875, 5.707873e-05, 0.00024645904, 1.4337765e-05, 0.057824776, 0.081990086, 1.1010136e-05, 0.00040201948, 0.00014674033, 0.00034186945, 0.0035031205, 0.038623784, 0.010707548, 0.0012970966, 4.114937e-05, 6.960982e-06, 0.14111917, 7.8841485e-06]
+GOLD TOK: 	 [['terrorists']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'no , i have nothing to do with russia , john .'
+GOLD SEQ: 	 b'no , i have nothing to do with russia , john .'
+PRED SEQ:	 b'no , i have nothing to do with russia , john .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.16752487, 5.886125e-05, 0.02757404, 0.0060892683, 0.005329427, 9.094312e-05, 0.00030456332, 0.00026164996, 0.2797618, 0.00038331113, 0.29011622, 0.00015739603]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'55 public schools in this city have been rated as failing to meet expectations , despite ten thousand dollars in funding per - pupil .'
+GOLD SEQ: 	 b'55 public schools in this city have been rated as failing to meet expectations , despite ten thousand dollars in funding per - pupil .'
+PRED SEQ:	 b'55 public schools in this city have been rated as failing to meet expectations , despite ten thousand dollars in funding per - pupil .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.026853476, 3.4920333e-05, 1.0452454e-05, 8.82369e-06, 0.031943023, 0.10297671, 0.00018328127, 2.5095944e-05, 0.00798128, 6.517704e-05, 0.0006912585, 4.002772e-06, 1.32710065e-05, 0.00029352252, 2.9725268e-06, 0.6699033, 0.11545719, 0.005989811, 0.00071952684, 1.0335766e-05, 4.1438485e-05, 0.0001834843, 4.3107055e-05, 0.00065119774, 3.519829e-06]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'they are american citizens who want to uphold our tolerant values and keep our country safe .'
+GOLD SEQ: 	 b'they are decent american citizens who want to uphold our tolerant values and keep our country safe .'
+PRED SEQ:	 b'they are american citizens who want to uphold our tolerant values and keep our country safe .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.00046402903, 0.0015209349, 0.0012671417, 0.00026780996, 0.0012802118, 0.010750923, 4.773285e-06, 7.6493176e-05, 0.44018492, 0.5138771, 0.0001519378, 2.1177735e-05, 1.2912703e-05, 0.048403896, 0.00015288404, 0.0014788524, 3.314938e-06]
+GOLD TOK: 	 [['decent']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'this is a struggle for the survival of nation .'
+GOLD SEQ: 	 b'this is a struggle for the survival of our nation .'
+PRED SEQ:	 b'this is a struggle for the survival of nation .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.05006357, 0.6343414, 0.16471137, 0.049814355, 0.00073914696, 7.481761e-05, 0.027043892, 3.0061126e-05, 0.1390727, 6.8164445e-05]
+GOLD TOK: 	 [['our']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"you ' ve broken that tradition , you ' ve run a campaign this week ."
+GOLD SEQ: 	 b"you ' ve broken that tradition , you ' ve run a very aggressive campaign this week ."
+PRED SEQ:	 b"you ' ve broken that tradition , you ' ve run a campaign this week ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.09687763, 0.0004579598, 0.0007685609, 0.0012190383, 0.003223036, 0.043574437, 1.6559636e-05, 0.5903097, 0.00013597136, 0.00028067277, 0.000110924026, 8.613862e-05, 0.0004384059, 0.0025915832, 0.0002796276, 6.3884436e-05]
+GOLD TOK: 	 [['very', 'aggressive']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"according to the federal government ' s own data , there are more than 2 million convicted criminal illegal immigrants inside the united states right now ."
+GOLD SEQ: 	 b"according to the federal government ' s own data , there are more than 2 million convicted criminal illegal immigrants inside the united states right now ."
+PRED SEQ:	 b"according to the federal government ' s own data , there are more than 2 million convicted criminal illegal immigrants inside the united states right now ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.0016544515, 0.00035498937, 7.846246e-06, 6.233785e-05, 6.5849113e-06, 9.2464015e-06, 2.5207744e-05, 0.004445734, 0.0009402673, 4.408969e-06, 3.0572883e-05, 0.00012114547, 5.7808327e-05, 8.99477e-06, 3.5143396e-05, 0.00011122102, 0.14029819, 0.40716648, 0.09661134, 0.053596422, 0.010722287, 7.913919e-06, 1.1903854e-05, 1.3796181e-05, 0.12559082, 0.002376883, 8.180907e-06]
+GOLD TOK: 	 []
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"she ' s got no instinct , but that ' s decided hillary and the washington establishment , they ' ve spent that six trillion dollars ."
+GOLD SEQ: 	 b"she ' s got no instinct , but that ' s decided hillary and our failed washington establishment , they ' ve spent that six trillion dollars ."
+PRED SEQ:	 b"she ' s got no instinct , but that ' s decided hillary and the washington establishment , they ' ve spent that six trillion dollars ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.031946976, 0.026197266, 0.04712573, 0.044136364, 0.04278787, 0.02478291, 2.516823e-05, 0.00030000537, 0.0005842926, 0.00031359526, 0.0019830235, 0.109875746, 0.001184597, 4.0529976e-05, 7.0229224e-05, 0.0022089698, 0.0062872623, 0.00018217128, 0.021906883, 0.00012586017, 0.0020598941, 0.007048617, 0.19773847, 0.075767204, 0.0023943046, 0.000895201, 5.1402392e-05]
+GOLD TOK: 	 [['our', 'failed']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"[ applause ] and the african - american community and the hispanic community are understanding what ' s going on and you see that right now ."
+GOLD SEQ: 	 b"[ applause ] and the african - american community and the hispanic community are really understanding what ' s going on and you see that right now ."
+PRED SEQ:	 b"[ applause ] and the african - american community and the hispanic community are understanding what ' s going on and you see that right now ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.10664932, 0.36826524, 0.04259924, 0.00046100188, 0.00057936733, 0.009777346, 0.0011118213, 0.0018728016, 0.0021452846, 0.00017999882, 0.00023380388, 0.019353438, 0.0012358233, 0.028810572, 0.11672043, 0.0005257011, 0.0024072407, 0.0077949725, 0.0006481931, 0.00021478836, 0.0002969548, 0.23043407, 0.0019659766, 0.000895695, 0.0028648202, 0.00015704193, 0.00013867805]
+GOLD TOK: 	 [['really']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'the proposed trade deficit with the proposed t ##pp member countries cost the state of ohio more than 100 , 000 manufacturing jobs last year .'
+GOLD SEQ: 	 b'our trade deficit with the proposed t ##pp member countries cost the state of ohio more than 100 , 000 manufacturing jobs last year .'
+PRED SEQ:	 b'the proposed trade deficit with the proposed t ##pp member countries cost the state of ohio more than 100 , 000 manufacturing jobs last year .'
+GOLD DIST: 	 [1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.006233444, 0.047932196, 0.0016205874, 0.10352042, 0.00059984764, 0.00021572427, 0.009902574, 0.0043795514, 0.007082267, 0.032451194, 0.025782194, 0.3484462, 4.1931766e-05, 0.00019146653, 1.8853058e-05, 0.001083838, 0.0037212453, 0.00043883675, 0.0007988924, 2.962708e-05, 0.0004206544, 0.0014190929, 0.014784498, 0.15792651, 0.00020271695, 8.092495e-05]
+GOLD TOK: 	 [['our']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'a ras ##mussen poll has us up 5 points nationwide .'
+GOLD SEQ: 	 b'a brand new ras ##mussen poll has us up 5 points nationwide .'
+PRED SEQ:	 b'a ras ##mussen poll has us up 5 points nationwide .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [8.299355e-05, 3.1096755e-05, 5.804265e-05, 2.7209917e-05, 0.02673782, 0.71352494, 0.1588434, 0.0009810944, 4.4375975e-05, 0.0147926, 6.7741653e-06]
+GOLD TOK: 	 [['brand', 'new']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"and the people don ' t believe i ' ve watched for years ."
+GOLD SEQ: 	 b"and you know i ' ve watched for years ."
+PRED SEQ:	 b"and the people don ' t believe i ' ve watched for years ."
+GOLD DIST: 	 [0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.11988334, 0.37004605, 0.23430091, 0.07800504, 0.00014741335, 0.0017934837, 0.07616002, 0.0058100517, 3.837529e-05, 0.00012466514, 0.0062231557, 0.00123778, 0.00018148348, 6.8464775e-05]
+GOLD TOK: 	 [['you', 'know']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'1 . 8 million people are registered to vote and some of them are voting .'
+GOLD SEQ: 	 b'1 . 8 million dead people are registered to vote and some of them are voting .'
+PRED SEQ:	 b'1 . 8 million people are registered to vote and some of them are voting .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.04801742, 4.5443005e-05, 0.00057823176, 0.013067489, 0.07722597, 0.0029297457, 0.024536539, 0.00014010209, 0.011851256, 0.0051604793, 0.3658594, 0.00037644527, 0.11952434, 0.17966713, 0.095996775, 0.00019796248]
+GOLD TOK: 	 [['dead']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'here in america , we have seen one attack after another : thirteen were killed and thirty - eight wounded in the assault on fort hood .'
+GOLD SEQ: 	 b'here in america , we have seen one brutal attack after another : thirteen were murdered and thirty - eight wounded in the assault on fort hood .'
+PRED SEQ:	 b'here in america , we have seen one attack after another : thirteen were killed and thirty - eight wounded in the assault on fort hood .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.06544733, 0.004508684, 0.23940957, 2.160906e-05, 0.35906288, 0.0007182358, 0.0008485702, 0.00021754297, 0.002834122, 2.572811e-05, 2.9445795e-05, 6.2651794e-05, 0.0013681756, 0.0017366911, 0.00056120247, 2.022631e-05, 0.00012144978, 2.8922135e-05, 7.0587696e-05, 0.00031596512, 9.506681e-06, 3.5996058e-05, 0.011277775, 4.4315075e-05, 1.3291752e-05, 1.2386334e-05, 1.1826176e-05]
+GOLD TOK: 	 [['brutal'], ['murdered']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"our students are under pressure to a point where it ' s making them sick ."
+GOLD SEQ: 	 b"our students are under tremendous pressure to a point where it ' s making them sick ."
+PRED SEQ:	 b"some students are under pressure to a point where it ' s making them sick ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.47323722, 0.0080613205, 0.005108654, 0.00029133586, 0.009447993, 3.6244062e-05, 0.00013468445, 0.00016289801, 0.00054243125, 0.009170753, 0.01087891, 0.012686194, 0.0005438317, 0.0057304827, 0.33666477, 0.00010891768]
+GOLD TOK: 	 [['tremendous']]
+PRED TOK: 	 [['some']]
+################################################################################
+IN SEQ: 	 b"we ' re going to have an opening soon ."
+GOLD SEQ: 	 b"we ' re going to have an opening very soon ."
+PRED SEQ:	 b"we ' re going to have an opening soon ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.703511, 0.022678794, 0.026554685, 0.016630568, 0.00012144955, 0.0002552947, 0.0031323975, 0.07744693, 0.44704643, 0.0019479683]
+GOLD TOK: 	 [['very']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"it ' s a situation ."
+GOLD SEQ: 	 b"it ' s a horrible situation ."
+PRED SEQ:	 b"it ' s a situation ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.3459914, 0.37163416, 0.26379845, 0.054373644, 0.21331258, 0.008414323]
+GOLD TOK: 	 [['horrible']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'and he gives you the word , not looking good .'
+GOLD SEQ: 	 b'and he gives you the ultimate word , not looking good .'
+PRED SEQ:	 b'and he gives you the word , not looking good .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.06369193, 0.47031936, 0.16839676, 0.33571452, 0.0008287394, 0.01840038, 6.510958e-05, 0.0012830292, 0.00038876224, 0.002174212, 0.00013178462]
+GOLD TOK: 	 [['ultimate']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"[ boo ##t ] the spread of political agenda ##s into the justice department ##ther ##e ' s never been a thing like this that has happened in our country ' s history ##is one of the sad ##des ##t things that has happened to our country ."
+GOLD SEQ: 	 b"[ boo ##ing ] the spread of political agenda ##s into the justice department ##ther ##e ' s never been a thing like this that has happened in our country ' s history ##is one of the sad ##des ##t things that has happened to our country ."
+PRED SEQ:	 b"[ boo ##t ] the spread of political agenda ##s into the justice department ##ther ##e ' s never been a thing like this that has happened in our country ' s history ##is one of the sad ##des ##t things that has happened to our country ."
+GOLD DIST: 	 [0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.04079379, 0.1549306, 0.27611655, 0.06497012, 0.0006566456, 0.00037310866, 8.553194e-06, 0.0008801034, 0.0024694873, 0.00022707453, 0.00013553385, 2.0744099e-05, 9.070901e-05, 0.00017420731, 0.64732033, 0.31868374, 0.00081015954, 0.0025844146, 0.00025023066, 4.257668e-05, 1.6571279e-05, 0.0012473145, 0.0002103922, 0.0010004054, 0.00010787865, 0.0004160843, 0.00031048467, 1.9854673e-05, 0.065695494, 0.0008670027, 6.9868593e-06, 2.009258e-05, 0.00427389, 0.34108955, 0.00027541746, 2.1567326e-05, 7.629402e-05, 0.28861964, 0.15805501, 0.21391945, 0.00055516156, 0.00039017573, 0.00021365823, 0.00023514748, 1.8656121e-05, 0.05216112, 0.006301193, 2.556205e-05]
+GOLD TOK: 	 [['##ing']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'but obama played ball with the allegations that are running it right now .'
+GOLD SEQ: 	 b'but obama played ball with the thugs that are running it right now .'
+PRED SEQ:	 b'but obama played ball with the allegations that are running it right now .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.38971466, 0.020371856, 0.028254142, 0.003897428, 0.00047496767, 0.033214707, 0.38983887, 0.031034982, 0.10218041, 0.0011450454, 0.00025537112, 0.0044439514, 0.00025238036, 6.7203146e-05]
+GOLD TOK: 	 [['thugs']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b"that ' s something bad going on ."
+GOLD SEQ: 	 b"that ' s something really bad going on ."
+PRED SEQ:	 b"that ' s something going on ."
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.5117426, 0.2804503, 0.24890117, 0.35245827, 0.75067544, 0.019721294, 0.014259892, 0.023723647]
+GOLD TOK: 	 [['really']]
+PRED TOK: 	 []
+################################################################################
+IN SEQ: 	 b'and i just want to say thank you to both of them .'
+GOLD SEQ: 	 b'and i just want to say thank you to both of them .'
+PRED SEQ:	 b'and i just want to say thank you to both of them .'
+GOLD DIST: 	 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+PRED DIST: 	 [0.21634878, 0.09302575, 0.41367954, 0.06126094, 0.00063130964, 0.0026151997, 0.019410832, 0.13478819, 0.00023216492, 0.088019356, 0.00045319484, 0.12492587, 0.0034278343]
+GOLD TOK: 	 []
+PRED TOK: 	 []

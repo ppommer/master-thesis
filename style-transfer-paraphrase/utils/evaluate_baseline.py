@@ -60,10 +60,10 @@ print("Starting evaluation of single-word source copy...")
 sim_scores = []
 bleu_scores = []
 
-with open("datasets/WNC/single_neutral_test.txt", "r") as f:
+with open("data/WNC/single_neutral_test.txt", "r") as f:
     gold_data = f.read().strip().split("\n")
 
-with open("datasets/WNC/single_biased_test.txt", "r") as f:
+with open("data/WNC/single_biased_test.txt", "r") as f:
     in_data = f.read().strip().split("\n")
 
 assert len(gold_data) == len(in_data)
@@ -100,10 +100,10 @@ print("Starting evaluation of single-word target copy...")
 sim_scores = []
 bleu_scores = []
 
-with open("datasets/WNC/single_neutral_test.txt", "r") as f:
+with open("data/WNC/single_neutral_test.txt", "r") as f:
     gold_data = f.read().strip().split("\n")
 
-with open("datasets/WNC/single_neutral_test.txt", "r") as f:
+with open("data/WNC/single_neutral_test.txt", "r") as f:
     in_data = f.read().strip().split("\n")
 
 assert len(gold_data) == len(in_data)
@@ -141,10 +141,10 @@ print("Starting evaluation of multi-word source copy...")
 sim_scores = []
 bleu_scores = []
 
-with open("datasets/WNC/multi_neutral_test.txt", "r") as f:
+with open("data/WNC/multi_neutral_test.txt", "r") as f:
     gold_data = f.read().strip().split("\n")
 
-with open("datasets/WNC/multi_biased_test.txt", "r") as f:
+with open("data/WNC/multi_biased_test.txt", "r") as f:
     in_data = f.read().strip().split("\n")
 
 assert len(gold_data) == len(in_data)
@@ -181,10 +181,10 @@ print("Starting evaluation of multi-word target copy...")
 sim_scores = []
 bleu_scores = []
 
-with open("datasets/WNC/multi_neutral_test.txt", "r") as f:
+with open("data/WNC/multi_neutral_test.txt", "r") as f:
     gold_data = f.read().strip().split("\n")
 
-with open("datasets/WNC/multi_neutral_test.txt", "r") as f:
+with open("data/WNC/multi_neutral_test.txt", "r") as f:
     in_data = f.read().strip().split("\n")
 
 assert len(gold_data) == len(in_data)

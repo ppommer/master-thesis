@@ -22,26 +22,9 @@ BASE_CONFIG = {
 }
 
 DATASET_CONFIG = {
-    "datasets/test_custom": BASE_CONFIG,
-    "datasets/paranmt_filtered": BASE_CONFIG,
-    "datasets/shakespeare": BASE_CONFIG,
-    "datasets/formality": BASE_CONFIG,
-    "datasets/shakespeare_aae_tweets_bible_romantic-poetry_switchboard_coha_3_bins_lyrics_full": BASE_CONFIG,
-    "datasets/aae": BASE_CONFIG,
-    "datasets/bible": BASE_CONFIG,
-    "datasets/poetry": BASE_CONFIG,
-    "datasets/switchboard": BASE_CONFIG,
-    "datasets/english_tweets": BASE_CONFIG,
-    "datasets/lyrics_full": BASE_CONFIG,
-    "datasets/joyce": BASE_CONFIG,
-    "datasets/congress-bills": BASE_CONFIG,
-    "datasets/shakespeare": BASE_CONFIG,
-    "datasets/coha_3_bins_1810s-1820s": BASE_CONFIG,
-    "datasets/coha_3_bins_1890s-1900s": BASE_CONFIG,
-    "datasets/coha_3_bins_1990s-2000s": BASE_CONFIG,
-    "/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/WNC/WNC_biased_word": BASE_CONFIG,
-    "/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/WNC/WNC_biased_full": BASE_CONFIG,
-    "/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/WNC/WNC_large": BASE_CONFIG,
+    "/data/WNC/WNC_biased_word": BASE_CONFIG,
+    "/data/WNC/WNC_biased_full": BASE_CONFIG,
+    "/data/WNC/WNC_large": BASE_CONFIG,
 }
 
 # Fill in DATASET_CONFIG with keys it was missing previously

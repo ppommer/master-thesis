@@ -1,9 +1,4 @@
-bias_data
 cache
-inference_modular
-inference_concurrent
-models
-OUT_concurrent
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

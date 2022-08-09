@@ -1,7 +1,8 @@
-DATA_DIR=/home/ppommer/repos/master-thesis/style-transfer-paraphrase/datasets/WNC/WNC_biased_full
+DATA_DIR=../data/WNC/WNC_biased_full
+OUTPUT_DIR=../models/strap_full
 
 python -m torch.distributed.launch --nproc_per_node 1 run_lm_finetuning.py \
-    --output_dir models/OUT/strap_full \
+    --output_dir $OUTPUT_DIR \
     --model_type gpt2 \
     --model_name_or_path gpt2 \
     --do_train \

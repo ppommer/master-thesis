@@ -1,5 +1,3 @@
-paraphraser_gpt2_large
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -55,7 +53,6 @@ style-venv
 
 .vscode
 runs/
-#datasets/
 
 outputs/formality_backup
 outputs/baselines/dlsm_formality

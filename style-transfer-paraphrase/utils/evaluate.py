@@ -11,8 +11,8 @@ from pytorch_pretrained_bert.tokenization import BertTokenizer
 parser = argparse.ArgumentParser()
 parser.add_argument('--pred_data', type=str, default="inference/strap_large/output_strap_large_multi_9.txt")
 parser.add_argument('--output', type=str, default="inference/strap_large/stats_strap_large_multi_9.txt")
-parser.add_argument('--gold_data', type=str, default="datasets/WNC/multi_neutral_test.txt")
-parser.add_argument('--in_data', type=str, default="datasets/WNC/multi_biased_test.txt")
+parser.add_argument('--gold_data', type=str, default="data/WNC/multi_neutral_test.txt")
+parser.add_argument('--in_data', type=str, default="data/WNC/multi_biased_test.txt")
 parser.add_argument('--batch_size', type=int, default=16)
 ARGS = parser.parse_args()
 

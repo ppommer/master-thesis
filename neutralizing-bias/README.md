@@ -1,97 +1,246 @@
-# Neutralizing Biased Text
-
-This repo contains code for the paper, "[Automatically Neutralizing Subjective Bias in Text](https://arxiv.org/abs/1911.09709)".
-
-Concretely this means algorithms for
-* Identifying biased words in sentences.
-* Neutralizing bias in sentences.
-
-<img src="firstpage.png" alt="firstpage" width="650"/>
-
-This repo was tested with python 3.7.7. 
-
-## Quickstart
-
-These commands will download data and a pretrained model before running inference.
-```
-$ cd src/
-$ python3 -m venv venv
-$ source venv/bin/activate
-$ pip install -r requirements.txt
-$ python
->> import nltk; nltk.download("punkt")
-$ sh download_data_ckpt_and_run_inference.sh
-```
-
-You can also run `sh integration_test.sh` to further verify that everything is installed correctly and working as it should be. 
-
-## Data
-
-Click [this link to download](http://bit.ly/bias-corpus) (100MB, expands to 500MB). 
-
-If that link is broken, try this mirror: [download link](https://www.dropbox.com/s/qol3rmn0rq0dfhn/bias_data.zip?dl=0)
-
-
-## Pretrained model
-Click [this link](https://bit.ly/bias-model) to download a (Modular) model checkpoint. We used [this command](https://nlp.stanford.edu/projects/bias/train.sh) to train it. 
-
 
 ## Overview
 
-`harvest/`: Code for making the dataset. It works by crawling and filtering Wikipedia for bias-driven edits.
+See [shared/args.py](https://github.com/rpryzant/neutralizing-bias/blob/master/src/shared/args.py) for a complete list of CLI args.
 
-`src/`: Code for training models and using trained models to run inference. The models implemented here are referred to as `MODULAR` and `CONCURRENT` in the paper.
+This directory has the following subdirectories:
+* `lexicons/`: text files with expert features from the literature (basically word lists).
+* `tagging/`: The tagging model (it tags biased words in a sentence)
+* `seq2seq/`: The CONCURRENT model (it converts biased sentences into neutral form)
+* `joint/`: The MODULAR model (it has both tagger and CONCURRENT models inside of it) 
+* `shared/`: Code that is common to all components: data iterators, command line arguments, constants, and beam search
 
-## Usage
+Each model directory (`tagging`, `seq2seq`, `joint`) has the following files:
+* `model.py`: modeling code (whether that be the tagger, seq2seq, or joint model)
+* `utils.py`: code for (1) training and (2) evaluation 
+* `train.py`: main driver code that builds and trains a model, evaluating after each epoch. All files take the same command line arguments (see `shared/args.py` for a list of arguments).  TODO LINK
 
-Please see `src/README.md` for bias neutralization directions.
+To run any of the commands given below, you must first do the following:
 
-See `harvest/README.md` for making a new dataset (as opposed to downloading the one available above). 
+(1) Download and unpack [the data](http://bit.ly/bias-corpus).
+
+(2) `$ export DATA=/path/to/bias_data/WNC/`
+
+Note: Incase you notice all of your sentences are not being read from the files the reason could be that they contain characters which are not in tok2id which is present in ```train.py``` as it is used in lots of places for getting ids
+
+## Run Tests
+
+`$ sh integration_test.sh`
+
+## Run Tagger Model
+
+### Train
+
+```
+python tagging/train.py \
+	--train $DATA/biased.word.train \
+	--test $DATA/biased.word.test \
+	--categories_file $DATA/revision_topics.csv \
+	--extra_features_top --pre_enrich --activation_hidden --category_input \
+	--learning_rate 0.0003 --epochs 20 --hidden_size 512 --train_batch_size 32 \
+	--test_batch_size 16 --debias_weight 1.3 --working_dir train_tagging/
+```
+Takes ~40 minutes on a TITAN X gpu.
+
+## Run Concurrent Model
+
+### Train
+
+```
+python seq2seq/train.py \
+       --train $DATA/biased.word.train \
+       --test $DATA/biased.word.test \
+       --pretrain_data $DATA/unbiased \
+       --bert_full_embeddings --bert_encoder --debias_weight 1.3 \
+       --pointer_generator --coverage --no_tok_enrich \
+       --working_dir train_concurrent/
+```
+
+Checkpoints, tensorboard summaries, and per-epoch evaluations and decodings will go in your working directory. Takes ~25 hours on a TITAN X gpu.
 
 
-## How do I run on my own dataset?
+### Inference
 
-1. Get your data into the same format as the bias dataset. You can do this by making a tsv file with columns [id, src tokenized, tgt tokenized, src raw, tgt raw] and then adding POS tags, etc with [this script](https://github.com/rpryzant/neutralizing-bias/blob/master/harvest/add_tags.py).
-2. Training the pretrained model on your custom dataset using either the [train command used to build that model](https://github.com/rpryzant/neutralizing-bias#pretrained-model) or follow the [instructions in the src/ directory](https://github.com/rpryzant/neutralizing-bias/tree/master/src#training-in-stages) to write your own training commands.
+```
+python joint/inference.py \
+       --test $DATA/biased.word.test \
+       --bert_full_embeddings --bert_encoder --debias_weight 1.3 \
+       --pointer_generator --coverage --no_tok_enrich \  # no_tok_enrich makes it run as a seq2seq
+       --working_dir inference_concurrent/ \ 
+       --inference_output inference_concurrent/output.txt \
+       --debias_checkpoint train_concurrent/model_X.ckpt
+```
+or
+```
+python joint/inference.py --test $DATA/biased.word.test --bert_full_embeddings --bert_encoder --debias_weight 1.3 --pointer_generator --coverage --no_tok_enrich --working_dir inference_concurrent/  --inference_output inference_concurrent/output.txt --debias_checkpoint train_concurrent/model_X.ckpt
+```
+Evaluations and decodings will go in your working directory. 
 
 
+
+## Run Modular Model
+
+### Train
+
+```
+python joint/train.py \
+       --train $DATA/biased.word.train \
+       --test $DATA/biased.word.test \
+       --pretrain_data $DATA/unbiased \
+       --categories_file $DATA/revision_topics.csv --category_input \
+       --extra_features_top --pre_enrich --activation_hidden --tagging_pretrain_epochs 3 \
+       --bert_full_embeddings --debias_weight 1.3 --token_softmax \
+       --pointer_generator --coverage \
+       --working_dir train_modular/
+```
+
+Checkpoints, tensorboard summaries, and per-epoch evaluations and decodings will go in your working directory. Takes ~15 hours on a TITAN X gpu. 
+
+
+### Inference
+
+```
+python joint/inference.py \
+       --test $DATA/biased.word.test \
+       --categories_file $DATA/revision_topics.csv --category_input \
+       --extra_features_top --pre_enrich --activation_hidden --tagging_pretrain_epochs 3 \
+       --bert_full_embeddings --debias_weight 1.3 --token_softmax \
+       --pointer_generator --coverage \
+       --working_dir inference_modular/ \
+       --inference_output inference_modular/inference_output.txt \
+       --checkpoint train_modular/model_X.ckpt
+```
+or
+```
+python joint/inference.py --test $DATA/biased.word.test --categories_file $DATA/revision_topics.csv --category_input --extra_features_top --pre_enrich --activation_hidden --tagging_pretrain_epochs 3 --bert_full_embeddings --debias_weight 1.3 --token_softmax --pointer_generator --coverage --working_dir inference_modular/ --inference_output inference_modular/inference_output.txt --checkpoint train_modular/model_X.ckpt
+```
+
+### Training in stages
+
+Training many modular models from scratch is slow. First you have to train a tagger, then a seq2seq, then fine-tune together. To speed things up, you can first pre-train your tagger and language model seperately (see sections **Tagger** and **Concurrent**, then give both as arguments to your Modular training command: 
+
+```
+
+python tagging/train.py \
+       --train $DATA/biased.word.train \
+       --test $DATA/biased.word.test \
+       --pretrain_data $DATA/unbiased \
+       --categories_file $DATA/revision_topics.csv --category_input \
+       --extra_features_top --pre_enrich --activation_hidden --tagging_pretrain_epochs 3 \
+       --bert_full_embeddings --debias_weight 1.3 --token_softmax \
+       --pointer_generator --coverage \
+       --working_dir tagger/
+       
+       
+python seq2seq/train.py \
+       --train $DATA/biased.word.train \
+       --test $DATA/biased.word.test \
+       --pretrain_data $DATA/unbiased \
+       --categories_file $DATA/revision_topics.csv --category_input \
+       --extra_features_top --pre_enrich --activation_hidden --tagging_pretrain_epochs 3 \
+       --bert_full_embeddings --debias_weight 1.3 --token_softmax \
+       --pointer_generator --coverage \
+       --working_dir seq2seq/
+       
+       
+python joint/train.py \
+       --train $DATA/biased.word.train \
+       --test $DATA/biased.word.test \
+       --pretrain_data $DATA/unbiased \
+       --categories_file $DATA/revision_topics.csv --category_input \
+       --extra_features_top --pre_enrich --activation_hidden --tagging_pretrain_epochs 3 \
+       --bert_full_embeddings --debias_weight 1.3 --token_softmax \
+       --pointer_generator --coverage \
+       --tagger_checkpoint tagger/model_3.ckpt \
+       --debias_checkpoint seq2seq/debiaser.ckpt \
+       --working_dir joint/
+```
+
+Note that all 3 train scripts take the same arguments. Hurray for `args.py` being in the `shared/` directory!
 
 
 <!--
 
 
 
+# Run as a pipeline
 
-Our code-based is structured in the following format: 
+This command runs the three steps from below as a single pipeline. Always run code from the `src/debiaser/` directory.
 
-* `harvest/`: Provides utilities for crawling Wikipedia articles and for generating a parallel dataset of biased-debiased sentences. Our data generation approach mirrors that proposed by Recasens et al. (https://nlp.stanford.edu/pubs/neutrality.pdf). A final version of our crawled dataset can be found at https://stanford.io/2Q8G3bX. The zip file containing the data is 100MB
-and expands to 500MB. 
-* `src/`: This folder provides the model architectures, and training procedures for both detecting bias and generating 'debiased' versions of text. It is sub-divided in the following manner: 
-    + `src/tagging/`: Functionality for detecting bias in a given input sentence. The model architectures, which are based on BERT and use the huggingface implementation, can be found under model.py. Simple baselines we implement, such as logistic regression classifiers, are presented in baseline.py. The primary training loop can be found under train.py. Utilities used by both model.py and train.py can be found under util.py.  To spawn a basic training and evaluation run, you can call the following from the root directory: 
+```
+python joint/train.py \
+	--train /home/rpryzant/persuasion/data/v6/corpus.wordbiased.tag.train \
+	--test /home/rpryzant/persuasion/data/v6/corpus.wordbiased.tag.test \
+	--categories_file /home/rpryzant/persuasion/data/v6/corpus.wordbiased.tag.topics \
+	--pretrain_data /home/rpryzant/persuasion/data/v6/corpus.unbiased.shuf \
+	--extra_features_top --pre_enrich --activation_hidden --category_input --tagging_pretrain_epochs 3 \
+	--pretrain_epochs 4 --learning_rate 0.0003 --epochs 20 --hidden_size 512 --train_batch_size 24 \
+	--test_batch_size 16 --bert_full_embeddings --debias_weight 1.3 --freeze_tagger --token_softmax \
+ 	--working_dir inference_model/toksm --pointer_generator
 
-    ```bash
-    python tagging/train.py --train <training dataset> --test <test dataset> --working_dir <dir> --train_batch_size <batch_size> --test_batch_size <batch_size>  --hidden_size <hidden_size> --debug_skip
-    ```
+```
+then inference with that model `model_4.ckpt`:
+```
+python joint/inference.py \
+	--test ../../data/v6/corpus.wordbiased.tag.test \
+	--extra_features_top --pre_enrich --activation_hidden --tagging_pretrain_epochs 3 \
+	--pretrain_epochs 4 --learning_rate 0.0003 --epochs 20 --hidden_size 512 --train_batch_size 2 \
+	--test_batch_size 16 --bert_full_embeddings --debias_weight 1.3 --freeze_tagger --token_softmax \
+	--pointer_generator \
+	--checkpoint ~/Desktop/model_4.ckpt \
+ 	--working_dir TEST --inference_output small_test
+```
 
-    By default, the tagging module is trained to incorporate the linguistic features enumerated by Recasens et al. For more information on how we incorporate these features into our BERT architecture, we direct you to the accompanying conference publication. In general terms, Marta's features comprise 32 linguistic features that are extracted for each word in a given sentence. In the process of training our model, we combine the BERT based word representation for each word with the words' accompanying linguistic features. We specify different ways in which these two representations can be combined, namely via concatenation or addition. We also allow users to specify whether the lingusitic features should be conatenated at the top or bottom of a given word's BERT embedding. These settings and the default specifications can be found under 'src/shared/args.py'. In addition to Recasens features, we also enable user to learn a category embedding, in addition to individual word embeddings, that specify a latent representation of the category of the article from which the input was extracted. These categories are derived from a set of predetermined article categories specified by the Wikipedia foundation. In our paper, we show empirically that conditioning our bias detection system on the given type of input enables the system to more accurately find bias. Setting and default specifications for jointly learning category embeddings can also be accessed under 'src/shared/args.py'.
 
-    + `src/seq2seq/`: Functionality for generating debiased versions of a given biased sentence. As in the tagging directory, the model.py directory establishes the model architectures we use 
-    in order to generate a debiased version for a given biased sentence. The models we establish are variants of basic Seq-2-Seq networks, with varying attention implementations. We provide an additional architecture of a generative debiasing model under transformer_decoder.py that uses a transformer-based architecture as a decoding module. The training procedure can again be found under train.py. To spawn a basic training and evaluation run, you can call the following from the root directory: 
+inference turn off tok enrich for seq2seq
 
-    ```bash
-    python seq2seq/train.py --train <training dataset> --test <test dataset> --working_dir <dir> --max_seq_len <seq_size> --train_batch_size <batch_size>  --test_batch_size <batch_size>   --hidden_size  <hidden_size> --debug_skip
-    ```
 
-    + `src/joint/`: Combines together the bias detection and debiasing modules into one end-to-end model that can be trained, and evaluated jointly. As in the other modules, the joint model architecture is stored under model.py and the primary training loop can be found under train.py. To spawn a basic training and evaluation run of our joint end-to-end framework, you can call the following from the root directory: 
+# Running in parts
 
-    ```bash
-    python joint/train.py --train  <training dataset> --test <test dataset>  --extra_features_top --pre_enrich --activation_hidden --tagging_pretrain_epochs 1 --pretrain_epochs 4     --learning_rate 0.0003 --epochs 2 --hidden_size 10 --train_batch_size 4 --test_batch_size 4     --bert_full_embeddings --debias_weight 1.3 --freeze_tagger --token_softmax --sequence_softmax  --working_dir <dir>  --debug_skip
-    ```
+Everything uses the same arguments. 
 
-    + `src/lexicons/`: Lexicons of words and their associated linguistic properties, such as impliocations, hedges, and factives. We require these lexicons to derive the features used by Recasens. et al to detect bias. 
+For example:
 
-    + `src/shared/`: A set of utilities that are shared by both the bias detection and debias generation modules, such as an implementation of beam search. We also store, constants and arguments that are shared globally. Args.py stores the entire set of arguments that can be passed into any one of the modules, along with a default specification. 
-    
-    
+(1) Train a tagger
+```
+python tagging/train.py \
+	--train /home/rpryzant/persuasion/data/v6/corpus.wordbiased.tag.train \
+	--test /home/rpryzant/persuasion/data/v6/corpus.wordbiased.tag.test \
+	--pretrain_data /home/rpryzant/persuasion/data/v6/corpus.unbiased.shuf \
+	--categories_file /home/rpryzant/persuasion/data/v6/corpus.wordbiased.tag.topics \
+	--extra_features_top --pre_enrich --activation_hidden --category_input \
+	--learning_rate 0.0003 --epochs 20 --hidden_size 512 --train_batch_size 32 \
+	--test_batch_size 16 --debias_weight 1.3 --working_dir tagging/
+```
+
+(2) pretrain a seq2seq
+```
+python seq2seq/train.py \
+	--train /home/rpryzant/persuasion/data/v6/corpus.wordbiased.tag.train \
+	--test /home/rpryzant/persuasion/data/v6/corpus.wordbiased.tag.test \
+	--pretrain_data /home/rpryzant/persuasion/data/v6/corpus.unbiased.shuf \
+	--categories_file /home/rpryzant/persuasion/data/v6/corpus.wordbiased.tag.topics \
+	--category_input --pretrain_epochs 4 --learning_rate 0.0003 --epochs 20 \
+  --hidden_size 512 --train_batch_size 32 --test_batch_size 16 \
+  --bert_full_embeddings --debias_weight 1.3 --pointer_generator \
+  --working_dir seq2seq/
+```
+
+(3) Use the tagger + seq2seq checkpoints to fine tune a joint model
+```
+python joint/train.py \
+	--train /home/rpryzant/persuasion/data/v6/corpus.wordbiased.tag.train \
+	--test /home/rpryzant/persuasion/data/v6/corpus.wordbiased.tag.test \
+	--pretrain_data /home/rpryzant/persuasion/data/v6/corpus.unbiased.shuf \
+	--categories_file /home/rpryzant/persuasion/data/v6/corpus.wordbiased.tag.topics \
+	--extra_features_top --pre_enrich --activation_hidden --category_input --tagging_pretrain_epochs 3 \
+	--pretrain_epochs 4 --learning_rate 0.0003 --epochs 20 --hidden_size 512 --train_batch_size 32 \
+	--test_batch_size 16 --bert_full_embeddings --debias_weight 1.3 --freeze_tagger --token_softmax \
+	--sequence_softmax --pointer_generator \
+	--tagger_checkpoint tagger/model_3.ckpt \
+	--debias_checkpoint seq2seq/model_4.ckpt \
+	--working_dir joint/
+```
+
+
 -->
-

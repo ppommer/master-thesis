@@ -1,9 +1,9 @@
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--input', type=str, default="/home/ppommer/repos/master-thesis/neutralizing-bias/src/bias_data/WNC/biased.word.test")
-parser.add_argument('--output_bias', type=str, default="datasets/WNC/test_biased.txt")
-parser.add_argument('--output_neutral', type=str, default="datasets/WNC/test_neutral.txt")
+parser.add_argument('--input', type=str)
+parser.add_argument('--output_bias', type=str)
+parser.add_argument('--output_neutral', type=str)
 ARGS = parser.parse_args()
 
 with open(ARGS.input, "r") as in_file:
