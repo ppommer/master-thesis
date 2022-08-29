@@ -1,46 +1,62 @@
 # Towards Fairness in NLP: Neural Methods for Flavor Detection and Bias Mitigation
 
-## Requirements
-Requirement | Comment
-:--- | :---
-python 3.10 | 
-virtualenv | <ul style="padding-left:0em;"><li>install by running `sudo apt-get install virtualenv` (Linux) or `pip install virtualenv`</li><li>create new environment by running `virtualenv -p python3.10 .venv`</li><li>activate by running `source .venv/bin/activate` (Linux) or `source .venv/Scripts/activate` (Windows)</li><li>deactivate by running `deactivate`</li></ul>
-pip-tools | <ul style="padding-left:0em;"><li>compiles requirements.in to requirements.txt</li><li>install by running `pip install pip-tools`</li><li>run `pip-compile requirements.in` to generate or refresh requirements.txt</li></ul>
-requirements.txt | run `pip install -r requirements.txt`
-[GloVe](https://nlp.stanford.edu/projects/glove/) word embeddings | [download](https://nlp.stanford.edu/data/glove.6B.zip) and extract the `.zip` file and save `glove.6B.50d.txt` to [data](./data)
+## Evaluation
+---
+This folder contains the evaluation results described in _Chapter 5: Results and Evaluation_. The human evaluation forms and the analysis sheet are located [here](https://drive.google.com/drive/folders/1JzKLK7a0VTdmGSNNTdqMW4oy8R1lKEAg?usp=sharing).
+The Perspective API evaluation results and scripts are located [here](evaluation/perspective_api/). You need an [API key](https://developers.perspectiveapi.com/s/docs-enable-the-api) to run the scripts.
 
-## Notebooks
-Notebook | Content
-:--- | :---
-[embeddings.ipynb](./embeddings.ipynb) | Playground for GloVe and BERT embeddings
-[perspective_api.ipynb](./perspective_api.ipynb) | Access to the Perspective API (returns toxicity scores)
-[emotions.ipynb](./emotions.ipynb) | Emotion classification with BERT on GoEmotions
+## Neutralizing Bias
+---
+This folder contains __MODULAR__ and __CONCURRENT__ described in _Chapter 4: Experimental Setup_ based on the paper [Automatically Neutralizing Subjective Bias in Text](https://arxiv.org/abs/1911.09709). You can find the original repository [here](https://github.com/rpryzant/neutralizing-bias).
 
-## Hypotheses
-Hypothesis | Approach | Validated | Comment | Notebook | References
-:--- | :--- | :---: | :--- | :--- | :---
-Gender bias in GloVe embeddings can be mitigated using a de-biasing algorithm. | Load pre-trained GloVe word embeddings and de-bias them using the algorithm proposed by [Bolukbasi et al.](https://arxiv.org/abs/1607.06520) | yes | Drawback: Gender-intrinsic word pairs to be equalized have to be hand-picked. | [embeddings.ipynb](./embeddings.ipynb) | <ul style="padding-left:0em;"></ul>
-The de-biasing algorithm works the same for BERT. | Load a pre-trained BERT model and try to de-bias it using the algorithm proposed by [Bolukbasi et al.](https://arxiv.org/abs/1607.06520) | no | The de-biasing algorithm cannot be applied to contextual language models. | [embeddings.ipynb](./embeddings.ipynb)
+### Requirements
+1. Set up your environment:
+```
+$ virtualenv -p python3 .venv-nb
+$ source .venv-nb/bin/activate
+$ pip install -r req-nb.txt
+$ python
+>> import nltk; nltk.download("punkt")
+```
+2. Download the Wiki Neutrality Corpus (WNC) data [here](http://nlp.stanford.edu/projects/bias/bias_data.zip). Extract it to the [data folder](neutralizing-bias/data/).
 
-## Resources
-Status | Type | Reference | Content
-:---: | :--- | :--- | :---
-✔️ | Paper | [Automatically Neutralizing Subjective Bias in Texts](https://paperswithcode.com/paper/automatically-neutralizing-subjective-bias-in) | 
-🟡 | Paper | [Reformulating Unsupervised Style Transfer as Paraphrase Generation](https://paperswithcode.com/paper/reformulating-unsupervised-style-transfer-as) | 
-✔️ | Article | [BERT Word Embeddings Tutorial](https://mccormickml.com/2019/05/14/BERT-word-embeddings-tutorial/) | Tutorial for configuring BERT
-✔️ | Article | [A complete tutorial on masked language modelling using BERT](https://analyticsindiamag.com/a-complete-tutorial-on-masked-language-modelling-using-bert/) | Tutorial on how to set up a masked language model using BERT
-✔️ | Article | [How to easily do efficient Sentences Embedding Visualization – TSNE](https://inside-machinelearning.com/en/efficient-sentences-embedding-visualization-tsne/) | 
-✔️ | Paper | [Bias in Word Embeddings](https://paperswithcode.com/paper/bias-in-word-embeddings) | 
-✔️ | Website | [GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/projects/glove/) | GloVe homepage containing the paper as well as pre-trained word embeddings
-❌ | Paper | [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://aclanthology.org/N19-1423/) | BERT paper
+3. Download the __MODULAR__ checkpoint [here](https://nlp.stanford.edu/projects/bias/model.ckpt) and save it to the [model folder](neutralizing-bias/models/) or train your own model using [this script](neutralizing-bias/joint/train_modular.sh). Please contact me if you need a checkpoint for __CONCURRENT__. You can train your own model using [this script](neutralizing-bias/seq2seq/train_concurrent.sh).
 
-## Read list
-Status | Type | Reference | Content
-:---: | :--- | :--- | :---
-❌ | Paper | [Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings](https://arxiv.org/abs/1607.06520) | De-biasing algorithm for word embeddings
-❌ | Paper | [Understanding the Origins of Bias in Word Embeddings](https://paperswithcode.com/paper/understanding-the-origins-of-bias-in-word) | 
-❌ | Paper | [Detecting Gender Bias in Transformer-based Models: A Case Study on BERT](https://paperswithcode.com/paper/detecting-gender-bias-in-transformer-based) | 
-❌ | Paper | [Towards a Comprehensive Understanding and Accurate Evaluation of Societal Biases in Pre-Trained Transformers](https://paperswithcode.com/paper/towards-a-comprehensive-understanding-and) | 
-❌ | Paper | [Delete, Retrieve, Generate: A Simple Approach to Sentiment and Style Transfer](https://paperswithcode.com/paper/delete-retrieve-generate-a-simple-approach-to) | Model for text attribute transfer. Approach to alter a specific attribute (e.g., sentiment) while preserving its attribute-independent content (e.g., changing "screen is just the right size" to "screen is too small"). Training data contains only sentences labeled with their attribute, no parallel data. Disentanglement of attributes from attribute-independent content is learnt in an unsupervised way. Generates grammatical and appropriate responses, e.g., altering sentiment of reviews on Amazon and altering image captions to be more romantic or humorous.
-❌ | Paper | [Unpaired Sentiment-to-Sentiment Translation: A Cycled Reinforcement Learning Approach](https://paperswithcode.com/paper/unpaired-sentiment-to-sentiment-translation-a) | Model for sentiment-to-sentiment translation. Changes the underlying sentiment of a sentence while keeping its content. Cycled reinforcement learning is used to cope with the lack of parallel data.
-❌ | Paper | [Towards Controlled Transformation of Sentiment in Sentences](https://paperswithcode.com/paper/towards-controlled-transformation-of) | Method to transform the sentiment of sentences in order to limit the work necessary to generate training data. Transforms a sentence to an opposite sentiment sentence. The pipeline consists of a sentiment classifier with an attention mechanism to highlight the short phrases that determine the sentiment of a sentence. Then, these phrases are changed to phrases of the opposite sentiment using a baseline model and an autoencoder approach. Success rate of 54.7% on sentiment change.
+4. Use the [model interface](neutralizing-bias/interface.ipynb) or the [inference scripts](neutralizing-bias/inference/) for inference.
+
+## Style Transfer Paraphrase
+---
+This folder contains __STRAP__ described in _Chapter 4: Experimental Setup_ based on the paper [Reformulating Unsupervised Style Transfer as Paraphrase Generation](https://arxiv.org/abs/2010.05700). You can find the original repository [here](https://github.com/martiansideofthemoon/style-transfer-paraphrase).
+
+### Requirements
+1. Set up your environment:
+```
+$ virtualenv -p python3 .venv-stp
+$ source .venv-stp/bin/activate
+$ pip install transformers
+$ pip install torch==1.6.0+cu92 torchvision==0.7.0+cu92 -f https://download.pytorch.org/whl/torch_stable.html
+$ pip install -r req-stp.txt
+```
+
+2. Please contact me if you need the preprocessed WNC data.
+
+3. You can download the __Diverse Paraphraser__ (paraphraser_gpt2_large) [here](https://drive.google.com/drive/folders/12ImHH2kJKw1Vs3rDUSRytP3DZYcHdsZw?usp=sharing). Save it to the [models folder](style-transfer-paraphrase/models/). Please contact me if you need a checkpoint for the __Inverse Paraphraser__ trained on WNC. If you want to train it yourself, please follow the steps described [here](https://github.com/martiansideofthemoon/style-transfer-paraphrase#custom-datasets).
+
+4. You can use the command line-based [interface](style-transfer-paraphrase/interface.py) to interact with the model. It is documented [here](https://github.com/martiansideofthemoon/style-transfer-paraphrase/blob/master/README_terminal_demo.md#paraphrase-model-demo).
+
+5. Evaluation requires the SIM model ([Wieting et al., 2019](https://www.aclweb.org/anthology/P19-1427/)). You can download it [here](https://drive.google.com/drive/folders/12ImHH2kJKw1Vs3rDUSRytP3DZYcHdsZw?usp=sharing) and save it to [this folder](style-transfer-paraphrase/style_paraphrase/evaluation/similarity/).
+
+
+## Playground
+---
+### Requirements
+1. Set up your environment:
+```
+$ virtualenv -p python3.10 .venv-pg
+$ source .venv-pg/bin/activate
+$ pip install -r req-pg.txt
+```
+
+2. Download pretrained [GloVe](https://nlp.stanford.edu/data/glove.6B.zip) word embeddings and extract the `.zip` file `glove.6B.50d.txt` to the [data folder](playground/data/).
+
+3. Follow the descriptions in the notebooks.
