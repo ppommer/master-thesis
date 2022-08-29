@@ -1,12 +1,10 @@
 # Towards Fairness in NLP: Neural Methods for Flavor Detection and Bias Mitigation
 
 ## Evaluation
----
 This folder contains the evaluation results described in _Chapter 5: Results and Evaluation_. The human evaluation forms and the analysis sheet are located [here](https://drive.google.com/drive/folders/1JzKLK7a0VTdmGSNNTdqMW4oy8R1lKEAg?usp=sharing).
 The Perspective API evaluation results and scripts are located [here](evaluation/perspective_api/). You need an [API key](https://developers.perspectiveapi.com/s/docs-enable-the-api) to run the scripts.
 
 ## Neutralizing Bias
----
 This folder contains __MODULAR__ and __CONCURRENT__ described in _Chapter 4: Experimental Setup_ based on the paper [Automatically Neutralizing Subjective Bias in Text](https://arxiv.org/abs/1911.09709). You can find the original repository [here](https://github.com/rpryzant/neutralizing-bias).
 
 ### Requirements
@@ -25,7 +23,6 @@ $ python
 4. Use the [model interface](neutralizing-bias/interface.ipynb) or the [inference scripts](neutralizing-bias/inference/) for inference.
 
 ## Style Transfer Paraphrase
----
 This folder contains __STRAP__ described in _Chapter 4: Experimental Setup_ based on the paper [Reformulating Unsupervised Style Transfer as Paraphrase Generation](https://arxiv.org/abs/2010.05700). You can find the original repository [here](https://github.com/martiansideofthemoon/style-transfer-paraphrase).
 
 ### Requirements
@@ -48,7 +45,6 @@ $ pip install -r req-stp.txt
 
 
 ## Playground
----
 ### Requirements
 1. Set up your environment:
 ```
@@ -57,6 +53,6 @@ $ source .venv-pg/bin/activate
 $ pip install -r req-pg.txt
 ```
 
-2. Download pretrained [GloVe](https://nlp.stanford.edu/data/glove.6B.zip) word embeddings and extract the `.zip` file `glove.6B.50d.txt` to the [data folder](playground/data/).
+2. Download pretrained [GloVe](https://nlp.stanford.edu/data/glove.6B.zip) word embeddings and extract the `.zip` file. Save `glove.6B.50d.txt` to the [data folder](playground/data/).
 
-3. Follow the descriptions in the notebooks.
+3. Follow the descriptions in the [notebooks](playground).
