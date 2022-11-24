@@ -1,4 +1,5 @@
 # Towards Fairness in NLP: Neural Methods for Flavor Detection and Bias Mitigation
+This repository contains the source code for my Master's thesis [Towards Fairness in NLP: Neural Methods for Flavor Detection and Bias Mitigation](https://www.dropbox.com/s/57hbw8n1i6c8x8z/master_thesis.pdf?dl=0).
 
 ## Evaluation
 This folder contains the evaluation results described in _Chapter 5: Results and Evaluation_. The human evaluation forms and the analysis sheet are located [here](https://drive.google.com/drive/folders/1JzKLK7a0VTdmGSNNTdqMW4oy8R1lKEAg?usp=sharing).
